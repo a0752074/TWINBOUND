@@ -1,0 +1,36 @@
+{
+  "schema": "twinbound-gmat-case-v1",
+  "status": "Not Executed",
+  "gmatVersion": "R2025a",
+  "frame": "EarthMJ2000Eq",
+  "origin": "Earth",
+  "timeSystem": "TAIModJulian",
+  "epoch": "21545",
+  "units": {
+    "position": "km",
+    "velocity": "km/s",
+    "time": "elapsed seconds"
+  },
+  "gmKm3S2": 398600.43550702266,
+  "gravity": "Earth point mass only",
+  "thrust": false,
+  "drag": false,
+  "srp": false,
+  "relativity": false,
+  "initialState": [
+    7000,
+    0,
+    0,
+    0,
+    7.5,
+    1
+  ],
+  "sampleSeconds": 60,
+  "durationSeconds": 3600,
+  "scope": "Matched two-body integration benchmark only. This is not the live Horizons 11-body force model.",
+  "preconditions": [
+    "Run the supplied script in GMAT R2025a.",
+    "Confirm Earth.Mu in the running GMAT configuration matches gmKm3S2.",
+    "Retain the execution log and raw report; do not treat the local integrator output as GMAT output."
+  ]
+}

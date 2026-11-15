@@ -1,0 +1,165 @@
+{
+  "schema": "twinbound-trade-index-v1",
+  "alternatives": [
+    {
+      "id": "moon-imaging-camera-compact-dedicated-expanded",
+      "selection": {
+        "level": "moon",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "camera",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": true,
+      "deltaVMS": 1898.5732589213417,
+      "endEnergyWh": 324.54513888889494,
+      "receivedMB": 18.11999999999993
+    },
+    {
+      "id": "moon-imaging-camera-dish-dedicated-expanded",
+      "selection": {
+        "level": "moon",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "camera",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": true,
+      "deltaVMS": 1858.3473295381516,
+      "endEnergyWh": 319.71354166667425,
+      "receivedMB": 18.11999999999993
+    },
+    {
+      "id": "moon-imaging-spectrometer-compact-dedicated-expanded",
+      "selection": {
+        "level": "moon",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "spectrometer",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1845.3210909709865,
+      "endEnergyWh": 318.45312499999153,
+      "receivedMB": 37.75
+    },
+    {
+      "id": "moon-imaging-spectrometer-dish-dedicated-expanded",
+      "selection": {
+        "level": "moon",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "spectrometer",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1807.332663463366,
+      "endEnergyWh": 313.62152777777084,
+      "receivedMB": 60.40000000000059
+    },
+    {
+      "id": "moon-imaging-magnetometer-compact-dedicated-expanded",
+      "selection": {
+        "level": "moon",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "magnetometer",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1912.3786886311084,
+      "endEnergyWh": 325.80555555554326,
+      "receivedMB": 6.7950000000001
+    },
+    {
+      "id": "moon-imaging-magnetometer-dish-dedicated-expanded",
+      "selection": {
+        "level": "moon",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "magnetometer",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1871.5619584605306,
+      "endEnergyWh": 320.97395833332257,
+      "receivedMB": 6.7950000000001
+    },
+    {
+      "id": "moon-imaging-clock-compact-dedicated-expanded",
+      "selection": {
+        "level": "moon",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "clock",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1919.3583303978066,
+      "endEnergyWh": 326.22569444446043,
+      "receivedMB": 3.7750000000000368
+    },
+    {
+      "id": "moon-imaging-clock-dish-dedicated-expanded",
+      "selection": {
+        "level": "moon",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "clock",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1878.2412225700657,
+      "endEnergyWh": 321.39409722223974,
+      "receivedMB": 3.7750000000000368
+    }
+  ]
+}

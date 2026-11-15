@@ -1,0 +1,1717 @@
+{
+  "baseline": "Uploaded TWINBOUND_v10.3.0_Final_Mission_Edition(3).zip",
+  "release": "TWINBOUND v10.3.1",
+  "note": "Generated inventory/evidence hashes are omitted to avoid circular finalization; every original source is retained.",
+  "counts": {
+    "unchanged": 239,
+    "modified": 28,
+    "added": 17,
+    "removed": 0
+  },
+  "files": [
+    {
+      "file": ".dockerignore",
+      "status": "unchanged",
+      "baselineSha256": "80567d094ce1456f11ca111bc2b9483bf05776474ef7c24742b157a8ec99f754",
+      "releaseSha256": "80567d094ce1456f11ca111bc2b9483bf05776474ef7c24742b157a8ec99f754"
+    },
+    {
+      "file": ".github/workflows/pages.yml",
+      "status": "modified",
+      "baselineSha256": "5c15b121ebd8763c0477a0d56034e892100ede1c9e9bcf05bb700647d330c452",
+      "releaseSha256": "8db07e63f92bff80bec2360dec8f743b765e1c2cf278a6d60783c50e13dbd614"
+    },
+    {
+      "file": ".gitignore",
+      "status": "unchanged",
+      "baselineSha256": "691b409fa2d6fdad1f8b7dc97a8c159bf0ea41c2e2b3aaaa86cd1f6acf0b6445",
+      "releaseSha256": "691b409fa2d6fdad1f8b7dc97a8c159bf0ea41c2e2b3aaaa86cd1f6acf0b6445"
+    },
+    {
+      "file": "Dockerfile",
+      "status": "modified",
+      "baselineSha256": "d55ca9378da8f7d963bd51ff9e0e9a8c7b5afe6136c813138ff958196641a700",
+      "releaseSha256": "e9fc66199494bfb5f98d9e38401346166669d884bb7dfb6ffea75f991a159975"
+    },
+    {
+      "file": "LICENSE",
+      "status": "unchanged",
+      "baselineSha256": "a89ce7325ccd239163a90200388aa27b242279a08811f9a5ab749365db00b2ac",
+      "releaseSha256": "a89ce7325ccd239163a90200388aa27b242279a08811f9a5ab749365db00b2ac"
+    },
+    {
+      "file": "README.md",
+      "status": "modified",
+      "baselineSha256": "327962df361be6d17889d5e0aabbb19c5d76d65d5945ae4323066420d15bc77d",
+      "releaseSha256": "d3f06dca080976f14cf6b0db2c71c281d3088ecaaab52c57de615f70b9742336"
+    },
+    {
+      "file": "assets/favicon.svg",
+      "status": "unchanged",
+      "baselineSha256": "8b056b707659a092ded0be3bab70effa79fdfb42a140c6bcb613d8e95ca87bfb",
+      "releaseSha256": "8b056b707659a092ded0be3bab70effa79fdfb42a140c6bcb613d8e95ca87bfb"
+    },
+    {
+      "file": "assets/photos/PIA00407.jpg",
+      "status": "unchanged",
+      "baselineSha256": "b97cb7e1fe54a68f0dc1949015752875c86ee18921b91c43046e5fe20f195a4e",
+      "releaseSha256": "b97cb7e1fe54a68f0dc1949015752875c86ee18921b91c43046e5fe20f195a4e"
+    },
+    {
+      "file": "assets/photos/PIA02653.jpg",
+      "status": "unchanged",
+      "baselineSha256": "9904cc710b0b688db8e27102b37dbce377f2af13118127f71a9c130aa12e4370",
+      "releaseSha256": "9904cc710b0b688db8e27102b37dbce377f2af13118127f71a9c130aa12e4370"
+    },
+    {
+      "file": "assets/photos/PIA12954.jpg",
+      "status": "unchanged",
+      "baselineSha256": "772422234452b24748e7cc8fa111a91c8e1d27e0947fdb815d289eee11881428",
+      "releaseSha256": "772422234452b24748e7cc8fa111a91c8e1d27e0947fdb815d289eee11881428"
+    },
+    {
+      "file": "assets/photos/PIA13008.jpg",
+      "status": "unchanged",
+      "baselineSha256": "839bf582379dc0abbf691e934b8a9c218154fdfa49c39aa11c8ed52394253aa2",
+      "releaseSha256": "839bf582379dc0abbf691e934b8a9c218154fdfa49c39aa11c8ed52394253aa2"
+    },
+    {
+      "file": "assets/photos/proxima_wfc3.jpg",
+      "status": "unchanged",
+      "baselineSha256": "22733c1ade944756ddcfe39208cee5845ac05710aefbd343c231e38022029bfb",
+      "releaseSha256": "22733c1ade944756ddcfe39208cee5845ac05710aefbd343c231e38022029bfb"
+    },
+    {
+      "file": "assets/photos/proxima_wfpc2.jpg",
+      "status": "unchanged",
+      "baselineSha256": "e4231858c5bc750bd4dabec5b6cdf216bb18f7666f85c9fcdddc536c87f57692",
+      "releaseSha256": "e4231858c5bc750bd4dabec5b6cdf216bb18f7666f85c9fcdddc536c87f57692"
+    },
+    {
+      "file": "compose.yml",
+      "status": "modified",
+      "baselineSha256": "202f1f16cab2eda6147b6e1aec67589083c884d36b59a309a7a63dd0d89bc4bc",
+      "releaseSha256": "7eba7a7b6f24127e50af128236851ed6a598b4d32a6cc3a828bf4d760473ccad"
+    },
+    {
+      "file": "data/ephemeris.bin",
+      "status": "unchanged",
+      "baselineSha256": "22ebdae7bd9b7efa78a823e0aebbfe9e7c2b000f59d84788ea1e5f341aa0a90b",
+      "releaseSha256": "22ebdae7bd9b7efa78a823e0aebbfe9e7c2b000f59d84788ea1e5f341aa0a90b"
+    },
+    {
+      "file": "data/ephemeris.json",
+      "status": "unchanged",
+      "baselineSha256": "cc9c5d184986ea37216816a6dbb6ef4317460375be940998f0119d656bf6eaa1",
+      "releaseSha256": "cc9c5d184986ea37216816a6dbb6ef4317460375be940998f0119d656bf6eaa1"
+    },
+    {
+      "file": "data/evidence/generation.log",
+      "status": "unchanged",
+      "baselineSha256": "3247eea87b8eea1b04ed920e226fd24be29ba14ea0d4e8422748c9c105ac0959",
+      "releaseSha256": "3247eea87b8eea1b04ed920e226fd24be29ba14ea0d4e8422748c9c105ac0959"
+    },
+    {
+      "file": "data/evidence/gmat/benchmark.script",
+      "status": "unchanged",
+      "baselineSha256": "e3546e19a35846caa642f8058d5f2961c1c059ea35e1d1326ce18c98affa8daf",
+      "releaseSha256": "e3546e19a35846caa642f8058d5f2961c1c059ea35e1d1326ce18c98affa8daf"
+    },
+    {
+      "file": "data/evidence/gmat/case.json",
+      "status": "unchanged",
+      "baselineSha256": "e83e4a798327f0fb571d3862fd80d7ca7f7665fff9c58408015c538d4b07ee30",
+      "releaseSha256": "e83e4a798327f0fb571d3862fd80d7ca7f7665fff9c58408015c538d4b07ee30"
+    },
+    {
+      "file": "data/evidence/gmat/status.json",
+      "status": "unchanged",
+      "baselineSha256": "2b61e31912ebc57adf412394f06b9e951f718d6a3eb697e52d1195963bc22922",
+      "releaseSha256": "2b61e31912ebc57adf412394f06b9e951f718d6a3eb697e52d1195963bc22922"
+    },
+    {
+      "file": "data/evidence/gmat/twinbound-reference.json",
+      "status": "unchanged",
+      "baselineSha256": "9401349b9437ffd56ed6a78f52f54c9253a805dff985fbe35df794bb4bcf8638",
+      "releaseSha256": "9401349b9437ffd56ed6a78f52f54c9253a805dff985fbe35df794bb4bcf8638"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/cubesat-review.json",
+      "status": "unchanged",
+      "baselineSha256": "80559fd90b597693c8c3b151d2024b779be52d52eb817596639716f5689de3a8",
+      "releaseSha256": "80559fd90b597693c8c3b151d2024b779be52d52eb817596639716f5689de3a8"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/maturity.json",
+      "status": "unchanged",
+      "baselineSha256": "f0cd83c116feeea1eb7467e99b4ea72670b2fede58b98441bb6b1bd91be893b3",
+      "releaseSha256": "f0cd83c116feeea1eb7467e99b4ea72670b2fede58b98441bb6b1bd91be893b3"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/mission-viz-actual-track.csv",
+      "status": "unchanged",
+      "baselineSha256": "650127d32da045885a0b29274c0a2f3694b37e52c238dd7a6f8ecc8d12fdd7a1",
+      "releaseSha256": "650127d32da045885a0b29274c0a2f3694b37e52c238dd7a6f8ecc8d12fdd7a1"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/mission-viz-osculating-ellipse.csv",
+      "status": "unchanged",
+      "baselineSha256": "6463e92acffda3550c2fe9ee6fe51a5d3444a52793490ff740c48e5fd2c56255",
+      "releaseSha256": "6463e92acffda3550c2fe9ee6fe51a5d3444a52793490ff740c48e5fd2c56255"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/mission-viz.json",
+      "status": "unchanged",
+      "baselineSha256": "cc00276c5c26bcd31db4198e02590a53db6149d535b08e66d1f1364d95e13f40",
+      "releaseSha256": "cc00276c5c26bcd31db4198e02590a53db6149d535b08e66d1f1364d95e13f40"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/record.json",
+      "status": "unchanged",
+      "baselineSha256": "f235b67d12405afc00ffecca1cafbb3298aa6acd5941144ba01db7980f31a57a",
+      "releaseSha256": "f235b67d12405afc00ffecca1cafbb3298aa6acd5941144ba01db7980f31a57a"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/requirements.json",
+      "status": "unchanged",
+      "baselineSha256": "0fd4c1f710ac35aa0509c6fd4a5e55c7d26af5b8c3263b8d445288a301220f99",
+      "releaseSha256": "0fd4c1f710ac35aa0509c6fd4a5e55c7d26af5b8c3263b8d445288a301220f99"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/index.json",
+      "status": "unchanged",
+      "baselineSha256": "74cfded1072d3f65993f150d393cf9a3562b656cd2b0c1d3fd098a1d81eb6506",
+      "releaseSha256": "74cfded1072d3f65993f150d393cf9a3562b656cd2b0c1d3fd098a1d81eb6506"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-camera-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "d22d60dd4b091efac90c46a7b7136ab7d7d3283ed330125a2ec8bef38b1d5df4",
+      "releaseSha256": "d22d60dd4b091efac90c46a7b7136ab7d7d3283ed330125a2ec8bef38b1d5df4"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-camera-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "fe1c3534662e560a58100a10c81f2d55d95aed50b8512be62683a650d84d18fc",
+      "releaseSha256": "fe1c3534662e560a58100a10c81f2d55d95aed50b8512be62683a650d84d18fc"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-clock-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "ff37d03b476586ff548913e06e911404ca59516e70137193b2e900fb878f9845",
+      "releaseSha256": "ff37d03b476586ff548913e06e911404ca59516e70137193b2e900fb878f9845"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-clock-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "da115cbad0ecbb056d9975521f79c2bb5ccb23560994129204cdaf1762ed170f",
+      "releaseSha256": "da115cbad0ecbb056d9975521f79c2bb5ccb23560994129204cdaf1762ed170f"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-magnetometer-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "2f9980122c602bed5c1f75693bf2b7a288806c7a000af0396c1694e62d06eec2",
+      "releaseSha256": "2f9980122c602bed5c1f75693bf2b7a288806c7a000af0396c1694e62d06eec2"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-magnetometer-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "29bb72588dacfac7838c8641e4e7c3f6b13b49073b92530f2529398e89658e30",
+      "releaseSha256": "29bb72588dacfac7838c8641e4e7c3f6b13b49073b92530f2529398e89658e30"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-spectrometer-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "420d778825fe3bdfa0a8b1112ed91e269f3c63a2af892f08543da4107c94673d",
+      "releaseSha256": "420d778825fe3bdfa0a8b1112ed91e269f3c63a2af892f08543da4107c94673d"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-spectrometer-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "7b7642f2a8eed43f7c7600e3b94efc4777dafcd088b3ad41c1aaa8e6c9c321e9",
+      "releaseSha256": "7b7642f2a8eed43f7c7600e3b94efc4777dafcd088b3ad41c1aaa8e6c9c321e9"
+    },
+    {
+      "file": "data/evidence/mars/cubesat-review.json",
+      "status": "unchanged",
+      "baselineSha256": "322c990ba28bcb2782c4df9b427a31204cc5d7ae02139c5336d69febaf1387fd",
+      "releaseSha256": "322c990ba28bcb2782c4df9b427a31204cc5d7ae02139c5336d69febaf1387fd"
+    },
+    {
+      "file": "data/evidence/mars/maturity.json",
+      "status": "unchanged",
+      "baselineSha256": "0f66f4480d6e3fff5fead69aa4e8e6df99d868dca2dd673d2547fbd628ea630a",
+      "releaseSha256": "0f66f4480d6e3fff5fead69aa4e8e6df99d868dca2dd673d2547fbd628ea630a"
+    },
+    {
+      "file": "data/evidence/mars/mission-viz-actual-track.csv",
+      "status": "unchanged",
+      "baselineSha256": "650127d32da045885a0b29274c0a2f3694b37e52c238dd7a6f8ecc8d12fdd7a1",
+      "releaseSha256": "650127d32da045885a0b29274c0a2f3694b37e52c238dd7a6f8ecc8d12fdd7a1"
+    },
+    {
+      "file": "data/evidence/mars/mission-viz-osculating-ellipse.csv",
+      "status": "unchanged",
+      "baselineSha256": "6463e92acffda3550c2fe9ee6fe51a5d3444a52793490ff740c48e5fd2c56255",
+      "releaseSha256": "6463e92acffda3550c2fe9ee6fe51a5d3444a52793490ff740c48e5fd2c56255"
+    },
+    {
+      "file": "data/evidence/mars/mission-viz.json",
+      "status": "unchanged",
+      "baselineSha256": "cc00276c5c26bcd31db4198e02590a53db6149d535b08e66d1f1364d95e13f40",
+      "releaseSha256": "cc00276c5c26bcd31db4198e02590a53db6149d535b08e66d1f1364d95e13f40"
+    },
+    {
+      "file": "data/evidence/mars/record.json",
+      "status": "unchanged",
+      "baselineSha256": "cd3a29415c95d5c0cb1ca45aade7ddd45d36b4e6b97a2ae388eadb9cc1205e13",
+      "releaseSha256": "cd3a29415c95d5c0cb1ca45aade7ddd45d36b4e6b97a2ae388eadb9cc1205e13"
+    },
+    {
+      "file": "data/evidence/mars/requirements.json",
+      "status": "unchanged",
+      "baselineSha256": "85f0ff3d307547640e9484a1a735b9b2475a0893e72bc27e7d872891b673ecfe",
+      "releaseSha256": "85f0ff3d307547640e9484a1a735b9b2475a0893e72bc27e7d872891b673ecfe"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/index.json",
+      "status": "unchanged",
+      "baselineSha256": "74cfded1072d3f65993f150d393cf9a3562b656cd2b0c1d3fd098a1d81eb6506",
+      "releaseSha256": "74cfded1072d3f65993f150d393cf9a3562b656cd2b0c1d3fd098a1d81eb6506"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-camera-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "d22d60dd4b091efac90c46a7b7136ab7d7d3283ed330125a2ec8bef38b1d5df4",
+      "releaseSha256": "d22d60dd4b091efac90c46a7b7136ab7d7d3283ed330125a2ec8bef38b1d5df4"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-camera-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "fe1c3534662e560a58100a10c81f2d55d95aed50b8512be62683a650d84d18fc",
+      "releaseSha256": "fe1c3534662e560a58100a10c81f2d55d95aed50b8512be62683a650d84d18fc"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-clock-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "ff37d03b476586ff548913e06e911404ca59516e70137193b2e900fb878f9845",
+      "releaseSha256": "ff37d03b476586ff548913e06e911404ca59516e70137193b2e900fb878f9845"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-clock-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "da115cbad0ecbb056d9975521f79c2bb5ccb23560994129204cdaf1762ed170f",
+      "releaseSha256": "da115cbad0ecbb056d9975521f79c2bb5ccb23560994129204cdaf1762ed170f"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-magnetometer-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "2f9980122c602bed5c1f75693bf2b7a288806c7a000af0396c1694e62d06eec2",
+      "releaseSha256": "2f9980122c602bed5c1f75693bf2b7a288806c7a000af0396c1694e62d06eec2"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-magnetometer-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "29bb72588dacfac7838c8641e4e7c3f6b13b49073b92530f2529398e89658e30",
+      "releaseSha256": "29bb72588dacfac7838c8641e4e7c3f6b13b49073b92530f2529398e89658e30"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-spectrometer-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "420d778825fe3bdfa0a8b1112ed91e269f3c63a2af892f08543da4107c94673d",
+      "releaseSha256": "420d778825fe3bdfa0a8b1112ed91e269f3c63a2af892f08543da4107c94673d"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-spectrometer-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "7b7642f2a8eed43f7c7600e3b94efc4777dafcd088b3ad41c1aaa8e6c9c321e9",
+      "releaseSha256": "7b7642f2a8eed43f7c7600e3b94efc4777dafcd088b3ad41c1aaa8e6c9c321e9"
+    },
+    {
+      "file": "data/evidence/moon/cubesat-review.json",
+      "status": "unchanged",
+      "baselineSha256": "f54357a6bae966bd529b7e06f6aae2815f64c9260f38252300890d2b051b08d4",
+      "releaseSha256": "f54357a6bae966bd529b7e06f6aae2815f64c9260f38252300890d2b051b08d4"
+    },
+    {
+      "file": "data/evidence/moon/maturity.json",
+      "status": "unchanged",
+      "baselineSha256": "54e2d3869fbb72695605695eba9669c14949383355fb74dcd06f5e1d10d7950a",
+      "releaseSha256": "54e2d3869fbb72695605695eba9669c14949383355fb74dcd06f5e1d10d7950a"
+    },
+    {
+      "file": "data/evidence/moon/mission-viz-actual-track.csv",
+      "status": "unchanged",
+      "baselineSha256": "6067c272e62e30007ee06254bbdb9a3b0b971421e870ba731d04d6982a5c4bed",
+      "releaseSha256": "6067c272e62e30007ee06254bbdb9a3b0b971421e870ba731d04d6982a5c4bed"
+    },
+    {
+      "file": "data/evidence/moon/mission-viz-osculating-ellipse.csv",
+      "status": "unchanged",
+      "baselineSha256": "796ceb68a3eb1bf484901b6fa459ab754f084e31290d2108d89dc7fdf9b2e14d",
+      "releaseSha256": "796ceb68a3eb1bf484901b6fa459ab754f084e31290d2108d89dc7fdf9b2e14d"
+    },
+    {
+      "file": "data/evidence/moon/mission-viz.json",
+      "status": "unchanged",
+      "baselineSha256": "46f204c08cd1b7885fbf918f5d84ad0ab41dac45ea8cac42d2d4286c7fe2ee6e",
+      "releaseSha256": "46f204c08cd1b7885fbf918f5d84ad0ab41dac45ea8cac42d2d4286c7fe2ee6e"
+    },
+    {
+      "file": "data/evidence/moon/record.json",
+      "status": "unchanged",
+      "baselineSha256": "f2b670d10b58c81d767050ca1fee2b7b531b52592825176ced3b5d2439d1031b",
+      "releaseSha256": "f2b670d10b58c81d767050ca1fee2b7b531b52592825176ced3b5d2439d1031b"
+    },
+    {
+      "file": "data/evidence/moon/requirements.json",
+      "status": "unchanged",
+      "baselineSha256": "a4ac7a2fc5d2c4eed62b425e242ff1f7d3e9d649b5d6e3ea33730c80de2e56bc",
+      "releaseSha256": "a4ac7a2fc5d2c4eed62b425e242ff1f7d3e9d649b5d6e3ea33730c80de2e56bc"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/index.json",
+      "status": "unchanged",
+      "baselineSha256": "1e119618c344ef2699e7c207427428f57127271ffe00880c6dfb10031c4d920f",
+      "releaseSha256": "1e119618c344ef2699e7c207427428f57127271ffe00880c6dfb10031c4d920f"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-camera-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "c96addb15b231cb05f6298a881b7ef05d2511fa50fc4db24dac6839440ab3b76",
+      "releaseSha256": "c96addb15b231cb05f6298a881b7ef05d2511fa50fc4db24dac6839440ab3b76"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-camera-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "8281e18faccb705d2c1c3bc543af8e9e68933ae18d91ce1afe07c9d39aff834c",
+      "releaseSha256": "8281e18faccb705d2c1c3bc543af8e9e68933ae18d91ce1afe07c9d39aff834c"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-clock-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "1173650f4898fa27c0e23ab1a6ffba625624669bd80fb49761cfda13e84d56d4",
+      "releaseSha256": "1173650f4898fa27c0e23ab1a6ffba625624669bd80fb49761cfda13e84d56d4"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-clock-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "4ca60337877dcd8374b41abf7d6533fd596a26fc844daed287108b5f125e3d45",
+      "releaseSha256": "4ca60337877dcd8374b41abf7d6533fd596a26fc844daed287108b5f125e3d45"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-magnetometer-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "17191c951778cd254c4eba677c45bc0401ebc54795a00b0afd272a51f44a27c0",
+      "releaseSha256": "17191c951778cd254c4eba677c45bc0401ebc54795a00b0afd272a51f44a27c0"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-magnetometer-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "8acfecedfb3a91cc000f826db38cc421cf2603475052bfc6b2aed8a30c5a747d",
+      "releaseSha256": "8acfecedfb3a91cc000f826db38cc421cf2603475052bfc6b2aed8a30c5a747d"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-spectrometer-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "ee0706a0fc29080e49a5d5b00d6250f2a49632c9c63d6df63c6d2efa8f7cc656",
+      "releaseSha256": "ee0706a0fc29080e49a5d5b00d6250f2a49632c9c63d6df63c6d2efa8f7cc656"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-spectrometer-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "4fbe825f4c250fde45cc13295addd57e34cf58f0f7be2a1580f012375ddc0523",
+      "releaseSha256": "4fbe825f4c250fde45cc13295addd57e34cf58f0f7be2a1580f012375ddc0523"
+    },
+    {
+      "file": "data/evidence/pluto/cubesat-review.json",
+      "status": "unchanged",
+      "baselineSha256": "653efb2a48fe259a05de99dcc5ae7281fff914f354b7beb80da4f4415b3120ec",
+      "releaseSha256": "653efb2a48fe259a05de99dcc5ae7281fff914f354b7beb80da4f4415b3120ec"
+    },
+    {
+      "file": "data/evidence/pluto/maturity.json",
+      "status": "unchanged",
+      "baselineSha256": "2687d20a85c132b6619661663c9527c300ce16a4489a169d094308ceda7c7b79",
+      "releaseSha256": "2687d20a85c132b6619661663c9527c300ce16a4489a169d094308ceda7c7b79"
+    },
+    {
+      "file": "data/evidence/pluto/mission-viz-actual-track.csv",
+      "status": "unchanged",
+      "baselineSha256": "1c1d2bc3f2b7cd0d1c4629d607e1eb72df23e7b0b7b3b2b97fd8f6c3a5195768",
+      "releaseSha256": "1c1d2bc3f2b7cd0d1c4629d607e1eb72df23e7b0b7b3b2b97fd8f6c3a5195768"
+    },
+    {
+      "file": "data/evidence/pluto/mission-viz-osculating-ellipse.csv",
+      "status": "unchanged",
+      "baselineSha256": "5a9c80096e990d971e9a10f1d6670dad4ff1e398a9c63179a1f86ba11580a761",
+      "releaseSha256": "5a9c80096e990d971e9a10f1d6670dad4ff1e398a9c63179a1f86ba11580a761"
+    },
+    {
+      "file": "data/evidence/pluto/mission-viz.json",
+      "status": "unchanged",
+      "baselineSha256": "37100552052942ca0ebd33b96911db57808eb4c1054868c53a557ac52a626558",
+      "releaseSha256": "37100552052942ca0ebd33b96911db57808eb4c1054868c53a557ac52a626558"
+    },
+    {
+      "file": "data/evidence/pluto/record.json",
+      "status": "unchanged",
+      "baselineSha256": "b0821239cbc956a52d3dc92e703247663f38d25be36d170c760d712e38eb150a",
+      "releaseSha256": "b0821239cbc956a52d3dc92e703247663f38d25be36d170c760d712e38eb150a"
+    },
+    {
+      "file": "data/evidence/pluto/requirements.json",
+      "status": "unchanged",
+      "baselineSha256": "9ba1e83893c46be713d1c837106b535f77cb2650e0f241b2aaf0682405e750dc",
+      "releaseSha256": "9ba1e83893c46be713d1c837106b535f77cb2650e0f241b2aaf0682405e750dc"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/index.json",
+      "status": "unchanged",
+      "baselineSha256": "3baca4fd5d4ad8affff397f1bc4e5d429fc34cfa72689157291b9276d3439263",
+      "releaseSha256": "3baca4fd5d4ad8affff397f1bc4e5d429fc34cfa72689157291b9276d3439263"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-camera-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "5128aa7a4b47516fa1173eaa60ed05ecfbb93e73b1943724b1ba65315142c24e",
+      "releaseSha256": "5128aa7a4b47516fa1173eaa60ed05ecfbb93e73b1943724b1ba65315142c24e"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-camera-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "aafa34c2dcb316fad9b7ca2b14b4f26b7e39fe6540201eca663e6287ab72cbc0",
+      "releaseSha256": "aafa34c2dcb316fad9b7ca2b14b4f26b7e39fe6540201eca663e6287ab72cbc0"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-clock-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "16a3854647ebaee843e6b6340c2ba3c54350f05a78f774319f54e96f8016f54b",
+      "releaseSha256": "16a3854647ebaee843e6b6340c2ba3c54350f05a78f774319f54e96f8016f54b"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-clock-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "45d26b90251e194cc9460a0b8831209ac3936a0542bf2fc39ef7c3e1b3f065b2",
+      "releaseSha256": "45d26b90251e194cc9460a0b8831209ac3936a0542bf2fc39ef7c3e1b3f065b2"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-magnetometer-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "66eab0cc165fc560973820fe2f2e0d634bfb8377796c7a38f1d4d5fe1b844976",
+      "releaseSha256": "66eab0cc165fc560973820fe2f2e0d634bfb8377796c7a38f1d4d5fe1b844976"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-magnetometer-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "a74a94a2a167471a81be64348fe8a0f6b4239dc34517e5130899b5b6a83997cb",
+      "releaseSha256": "a74a94a2a167471a81be64348fe8a0f6b4239dc34517e5130899b5b6a83997cb"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-spectrometer-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "e943a0674dc0bb86df5cfe28d5d8509c86f2b0fbe2229900bc2356e923f00515",
+      "releaseSha256": "e943a0674dc0bb86df5cfe28d5d8509c86f2b0fbe2229900bc2356e923f00515"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-spectrometer-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "8e1cb92a75e8db9f110c364cd603a921ed2f19a6ad69770fc8f17ef968a06ef3",
+      "releaseSha256": "8e1cb92a75e8db9f110c364cd603a921ed2f19a6ad69770fc8f17ef968a06ef3"
+    },
+    {
+      "file": "data/evidence/proxima/cubesat-review.json",
+      "status": "unchanged",
+      "baselineSha256": "290ddacb464ace3f2a5b833c6ee63613ab4af81aa91f47e58829599e7dace69c",
+      "releaseSha256": "290ddacb464ace3f2a5b833c6ee63613ab4af81aa91f47e58829599e7dace69c"
+    },
+    {
+      "file": "data/evidence/proxima/maturity.json",
+      "status": "unchanged",
+      "baselineSha256": "8f0c8bff8865462e7f2522501371050e9be40790909a33f56662ffb54ae2ab8b",
+      "releaseSha256": "8f0c8bff8865462e7f2522501371050e9be40790909a33f56662ffb54ae2ab8b"
+    },
+    {
+      "file": "data/evidence/proxima/mission-viz.json",
+      "status": "unchanged",
+      "baselineSha256": "8970772029b4e5ff3acceee5cd8ccc3bf6a7b93b82560240e789de27ac46b8cd",
+      "releaseSha256": "8970772029b4e5ff3acceee5cd8ccc3bf6a7b93b82560240e789de27ac46b8cd"
+    },
+    {
+      "file": "data/evidence/proxima/record.json",
+      "status": "unchanged",
+      "baselineSha256": "48ba501c4ca9ba89a581993b208f91d7c77117ca4ecc016dd4da304a5925afae",
+      "releaseSha256": "48ba501c4ca9ba89a581993b208f91d7c77117ca4ecc016dd4da304a5925afae"
+    },
+    {
+      "file": "data/evidence/proxima/requirements.json",
+      "status": "unchanged",
+      "baselineSha256": "5f131e08613be374e8cd89af5c06bc7602133a8b50928ea27da3b41119caedab",
+      "releaseSha256": "5f131e08613be374e8cd89af5c06bc7602133a8b50928ea27da3b41119caedab"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/index.json",
+      "status": "unchanged",
+      "baselineSha256": "c870d017843f57c8cc2db0b6a60a011ff2f12ea2efb92fc62a410daec55c04b5",
+      "releaseSha256": "c870d017843f57c8cc2db0b6a60a011ff2f12ea2efb92fc62a410daec55c04b5"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-camera-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "de7f64d5205fe2caa1e00a78cde4ffaff140de5f04ce32b39e84cdd46f23b527",
+      "releaseSha256": "de7f64d5205fe2caa1e00a78cde4ffaff140de5f04ce32b39e84cdd46f23b527"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-camera-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "47b024a200a73623b7856b8b3f3c3a0f069b6bc90c86d7b0ebdeac18a5434a85",
+      "releaseSha256": "47b024a200a73623b7856b8b3f3c3a0f069b6bc90c86d7b0ebdeac18a5434a85"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-clock-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "baa4511ef357d66e3e73a15c0d5b6525a0436b08f919a86067bbd691dfb6dc10",
+      "releaseSha256": "baa4511ef357d66e3e73a15c0d5b6525a0436b08f919a86067bbd691dfb6dc10"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-clock-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "cdc449f3c5b55653c09966c8b32a7d2a8d5e771dce21e939fad77aa94bfa4612",
+      "releaseSha256": "cdc449f3c5b55653c09966c8b32a7d2a8d5e771dce21e939fad77aa94bfa4612"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-magnetometer-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "1eadd4ef476530662c66c328ff1d6429a974b847c380d61dd9cbee144bc0bdcd",
+      "releaseSha256": "1eadd4ef476530662c66c328ff1d6429a974b847c380d61dd9cbee144bc0bdcd"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-magnetometer-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "3fbdca7f1fcc09edd189421f9a15a1bb77cb04e6c417054e483a9ca1abe7feb4",
+      "releaseSha256": "3fbdca7f1fcc09edd189421f9a15a1bb77cb04e6c417054e483a9ca1abe7feb4"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-spectrometer-compact-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "14a83f4486bac1375c52393d6a90930fa8ea1852253bfa24b3f4fa17074e7d02",
+      "releaseSha256": "14a83f4486bac1375c52393d6a90930fa8ea1852253bfa24b3f4fa17074e7d02"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-spectrometer-dish-dedicated-expanded.json",
+      "status": "unchanged",
+      "baselineSha256": "15e87aa8ac728231ef4c977cfc27678e24c3ccc653c5e3dc40ae0b1c08b37a2b",
+      "releaseSha256": "15e87aa8ac728231ef4c977cfc27678e24c3ccc653c5e3dc40ae0b1c08b37a2b"
+    },
+    {
+      "file": "data/evidence/resource-audit-v101.json",
+      "status": "unchanged",
+      "baselineSha256": "c0fd3b6cd1d712651d921cb6cd7c872b3cdb6d6ef5049d99ed847c109ac42108",
+      "releaseSha256": "c0fd3b6cd1d712651d921cb6cd7c872b3cdb6d6ef5049d99ed847c109ac42108"
+    },
+    {
+      "file": "data/evidence/resource-audit-v102.json",
+      "status": "unchanged",
+      "baselineSha256": "8036d5282c7de715070fff5d7258da5b0d55a04a76fd3fff46ba8b6840cc3600",
+      "releaseSha256": "8036d5282c7de715070fff5d7258da5b0d55a04a76fd3fff46ba8b6840cc3600"
+    },
+    {
+      "file": "data/evidence/resource-audit-v103.json",
+      "status": "unchanged",
+      "baselineSha256": "271e399a4e3bdfb065b7956bb05084d92eba0d55205a784d0edcbd530d91718a",
+      "releaseSha256": "271e399a4e3bdfb065b7956bb05084d92eba0d55205a784d0edcbd530d91718a"
+    },
+    {
+      "file": "data/evidence/source-snapshots.json",
+      "status": "unchanged",
+      "baselineSha256": "2121ccdadefe24043d187928ecea5569b2f33b978f0da3069363fdbe7c29a97e",
+      "releaseSha256": "2121ccdadefe24043d187928ecea5569b2f33b978f0da3069363fdbe7c29a97e"
+    },
+    {
+      "file": "data/evidence/summary.json",
+      "status": "unchanged",
+      "baselineSha256": "f8b76f54a98d53b368825fbe1a54be509b8f176236e5a308bbed34050f36bebb",
+      "releaseSha256": "f8b76f54a98d53b368825fbe1a54be509b8f176236e5a308bbed34050f36bebb"
+    },
+    {
+      "file": "data/gravity_v3.json",
+      "status": "unchanged",
+      "baselineSha256": "f70a6109d87c4fda8ce604e721cf02fb38371a1cccaebb57613d9b8c2568fce9",
+      "releaseSha256": "f70a6109d87c4fda8ce604e721cf02fb38371a1cccaebb57613d9b8c2568fce9"
+    },
+    {
+      "file": "data/horizons_v10/earth.bin",
+      "status": "unchanged",
+      "baselineSha256": "222c00110021fc6384d1f9b65e9abb95801d7f8d4a6dc52dbc0961168d49de8b",
+      "releaseSha256": "222c00110021fc6384d1f9b65e9abb95801d7f8d4a6dc52dbc0961168d49de8b"
+    },
+    {
+      "file": "data/horizons_v10/earth.json.gz",
+      "status": "unchanged",
+      "baselineSha256": "5be07f4db590beb3ae4d57252564da5257855034abaeb27670bc59d6f847a520",
+      "releaseSha256": "5be07f4db590beb3ae4d57252564da5257855034abaeb27670bc59d6f847a520"
+    },
+    {
+      "file": "data/horizons_v10/jupiter.bin",
+      "status": "unchanged",
+      "baselineSha256": "bb711ac36b42f1f88c1adf7040fd2d0ea5cb64434b5558ed2c939104951296b8",
+      "releaseSha256": "bb711ac36b42f1f88c1adf7040fd2d0ea5cb64434b5558ed2c939104951296b8"
+    },
+    {
+      "file": "data/horizons_v10/jupiter.json.gz",
+      "status": "unchanged",
+      "baselineSha256": "973d6baf3496b706b24b8f5f9e517e4e2fac0bc7fbd45d7eebcf10a14d5205ef",
+      "releaseSha256": "973d6baf3496b706b24b8f5f9e517e4e2fac0bc7fbd45d7eebcf10a14d5205ef"
+    },
+    {
+      "file": "data/horizons_v10/manifest.json",
+      "status": "unchanged",
+      "baselineSha256": "b3f49d8b388319a03f81c7a8f624aedd0f41a3daf554e8a98e985fc01ab2b795",
+      "releaseSha256": "b3f49d8b388319a03f81c7a8f624aedd0f41a3daf554e8a98e985fc01ab2b795"
+    },
+    {
+      "file": "data/horizons_v10/mars.bin",
+      "status": "unchanged",
+      "baselineSha256": "b21da9d6d311ec428abc3e8d26812d04625205d1cde9c457b23adf8e62db9b77",
+      "releaseSha256": "b21da9d6d311ec428abc3e8d26812d04625205d1cde9c457b23adf8e62db9b77"
+    },
+    {
+      "file": "data/horizons_v10/mars.json.gz",
+      "status": "unchanged",
+      "baselineSha256": "f7138dd2c9055c079112658c3434d52ce2ec097a892bb5b61ec0c8c5e9890157",
+      "releaseSha256": "f7138dd2c9055c079112658c3434d52ce2ec097a892bb5b61ec0c8c5e9890157"
+    },
+    {
+      "file": "data/horizons_v10/mercury.bin",
+      "status": "unchanged",
+      "baselineSha256": "2501a3ecfbc714b23817630fe471ba98e817c9ebaeb3af2fe18ad2892b990883",
+      "releaseSha256": "2501a3ecfbc714b23817630fe471ba98e817c9ebaeb3af2fe18ad2892b990883"
+    },
+    {
+      "file": "data/horizons_v10/mercury.json.gz",
+      "status": "unchanged",
+      "baselineSha256": "9180f6b734ca40ac81b2fe3365c61ba8fdca1d54e19d06e0196d590bbd1ead7a",
+      "releaseSha256": "9180f6b734ca40ac81b2fe3365c61ba8fdca1d54e19d06e0196d590bbd1ead7a"
+    },
+    {
+      "file": "data/horizons_v10/moon.bin",
+      "status": "unchanged",
+      "baselineSha256": "4d848859252753f2a5a486801c66504285cae49320bacee22515b447bf3c5b32",
+      "releaseSha256": "4d848859252753f2a5a486801c66504285cae49320bacee22515b447bf3c5b32"
+    },
+    {
+      "file": "data/horizons_v10/moon.json.gz",
+      "status": "unchanged",
+      "baselineSha256": "59ef61c74cc08f2448154619c0dc5c14ed05cd49bbc45db18a7d049e351140f9",
+      "releaseSha256": "59ef61c74cc08f2448154619c0dc5c14ed05cd49bbc45db18a7d049e351140f9"
+    },
+    {
+      "file": "data/horizons_v10/neptune.bin",
+      "status": "unchanged",
+      "baselineSha256": "4ad6ea90cb7b61006a3bff3dafe0ee0e5db083b6668f6f7287a5ecae00237ada",
+      "releaseSha256": "4ad6ea90cb7b61006a3bff3dafe0ee0e5db083b6668f6f7287a5ecae00237ada"
+    },
+    {
+      "file": "data/horizons_v10/neptune.json.gz",
+      "status": "unchanged",
+      "baselineSha256": "17aeee9e0ad07e8e6af52701ceecd3cf387562483d672505f4271513a529a70b",
+      "releaseSha256": "17aeee9e0ad07e8e6af52701ceecd3cf387562483d672505f4271513a529a70b"
+    },
+    {
+      "file": "data/horizons_v10/pluto.bin",
+      "status": "unchanged",
+      "baselineSha256": "19debfb563df2e14d320a6bb3102ccf550bf1e02cf41bd5889eb10bae7f13404",
+      "releaseSha256": "19debfb563df2e14d320a6bb3102ccf550bf1e02cf41bd5889eb10bae7f13404"
+    },
+    {
+      "file": "data/horizons_v10/pluto.json.gz",
+      "status": "unchanged",
+      "baselineSha256": "92c8f67e55a726c70bdd1374c891f5e58f7af7e83c12fcba9b12a067e8a67b3e",
+      "releaseSha256": "92c8f67e55a726c70bdd1374c891f5e58f7af7e83c12fcba9b12a067e8a67b3e"
+    },
+    {
+      "file": "data/horizons_v10/saturn.bin",
+      "status": "unchanged",
+      "baselineSha256": "6c90d7b1944580f6a52c157f20178d6a6b23fd869c0c2d4a03d8b912cbdb4190",
+      "releaseSha256": "6c90d7b1944580f6a52c157f20178d6a6b23fd869c0c2d4a03d8b912cbdb4190"
+    },
+    {
+      "file": "data/horizons_v10/saturn.json.gz",
+      "status": "unchanged",
+      "baselineSha256": "9b362782d50970bbe66790e052e728090e9347c0854b5dbfd1b5328699289ef9",
+      "releaseSha256": "9b362782d50970bbe66790e052e728090e9347c0854b5dbfd1b5328699289ef9"
+    },
+    {
+      "file": "data/horizons_v10/sun.bin",
+      "status": "unchanged",
+      "baselineSha256": "056a18a6f5a1134a17b21a167bb7f610034884ff1b96052c6170181969ed0f30",
+      "releaseSha256": "056a18a6f5a1134a17b21a167bb7f610034884ff1b96052c6170181969ed0f30"
+    },
+    {
+      "file": "data/horizons_v10/sun.json.gz",
+      "status": "unchanged",
+      "baselineSha256": "7fe293d422444d316e51062dc7b7d1f90b6bf346f417b7b5bd7db274418d5d01",
+      "releaseSha256": "7fe293d422444d316e51062dc7b7d1f90b6bf346f417b7b5bd7db274418d5d01"
+    },
+    {
+      "file": "data/horizons_v10/uranus.bin",
+      "status": "unchanged",
+      "baselineSha256": "6fe4b9be2e6ecf5792d1baa94da0700b74a552945b9ae0c480b003146a9c55c0",
+      "releaseSha256": "6fe4b9be2e6ecf5792d1baa94da0700b74a552945b9ae0c480b003146a9c55c0"
+    },
+    {
+      "file": "data/horizons_v10/uranus.json.gz",
+      "status": "unchanged",
+      "baselineSha256": "2ee2937e42f39e28d315fd136f0aa4f28319ffd9f6b36f821f97472b8c79be1c",
+      "releaseSha256": "2ee2937e42f39e28d315fd136f0aa4f28319ffd9f6b36f821f97472b8c79be1c"
+    },
+    {
+      "file": "data/horizons_v10/venus.bin",
+      "status": "unchanged",
+      "baselineSha256": "624b6ae12d8c08e1e13d716474f5516848e5059adbc9c58b70c1f7ff5af9c5e6",
+      "releaseSha256": "624b6ae12d8c08e1e13d716474f5516848e5059adbc9c58b70c1f7ff5af9c5e6"
+    },
+    {
+      "file": "data/horizons_v10/venus.json.gz",
+      "status": "unchanged",
+      "baselineSha256": "a986846d2572a372c9b57098e981f7aafee35b4a6b01017371d178ce1ff3185e",
+      "releaseSha256": "a986846d2572a372c9b57098e981f7aafee35b4a6b01017371d178ce1ff3185e"
+    },
+    {
+      "file": "data/lab_v8.json",
+      "status": "unchanged",
+      "baselineSha256": "4fd20429fa59352d46d3f45f84664f52675933ada90a36c7a36360a7c6f088d7",
+      "releaseSha256": "4fd20429fa59352d46d3f45f84664f52675933ada90a36c7a36360a7c6f088d7"
+    },
+    {
+      "file": "data/mission-score-rules.json",
+      "status": "modified",
+      "baselineSha256": "69172609c5642ebbc90e1c6a1e230a00fdc35f8bc77bd6609080f21502bf5081",
+      "releaseSha256": "f7b732078d6a16c2e0da91aa5cfa8da4a53c2de17a94f2cb966808d4539c1e55"
+    },
+    {
+      "file": "data/nasa-resources.json",
+      "status": "modified",
+      "baselineSha256": "271e399a4e3bdfb065b7956bb05084d92eba0d55205a784d0edcbd530d91718a",
+      "releaseSha256": "3c5a07885b27746b38f10044b249687163a19493c8869d690a61510762034dc2"
+    },
+    {
+      "file": "data/photos.json",
+      "status": "unchanged",
+      "baselineSha256": "868ce6643af344994b183920d5574888d38d1390e8c6a1eaa5d46597b35ddae4",
+      "releaseSha256": "868ce6643af344994b183920d5574888d38d1390e8c6a1eaa5d46597b35ddae4"
+    },
+    {
+      "file": "data/validation/cache_rebuild.log",
+      "status": "unchanged",
+      "baselineSha256": "cb72eb562ce2c763645cf66b985e14e1b5bc96515167dd11174fd68f71de0893",
+      "releaseSha256": "cb72eb562ce2c763645cf66b985e14e1b5bc96515167dd11174fd68f71de0893"
+    },
+    {
+      "file": "data/validation/change_manifest.json",
+      "status": "unchanged",
+      "baselineSha256": "8e8c8171a08edc2585ee443d3444d4eda89e28f5e413e9578eb0a8c78d5eec2b",
+      "releaseSha256": "8e8c8171a08edc2585ee443d3444d4eda89e28f5e413e9578eb0a8c78d5eec2b"
+    },
+    {
+      "file": "data/validation/changes-v103.json",
+      "status": "unchanged",
+      "baselineSha256": "726144eb70112e9cbbaeda88379f9669b2ca9037a74c2ba8d8e0e866b3dbcb43",
+      "releaseSha256": "726144eb70112e9cbbaeda88379f9669b2ca9037a74c2ba8d8e0e866b3dbcb43"
+    },
+    {
+      "file": "data/validation/controlled_missions.json",
+      "status": "unchanged",
+      "baselineSha256": "1825da0477e426889b6d334bea97deb96b46d9cd88877c8ec8b32f22cfc7a92a",
+      "releaseSha256": "1825da0477e426889b6d334bea97deb96b46d9cd88877c8ec8b32f22cfc7a92a"
+    },
+    {
+      "file": "data/validation/interpolation_errors.json",
+      "status": "unchanged",
+      "baselineSha256": "901e80b2bc7386131837f0083fc9d32b7cc37412b68050652ff2e25d9341e117",
+      "releaseSha256": "901e80b2bc7386131837f0083fc9d32b7cc37412b68050652ff2e25d9341e117"
+    },
+    {
+      "file": "data/validation/jpl_midpoints.json",
+      "status": "unchanged",
+      "baselineSha256": "ba1f5917732457f3244dab4918f0fe5362edaba9ad9d0e6c5f753e01618a5eb6",
+      "releaseSha256": "ba1f5917732457f3244dab4918f0fe5362edaba9ad9d0e6c5f753e01618a5eb6"
+    },
+    {
+      "file": "data/validation/mission-score-calibration.json",
+      "status": "unchanged",
+      "baselineSha256": "b14d2a16f2f00a8e4756f50dbb1e72174466104425194c7f9e1ed79f7ed77d31",
+      "releaseSha256": "b14d2a16f2f00a8e4756f50dbb1e72174466104425194c7f9e1ed79f7ed77d31"
+    },
+    {
+      "file": "data/validation/mission-score-original-pilot.json",
+      "status": "unchanged",
+      "baselineSha256": "d1839961cbf76af5058f5c2877e978f59f0fb2a7342516522d3fe97fea4b580e",
+      "releaseSha256": "d1839961cbf76af5058f5c2877e978f59f0fb2a7342516522d3fe97fea4b580e"
+    },
+    {
+      "file": "data/validation/numerical_report.json",
+      "status": "unchanged",
+      "baselineSha256": "2e0ade29a69e3c89e75de916ceb30c706ff8ce7318ca5158eaeb2dcff892f6ad",
+      "releaseSha256": "2e0ade29a69e3c89e75de916ceb30c706ff8ce7318ca5158eaeb2dcff892f6ad"
+    },
+    {
+      "file": "data/validation/release_checks.txt",
+      "status": "unchanged",
+      "baselineSha256": "beb45d4fcc268d10d50f9ec32754464a39de472095421ba785c0a59d4c76cd48",
+      "releaseSha256": "beb45d4fcc268d10d50f9ec32754464a39de472095421ba785c0a59d4c76cd48"
+    },
+    {
+      "file": "data/validation/tangent_fix_report.json",
+      "status": "unchanged",
+      "baselineSha256": "8afb505b06013d70ef7c1c27578a64b211e48b2b8f15fa65582b091ffbe9433b",
+      "releaseSha256": "8afb505b06013d70ef7c1c27578a64b211e48b2b8f15fa65582b091ffbe9433b"
+    },
+    {
+      "file": "data/validation/test_results.tap",
+      "status": "unchanged",
+      "baselineSha256": "484c1f873d984d7a242e3607ef19966f2bb4ce892ec17acc74c9ca2e826433cf",
+      "releaseSha256": "484c1f873d984d7a242e3607ef19966f2bb4ce892ec17acc74c9ca2e826433cf"
+    },
+    {
+      "file": "data/validation/v103/api-tests.log",
+      "status": "unchanged",
+      "baselineSha256": "27e15ef31dd11a80bc5c2d85aa8c595f4ae05e7ddaf643206f14dff15ca81fba",
+      "releaseSha256": "27e15ef31dd11a80bc5c2d85aa8c595f4ae05e7ddaf643206f14dff15ca81fba"
+    },
+    {
+      "file": "data/validation/v103/node-tests.log",
+      "status": "unchanged",
+      "baselineSha256": "ccaa2a2bba68838b65c379dbe7210cc47ee8689057acba86304e0ccdc3a6a6c0",
+      "releaseSha256": "ccaa2a2bba68838b65c379dbe7210cc47ee8689057acba86304e0ccdc3a6a6c0"
+    },
+    {
+      "file": "data/validation/v103/release-checks.log",
+      "status": "unchanged",
+      "baselineSha256": "e461ba5b66c9026f902a787109162901000f59d4eb81566e339fa07c505c0742",
+      "releaseSha256": "e461ba5b66c9026f902a787109162901000f59d4eb81566e339fa07c505c0742"
+    },
+    {
+      "file": "data/validation/v103/score-rules.log",
+      "status": "unchanged",
+      "baselineSha256": "710d79a13553cf729a0278011ccf59052814569e87ef0b1ea84084854d5144d1",
+      "releaseSha256": "710d79a13553cf729a0278011ccf59052814569e87ef0b1ea84084854d5144d1"
+    },
+    {
+      "file": "data/validation/v1031-changes.json",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": null
+    },
+    {
+      "file": "data/validation/v1031-preservation.json",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": "0ec13bfe8aa5a2197a60ef257f163b3815b2c63a23f8ea303ef16b1f40149dad"
+    },
+    {
+      "file": "data/validation/v1031/browser-attempt.txt",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": null
+    },
+    {
+      "file": "data/validation/v1031/former-server-tests.txt",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": null
+    },
+    {
+      "file": "data/validation/v1031/release-checks.txt",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": null
+    },
+    {
+      "file": "data/validation/v1031/scoring-rules.txt",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": null
+    },
+    {
+      "file": "data/validation/v1031/static-build.txt",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": null
+    },
+    {
+      "file": "data/validation/v1031/unit-tests.txt",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": null
+    },
+    {
+      "file": "data/validation/validation_report.json",
+      "status": "unchanged",
+      "baselineSha256": "98df5a028e7be38958ea341502930005f5dfda0919836ba6707945139ba344ea",
+      "releaseSha256": "98df5a028e7be38958ea341502930005f5dfda0919836ba6707945139ba344ea"
+    },
+    {
+      "file": "deploy/Caddyfile",
+      "status": "unchanged",
+      "baselineSha256": "405b082428ec85cd055d317db7e575900c2eb84c51f5dad08a661e873ec8b88b",
+      "releaseSha256": "405b082428ec85cd055d317db7e575900c2eb84c51f5dad08a661e873ec8b88b"
+    },
+    {
+      "file": "deploy/env.example",
+      "status": "modified",
+      "baselineSha256": "64276da08f999d0b15d68115a9ddf7de34563f0eb8272b6774b280da4b03beef",
+      "releaseSha256": "9dbc9d716ab79e7d2df0188c1649dbbf954065442b9dd4ab1b0055a411bf0cef"
+    },
+    {
+      "file": "docs/AI_USAGE.md",
+      "status": "modified",
+      "baselineSha256": "737be1b6453417dff6bfab489348b8fc3d04a1251297b36526b9e968bd623631",
+      "releaseSha256": "ab7e3d54379cd25f33d56c93440a4d77cb601437af1066238fb13458ef207ab5"
+    },
+    {
+      "file": "docs/CHANGED_FILES_v10.3.1.md",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": null
+    },
+    {
+      "file": "docs/CHANGELOG_v10.2.0.md",
+      "status": "unchanged",
+      "baselineSha256": "43f4f17b61a59a0cde2b01c4dd599ee5169a6c7d9016dedf0b3506da6d12d7be",
+      "releaseSha256": "43f4f17b61a59a0cde2b01c4dd599ee5169a6c7d9016dedf0b3506da6d12d7be"
+    },
+    {
+      "file": "docs/CHANGELOG_v10.3.0.md",
+      "status": "unchanged",
+      "baselineSha256": "779396c48f8c1c1bd80b746009a424cd938f8ff42d4e9dc094fa71df5dfb0bbe",
+      "releaseSha256": "779396c48f8c1c1bd80b746009a424cd938f8ff42d4e9dc094fa71df5dfb0bbe"
+    },
+    {
+      "file": "docs/CHANGELOG_v10.3.1.md",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": "3f6fe326acc168491a1656fabffd13b7b367eb764a53527a07f08244045f73fc"
+    },
+    {
+      "file": "docs/COCKPIT_VISIBILITY_FIX.md",
+      "status": "unchanged",
+      "baselineSha256": "54f7c66863b95c79bd801596ec5a8d18c46f695052f65ee9ce2dbc6e9ac47ab9",
+      "releaseSha256": "54f7c66863b95c79bd801596ec5a8d18c46f695052f65ee9ce2dbc6e9ac47ab9"
+    },
+    {
+      "file": "docs/DEPLOYMENT.md",
+      "status": "modified",
+      "baselineSha256": "ef0a427c7a49ffb866e698e5f2f404631ee92c0d8c7523ecb37cbc5fcf448f72",
+      "releaseSha256": "9affbf102f08f2a08c7c28156bcc69a10220e0367a6194bccec643937623904b"
+    },
+    {
+      "file": "docs/DIFF_v10.2.0_to_v10.3.0.patch",
+      "status": "unchanged",
+      "baselineSha256": "887482f70f4d088dd0035f3fe8eccc5c33f81ad748948ac8861eadb0f30457b2",
+      "releaseSha256": "887482f70f4d088dd0035f3fe8eccc5c33f81ad748948ac8861eadb0f30457b2"
+    },
+    {
+      "file": "docs/ENGINEERING_TRADE_STUDY.md",
+      "status": "unchanged",
+      "baselineSha256": "3d57b0b1011d87a3af98800c61cc9bd7d4e0e830a9de720f3f343899e46077b2",
+      "releaseSha256": "3d57b0b1011d87a3af98800c61cc9bd7d4e0e830a9de720f3f343899e46077b2"
+    },
+    {
+      "file": "docs/EPHEMERIS.md",
+      "status": "unchanged",
+      "baselineSha256": "cf915d49a2fa7919ca41769c5e58670953a5d258c38e9469d7c4e4b92bee3811",
+      "releaseSha256": "cf915d49a2fa7919ca41769c5e58670953a5d258c38e9469d7c4e4b92bee3811"
+    },
+    {
+      "file": "docs/FLIGHT_3D.md",
+      "status": "unchanged",
+      "baselineSha256": "194d9943a531e549f9571cd9b33a95b442d95ab0d8b331afaa71aae2ff9df4be",
+      "releaseSha256": "194d9943a531e549f9571cd9b33a95b442d95ab0d8b331afaa71aae2ff9df4be"
+    },
+    {
+      "file": "docs/GMAT_VALIDATION.md",
+      "status": "unchanged",
+      "baselineSha256": "75613030f812eec145751c07c8dcba909ed82238c80f5cb353969d401d2bdfd6",
+      "releaseSha256": "75613030f812eec145751c07c8dcba909ed82238c80f5cb353969d401d2bdfd6"
+    },
+    {
+      "file": "docs/IMAGE_CREDITS.md",
+      "status": "unchanged",
+      "baselineSha256": "e968387cf637b2bb3b0a0de19dabd2c80d85b397f48b424d46fedd506f737f69",
+      "releaseSha256": "e968387cf637b2bb3b0a0de19dabd2c80d85b397f48b424d46fedd506f737f69"
+    },
+    {
+      "file": "docs/MISSION_REQUIREMENTS_TRACE.md",
+      "status": "unchanged",
+      "baselineSha256": "5ac576af891cbcb9b7b51829ae9c1a82e1bae4e3639b7eca98e884d3f63df651",
+      "releaseSha256": "5ac576af891cbcb9b7b51829ae9c1a82e1bae4e3639b7eca98e884d3f63df651"
+    },
+    {
+      "file": "docs/MISSION_SCORE.md",
+      "status": "modified",
+      "baselineSha256": "7a97fb292d84909e9bc063b29420b8a1615a7ce565cb8c267416ba417d6c2e03",
+      "releaseSha256": "490c2c6ad225ee26b0f52d8e5cb17bc341339c31664d19004604728365778c96"
+    },
+    {
+      "file": "docs/NASA_INTEGRATION_EVIDENCE.md",
+      "status": "modified",
+      "baselineSha256": "7c5ba633d70cb9ceabb87fea65959741b481037944f62a26c92e8150a8354d8a",
+      "releaseSha256": "aa670eada1726d43957994d61a076820c95cc736944d523f873f2dfa4b3c5aec"
+    },
+    {
+      "file": "docs/NASA_RESOURCES.md",
+      "status": "modified",
+      "baselineSha256": "0f06760e67604d3522aca810b3b63d40008d62cb0ab215d2ec7610877b8ea104",
+      "releaseSha256": "8d4ec2e5f4c7488fdf57c78e8665ff32282d26e4b691419f9616765208245e54"
+    },
+    {
+      "file": "docs/PHYSICS.md",
+      "status": "unchanged",
+      "baselineSha256": "7d490fe27ecc6dd133087b5da2bdc8dcc5139464b31765f0213effa5e42c53d4",
+      "releaseSha256": "7d490fe27ecc6dd133087b5da2bdc8dcc5139464b31765f0213effa5e42c53d4"
+    },
+    {
+      "file": "docs/PROVENANCE.md",
+      "status": "unchanged",
+      "baselineSha256": "3f5d651f3339b0a37c0a954d22c7a99f3cc2a076b04b08372b7c84af7525a5d5",
+      "releaseSha256": "3f5d651f3339b0a37c0a954d22c7a99f3cc2a076b04b08372b7c84af7525a5d5"
+    },
+    {
+      "file": "docs/README_v10.2.0.md",
+      "status": "unchanged",
+      "baselineSha256": "3db491efd020fe1672f7dee311349fb672bc93ca04db46f6234825af34eb181a",
+      "releaseSha256": "3db491efd020fe1672f7dee311349fb672bc93ca04db46f6234825af34eb181a"
+    },
+    {
+      "file": "docs/SUBMISSION.md",
+      "status": "modified",
+      "baselineSha256": "1a03428657b4649f8b34089cd3b5c33588c94b006788a2977ed125698e7e4ed7",
+      "releaseSha256": "1e140c9946dfb2a04d35b13a6b8bb60d02340f0c47c4f592dacbed8450a5ff09"
+    },
+    {
+      "file": "docs/SUBMISSION_RESOURCES_EN.md",
+      "status": "unchanged",
+      "baselineSha256": "f23348a04dcd05664f39a3db9d4139ac990a422c709a9e1aeb1924321aaa01cb",
+      "releaseSha256": "f23348a04dcd05664f39a3db9d4139ac990a422c709a9e1aeb1924321aaa01cb"
+    },
+    {
+      "file": "docs/TANGENT_FIX.md",
+      "status": "unchanged",
+      "baselineSha256": "9b141178e95d038befe5d52420dc68059ee0648867a97b248992b3b38ba52839",
+      "releaseSha256": "9b141178e95d038befe5d52420dc68059ee0648867a97b248992b3b38ba52839"
+    },
+    {
+      "file": "docs/VALIDATION.md",
+      "status": "unchanged",
+      "baselineSha256": "0042454981ad25c7ebed7e95c9293e6890deab3f9936000df5be100260c6b31a",
+      "releaseSha256": "0042454981ad25c7ebed7e95c9293e6890deab3f9936000df5be100260c6b31a"
+    },
+    {
+      "file": "docs/VALIDATION_v10.3.0.md",
+      "status": "unchanged",
+      "baselineSha256": "f8dd4b75d6885fa792eb84c1ba4f6c9e21a23371ba2b14a005ff38144a62a074",
+      "releaseSha256": "f8dd4b75d6885fa792eb84c1ba4f6c9e21a23371ba2b14a005ff38144a62a074"
+    },
+    {
+      "file": "docs/VALIDATION_v10.3.1.md",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": "966f506f7e647acc4bf07c34f067a40b967ccbc03864e13bf0915f5edc892e96"
+    },
+    {
+      "file": "docs/images/cockpit-desktop.png",
+      "status": "unchanged",
+      "baselineSha256": "26cdd731194652fbe72dbe05429b476491a442ca9167bc973a3bed25a4100181",
+      "releaseSha256": "26cdd731194652fbe72dbe05429b476491a442ca9167bc973a3bed25a4100181"
+    },
+    {
+      "file": "docs/images/cockpit-desktop.svg",
+      "status": "unchanged",
+      "baselineSha256": "1a61e84f8fcf6e49d65af321e3e731beb05222c912d76485a89ff7041f96bcc3",
+      "releaseSha256": "1a61e84f8fcf6e49d65af321e3e731beb05222c912d76485a89ff7041f96bcc3"
+    },
+    {
+      "file": "docs/images/cockpit-mobile.png",
+      "status": "unchanged",
+      "baselineSha256": "bffd4347acf1bd53144d134a8d1e9290855c26f1e4e72542d5fb717d0d3351f1",
+      "releaseSha256": "bffd4347acf1bd53144d134a8d1e9290855c26f1e4e72542d5fb717d0d3351f1"
+    },
+    {
+      "file": "docs/images/cockpit-mobile.svg",
+      "status": "unchanged",
+      "baselineSha256": "fef78e8d5e654a32f63074c64a2b787ebb298a98c69053038dc686cc096c8872",
+      "releaseSha256": "fef78e8d5e654a32f63074c64a2b787ebb298a98c69053038dc686cc096c8872"
+    },
+    {
+      "file": "docs/images/visibility-fixed-desktop.svg",
+      "status": "unchanged",
+      "baselineSha256": "04ed9b9f6d0e67f2c05fd012650a0280649ec1abf2d4a999cb5f6e95d4410b0e",
+      "releaseSha256": "04ed9b9f6d0e67f2c05fd012650a0280649ec1abf2d4a999cb5f6e95d4410b0e"
+    },
+    {
+      "file": "docs/images/visibility-fixed-mobile.svg",
+      "status": "unchanged",
+      "baselineSha256": "297203358b85a7afa9630e0d4947e33c7a09911e3eb5039e3ee28da8e0acffae",
+      "releaseSha256": "297203358b85a7afa9630e0d4947e33c7a09911e3eb5039e3ee28da8e0acffae"
+    },
+    {
+      "file": "docs/images/visibility-old-plane-desktop.svg",
+      "status": "unchanged",
+      "baselineSha256": "eb8bced83ef10e49d5ab6dfb904e29c14ca605ecdec1b2a42980a46583056295",
+      "releaseSha256": "eb8bced83ef10e49d5ab6dfb904e29c14ca605ecdec1b2a42980a46583056295"
+    },
+    {
+      "file": "docs/images/visibility-old-plane-mobile.svg",
+      "status": "unchanged",
+      "baselineSha256": "c0233b0100c009e5bb355a8037a888611ef7a5cb7f395f8ba769f552cfea15ba",
+      "releaseSha256": "c0233b0100c009e5bb355a8037a888611ef7a5cb7f395f8ba769f552cfea15ba"
+    },
+    {
+      "file": "index.html",
+      "status": "modified",
+      "baselineSha256": "9b63720d2d462abeb0d14f2778b801f28872213e656ec91f6e1b1c89b55c6814",
+      "releaseSha256": "eaf72fce6244363e4422a5fb096e7b6d256d12275cc2213bd4954e5662eb9b57"
+    },
+    {
+      "file": "package.json",
+      "status": "modified",
+      "baselineSha256": "8383c6f44f9a3810b1a0a71f1399c4543cb6872b507571edb99d0df51184bcd8",
+      "releaseSha256": "64babe1b5b922e1cbb3d64aa6cacdc0191d80238403f851ea3a6d14d24364e4a"
+    },
+    {
+      "file": "run.py",
+      "status": "modified",
+      "baselineSha256": "7a23d1eb1b19072910c223ff0a0272791ebf570e9f98639755e6c36c56a30516",
+      "releaseSha256": "454fa9f68bd4e4476740e0d5642f3697e1aee00c48d60e1a82fac1c9e2fc765d"
+    },
+    {
+      "file": "runtime-config.js",
+      "status": "modified",
+      "baselineSha256": "dada08b9d612228c8fcbd609a390fbdf170e007d1253c0942f5ec17a13c65e5c",
+      "releaseSha256": "9a4808d1629ab34108b6f715ce270484c432f20ee25c998dc44eabe5ea469ff8"
+    },
+    {
+      "file": "server.py",
+      "status": "unchanged",
+      "baselineSha256": "f59fb6c5c3c7fca577cc61ceabafd856e147d466bfb3a559f2b72915ad58ea33",
+      "releaseSha256": "f59fb6c5c3c7fca577cc61ceabafd856e147d466bfb3a559f2b72915ad58ea33"
+    },
+    {
+      "file": "src/app.js",
+      "status": "modified",
+      "baselineSha256": "4f8bce484cf5aa6123c84da6ee3d1d95fdd5e57f97870225b1acfd2c12db2c26",
+      "releaseSha256": "ecc84a2ddaadef237fe4a4a0602d451a5eabce3914a2bbdef594adc73255131b"
+    },
+    {
+      "file": "src/art.js",
+      "status": "unchanged",
+      "baselineSha256": "875260b35d4624b61e6b09b46aacbf547788364ee366494ec32908676fb03da6",
+      "releaseSha256": "875260b35d4624b61e6b09b46aacbf547788364ee366494ec32908676fb03da6"
+    },
+    {
+      "file": "src/audio.js",
+      "status": "unchanged",
+      "baselineSha256": "dff509dd1c611cb00e90a53c5f9d5356a8b9a7806f6509a230081468a92bd805",
+      "releaseSha256": "dff509dd1c611cb00e90a53c5f9d5356a8b9a7806f6509a230081468a92bd805"
+    },
+    {
+      "file": "src/cockpit.css",
+      "status": "unchanged",
+      "baselineSha256": "f726681c31d74710377e2a724a1a5689dd7082f8680dcdf082e3f24d5843b79c",
+      "releaseSha256": "f726681c31d74710377e2a724a1a5689dd7082f8680dcdf082e3f24d5843b79c"
+    },
+    {
+      "file": "src/cockpit.js",
+      "status": "unchanged",
+      "baselineSha256": "15aae7da8f7cf6d00e9770f3c236b32a258527891019a4c83090da7395e86e23",
+      "releaseSha256": "15aae7da8f7cf6d00e9770f3c236b32a258527891019a4c83090da7395e86e23"
+    },
+    {
+      "file": "src/community-ui.js",
+      "status": "modified",
+      "baselineSha256": "8cbcc9988d980bd08a69c6300099200bd5d9331af615269cbcdb1ecbbb4f9a64",
+      "releaseSha256": "439532c124aa356430de8fcb2ff0fedbabc3bbc30cbf06733b22410f0ba9d867"
+    },
+    {
+      "file": "src/config.js",
+      "status": "modified",
+      "baselineSha256": "7a5a70e10d3efcb07d429e40abe49178982be07ea51f67e444e58285a192fd2c",
+      "releaseSha256": "e909eb011781c4ba4f5961ab155296dbb3128c32ae072ca63d9333890b1fe79f"
+    },
+    {
+      "file": "src/dynamics.js",
+      "status": "unchanged",
+      "baselineSha256": "15c57a8fb940f6fd265cfd3d4b45f3e8348a2344392152e432a4c8dd229f7abd",
+      "releaseSha256": "15c57a8fb940f6fd265cfd3d4b45f3e8348a2344392152e432a4c8dd229f7abd"
+    },
+    {
+      "file": "src/final.css",
+      "status": "modified",
+      "baselineSha256": "67a68e11709465bf68b6173cf05b4fcc60418990de1ee8699fefe96624ce270d",
+      "releaseSha256": "6090b82f49a3f4868b73e81056008edab9365056c178bca5ca5d4b48777f8754"
+    },
+    {
+      "file": "src/flight-3d.js",
+      "status": "unchanged",
+      "baselineSha256": "95b6ebc6d5d6caaa0975ff94c8b9f7033751baf40d6476edcf82e8a498292891",
+      "releaseSha256": "95b6ebc6d5d6caaa0975ff94c8b9f7033751baf40d6476edcf82e8a498292891"
+    },
+    {
+      "file": "src/flight-record.js",
+      "status": "unchanged",
+      "baselineSha256": "8da4d647a4d386450d08ea852ceb7f111f40a2252d8878a57c389da1bed66431",
+      "releaseSha256": "8da4d647a4d386450d08ea852ceb7f111f40a2252d8878a57c389da1bed66431"
+    },
+    {
+      "file": "src/flight-report.js",
+      "status": "modified",
+      "baselineSha256": "11e0d2b12e2f4d0ef7c29d9cd9389bfcc02ccea485efb0067a528ebdaa6d8f34",
+      "releaseSha256": "bfbc50bb09ce8cd5ab7c2d4638be65f47cee9c2729b9f7dc5eda61263cf03e16"
+    },
+    {
+      "file": "src/flight-service.js",
+      "status": "modified",
+      "baselineSha256": "1ce1eebd6d62f0f96a821c831a2d9eac68fa19141116a1b36e69db5b73234f2b",
+      "releaseSha256": "a6bfe8c20427c6844d6e5bdeb579ca1756eeb7819cf4bd987a0ff810ff4481b5"
+    },
+    {
+      "file": "src/mission-analysis-worker.js",
+      "status": "unchanged",
+      "baselineSha256": "7b038b867efb447943478804065a2429af38c4bf8d2344ed48c7bf0a50eba69a",
+      "releaseSha256": "7b038b867efb447943478804065a2429af38c4bf8d2344ed48c7bf0a50eba69a"
+    },
+    {
+      "file": "src/mission-score.js",
+      "status": "unchanged",
+      "baselineSha256": "4692b62144284495a2cd23e762febc7013f2a785f26015b53ac25ec96a01c4cd",
+      "releaseSha256": "4692b62144284495a2cd23e762febc7013f2a785f26015b53ac25ec96a01c4cd"
+    },
+    {
+      "file": "src/mission-ui.js",
+      "status": "modified",
+      "baselineSha256": "321f65e48e2682797964f7676cacf37de1fa99b700f784affcef0ec954eb9cdc",
+      "releaseSha256": "2ee835ab731620121151611fb5ba953552cbbbffb6a271cd725a6015c75a3057"
+    },
+    {
+      "file": "src/mission.js",
+      "status": "unchanged",
+      "baselineSha256": "8bcf77d7bdc3a68f2a69e822adc6abf3d0360589cda01679e62c1f7706ab7691",
+      "releaseSha256": "8bcf77d7bdc3a68f2a69e822adc6abf3d0360589cda01679e62c1f7706ab7691"
+    },
+    {
+      "file": "src/navigation.js",
+      "status": "unchanged",
+      "baselineSha256": "cb31eb0925d57b236eb9b2b79d6c9b747f70ea512a92ed005866abd07d7499ea",
+      "releaseSha256": "cb31eb0925d57b236eb9b2b79d6c9b747f70ea512a92ed005866abd07d7499ea"
+    },
+    {
+      "file": "src/orbit-view.js",
+      "status": "unchanged",
+      "baselineSha256": "a35a340098e601373d26613263625dee90eb8f73c10736e80781aaa17a238b97",
+      "releaseSha256": "a35a340098e601373d26613263625dee90eb8f73c10736e80781aaa17a238b97"
+    },
+    {
+      "file": "src/orbit.js",
+      "status": "unchanged",
+      "baselineSha256": "aa10646909ea44552ff06592311c6514c36fd2bcc3836fe0a4504699102adabd",
+      "releaseSha256": "aa10646909ea44552ff06592311c6514c36fd2bcc3836fe0a4504699102adabd"
+    },
+    {
+      "file": "src/photos.js",
+      "status": "unchanged",
+      "baselineSha256": "b5ce3ff1c28240a85527142ac34c75614dc3686b6c834f58d2e6528384bb661a",
+      "releaseSha256": "b5ce3ff1c28240a85527142ac34c75614dc3686b6c834f58d2e6528384bb661a"
+    },
+    {
+      "file": "src/physics.js",
+      "status": "unchanged",
+      "baselineSha256": "049ef2b9e5c8c46ef1d4f25b6d40ce99294d1c4c5c9f6ea62d77d775195d1c93",
+      "releaseSha256": "049ef2b9e5c8c46ef1d4f25b6d40ce99294d1c4c5c9f6ea62d77d775195d1c93"
+    },
+    {
+      "file": "src/planning-v10.js",
+      "status": "unchanged",
+      "baselineSha256": "ba8badca4b80a0c29587bac0d864d1cc813a2167400a8f7556d7699f50a378ad",
+      "releaseSha256": "ba8badca4b80a0c29587bac0d864d1cc813a2167400a8f7556d7699f50a378ad"
+    },
+    {
+      "file": "src/render.js",
+      "status": "unchanged",
+      "baselineSha256": "e617d39ea9e76e6d78e9bff0a24cc7cd21fe57028a92c2e788ed1a5496baa4ed",
+      "releaseSha256": "e617d39ea9e76e6d78e9bff0a24cc7cd21fe57028a92c2e788ed1a5496baa4ed"
+    },
+    {
+      "file": "src/research/gmat.js",
+      "status": "unchanged",
+      "baselineSha256": "45b77c8cad41713ba21201cc3fb36df50b7fda17767f5c0e21a57ec50485ea3c",
+      "releaseSha256": "45b77c8cad41713ba21201cc3fb36df50b7fda17767f5c0e21a57ec50485ea3c"
+    },
+    {
+      "file": "src/research/mission-viz.js",
+      "status": "unchanged",
+      "baselineSha256": "3b8a46d831f69babae88602ee267d632ec6266b8f32fc17a9e26768e119ab1c7",
+      "releaseSha256": "3b8a46d831f69babae88602ee267d632ec6266b8f32fc17a9e26768e119ab1c7"
+    },
+    {
+      "file": "src/research/requirements.js",
+      "status": "unchanged",
+      "baselineSha256": "aaec8b60c5385e82c65c7bb8c530c2731daa1700f031b87e1be14311fc3ae592",
+      "releaseSha256": "aaec8b60c5385e82c65c7bb8c530c2731daa1700f031b87e1be14311fc3ae592"
+    },
+    {
+      "file": "src/research/sources.js",
+      "status": "unchanged",
+      "baselineSha256": "38f081a79e594cc1c510a210974288cd103ea9f37f5e74cddf0a369da90f986f",
+      "releaseSha256": "38f081a79e594cc1c510a210974288cd103ea9f37f5e74cddf0a369da90f986f"
+    },
+    {
+      "file": "src/research/trade-study.js",
+      "status": "unchanged",
+      "baselineSha256": "23a4d93b08810dd71ef36f96564f8202d4587e57a88a63a0da32c8d5a71008b7",
+      "releaseSha256": "23a4d93b08810dd71ef36f96564f8202d4587e57a88a63a0da32c8d5a71008b7"
+    },
+    {
+      "file": "src/storage.js",
+      "status": "unchanged",
+      "baselineSha256": "19a08459effa0a813e385e4b73df1cee23454fcb757f38f9f6b409bae273802b",
+      "releaseSha256": "19a08459effa0a813e385e4b73df1cee23454fcb757f38f9f6b409bae273802b"
+    },
+    {
+      "file": "src/style.css",
+      "status": "unchanged",
+      "baselineSha256": "faaccb16d32685bd99188b59cb4d473a2e171f34a505fee6ffcec7ef6749814b",
+      "releaseSha256": "faaccb16d32685bd99188b59cb4d473a2e171f34a505fee6ffcec7ef6749814b"
+    },
+    {
+      "file": "src/trajectory-worker.js",
+      "status": "unchanged",
+      "baselineSha256": "a2269477948e388f60fff571032b35d61ba3da18b76e86ada13f74efda0973d5",
+      "releaseSha256": "a2269477948e388f60fff571032b35d61ba3da18b76e86ada13f74efda0973d5"
+    },
+    {
+      "file": "start_macos_linux.command",
+      "status": "unchanged",
+      "baselineSha256": "ea84a961916a06d0c9baaff7616d66584674b316c8629a8c3a77231776e7575a",
+      "releaseSha256": "ea84a961916a06d0c9baaff7616d66584674b316c8629a8c3a77231776e7575a"
+    },
+    {
+      "file": "start_windows.bat",
+      "status": "unchanged",
+      "baselineSha256": "e0152bb85ae1cb86dbeda68823e52c79faa693165167b9d8dfff1b641f9f68d4",
+      "releaseSha256": "e0152bb85ae1cb86dbeda68823e52c79faa693165167b9d8dfff1b641f9f68d4"
+    },
+    {
+      "file": "tests/app-flow.test.js",
+      "status": "modified",
+      "baselineSha256": "c7f09d40920c41b82860e88dbb31f496282c8c38e0fdebcbb9fd7b915e1556b9",
+      "releaseSha256": "040bb4f5717be7ff62f4ce0e5a18b8b6e68d62887e115031ce92d28329ea3486"
+    },
+    {
+      "file": "tests/campaign.test.js",
+      "status": "unchanged",
+      "baselineSha256": "8e0ae02b22609c74c7a2f8cbb59614a7921f664943179edebb9a37fe72d8398a",
+      "releaseSha256": "8e0ae02b22609c74c7a2f8cbb59614a7921f664943179edebb9a37fe72d8398a"
+    },
+    {
+      "file": "tests/cockpit-render.test.js",
+      "status": "unchanged",
+      "baselineSha256": "9eedbfb298ba8661579bf94c69ecbeec57c232d4a8da5b5fb06a48012087a1bb",
+      "releaseSha256": "9eedbfb298ba8661579bf94c69ecbeec57c232d4a8da5b5fb06a48012087a1bb"
+    },
+    {
+      "file": "tests/cockpit-visibility.test.js",
+      "status": "unchanged",
+      "baselineSha256": "0d28719272db673795099fa0336cba256edeeb5ce5541b22cf3240aceb60d6c9",
+      "releaseSha256": "0d28719272db673795099fa0336cba256edeeb5ce5541b22cf3240aceb60d6c9"
+    },
+    {
+      "file": "tests/community-ui.test.js",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": "935b72f667dacceaf5d9476a1231df11ba650ac8a3361443834a2e1d8e4d9568"
+    },
+    {
+      "file": "tests/fixtures/v101/locks.json",
+      "status": "unchanged",
+      "baselineSha256": "1e05fc95555dae00c24ef74bae579d4939668c2ce52fc00051c6e099331f6135",
+      "releaseSha256": "1e05fc95555dae00c24ef74bae579d4939668c2ce52fc00051c6e099331f6135"
+    },
+    {
+      "file": "tests/fixtures/v101/physics.js",
+      "status": "unchanged",
+      "baselineSha256": "e8b78f74f8b451887b4abd447d09a00db1367fcd757391b665d5c8719b2b511b",
+      "releaseSha256": "e8b78f74f8b451887b4abd447d09a00db1367fcd757391b665d5c8719b2b511b"
+    },
+    {
+      "file": "tests/fixtures/v102/physics.js",
+      "status": "unchanged",
+      "baselineSha256": "3cabe5527494f71289a973c164beb3091fee9bf52118731932d3c5b3698048f5",
+      "releaseSha256": "3cabe5527494f71289a973c164beb3091fee9bf52118731932d3c5b3698048f5"
+    },
+    {
+      "file": "tests/fixtures/v9/assets.json",
+      "status": "unchanged",
+      "baselineSha256": "8973836fbb2ee5e609f4c6743d75e78d23e470557d85fbb26f591709093c638e",
+      "releaseSha256": "8973836fbb2ee5e609f4c6743d75e78d23e470557d85fbb26f591709093c638e"
+    },
+    {
+      "file": "tests/fixtures/v9/config.js",
+      "status": "unchanged",
+      "baselineSha256": "c87a9e63d6e80a9aba852f0b4dfe60296a1af40702cf9ea9cc392b6b9d9d5435",
+      "releaseSha256": "c87a9e63d6e80a9aba852f0b4dfe60296a1af40702cf9ea9cc392b6b9d9d5435"
+    },
+    {
+      "file": "tests/fixtures/v9/physics.js",
+      "status": "unchanged",
+      "baselineSha256": "b9a6ba9c57f36771d996316d5909ef1cc8e80e7f1dbb023dee9c95acb1e4a0b1",
+      "releaseSha256": "b9a6ba9c57f36771d996316d5909ef1cc8e80e7f1dbb023dee9c95acb1e4a0b1"
+    },
+    {
+      "file": "tests/flight-3d.test.js",
+      "status": "unchanged",
+      "baselineSha256": "06953573b65b306ccdb0a24b983b82ccc663f93527d8fd3f38b2ed19ac93912d",
+      "releaseSha256": "06953573b65b306ccdb0a24b983b82ccc663f93527d8fd3f38b2ed19ac93912d"
+    },
+    {
+      "file": "tests/flight-service.test.js",
+      "status": "modified",
+      "baselineSha256": "ad523e1d9c66310fe644a9c3c82409e4d8977ea8ab9353cfb68871e3254b854b",
+      "releaseSha256": "3d4d14521a1d51e33b177fb50cecd162630bab11ab279625aabb234b27f164ed"
+    },
+    {
+      "file": "tests/helpers.js",
+      "status": "unchanged",
+      "baselineSha256": "9905816ac4a70dae97d19fab43596836e374516d849d82d4dbe65c0c6adbaaef",
+      "releaseSha256": "9905816ac4a70dae97d19fab43596836e374516d849d82d4dbe65c0c6adbaaef"
+    },
+    {
+      "file": "tests/launch-alignment.test.js",
+      "status": "unchanged",
+      "baselineSha256": "83298a6f57bcc725ed5c659f180b6d975c099664160e2c9a5c191ca073f1deaf",
+      "releaseSha256": "83298a6f57bcc725ed5c659f180b6d975c099664160e2c9a5c191ca073f1deaf"
+    },
+    {
+      "file": "tests/local-leaderboard.test.js",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": "76896a222382d79366b11184fc399d1faf16ee519c56207d168be03c51554f43"
+    },
+    {
+      "file": "tests/mission-score.test.js",
+      "status": "unchanged",
+      "baselineSha256": "3277b027928966ee9e07f803e889e247209c1262144f69c64ad80b31914ad4b2",
+      "releaseSha256": "3277b027928966ee9e07f803e889e247209c1262144f69c64ad80b31914ad4b2"
+    },
+    {
+      "file": "tests/mission.test.js",
+      "status": "unchanged",
+      "baselineSha256": "01fe49c67d538f87cce7768bfe980cf7b4c8955b788afe15240c59d1152852f4",
+      "releaseSha256": "01fe49c67d538f87cce7768bfe980cf7b4c8955b788afe15240c59d1152852f4"
+    },
+    {
+      "file": "tests/navigation.test.js",
+      "status": "unchanged",
+      "baselineSha256": "12d9139b851feea1e85afe324684de84c708caed3f8735e03cc79a58d85f595e",
+      "releaseSha256": "12d9139b851feea1e85afe324684de84c708caed3f8735e03cc79a58d85f595e"
+    },
+    {
+      "file": "tests/orbit.test.js",
+      "status": "unchanged",
+      "baselineSha256": "7c704732962036cde7788f3e009000449fca00be8e1f73d8c94eb306f4225433",
+      "releaseSha256": "7c704732962036cde7788f3e009000449fca00be8e1f73d8c94eb306f4225433"
+    },
+    {
+      "file": "tests/physics.test.js",
+      "status": "unchanged",
+      "baselineSha256": "78bc69605bcab8c519fc0a69a18565b2a0ff03d8e2fb6d08e09667f7f3178094",
+      "releaseSha256": "78bc69605bcab8c519fc0a69a18565b2a0ff03d8e2fb6d08e09667f7f3178094"
+    },
+    {
+      "file": "tests/release-preservation.test.js",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": "bb49d9c0a2c6789f7af5a1ebe6f3baa1132f2327b79218e7bf70ce42f4d3fe1f"
+    },
+    {
+      "file": "tests/research.test.js",
+      "status": "unchanged",
+      "baselineSha256": "79828f508acb94f9c32e69d2c9872e7e180f8a41dbf79fe24c0e677f0f549403",
+      "releaseSha256": "79828f508acb94f9c32e69d2c9872e7e180f8a41dbf79fe24c0e677f0f549403"
+    },
+    {
+      "file": "tests/resources-ui.test.js",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": "1063d6d80ea286d637a2291cfabb552619acba7381a4975d004937be3f9e05ef"
+    },
+    {
+      "file": "tests/score-regression.test.js",
+      "status": "unchanged",
+      "baselineSha256": "fe0342fcd50f453c32569279cc0227f44ffabff031f367b776171b28d87117f1",
+      "releaseSha256": "fe0342fcd50f453c32569279cc0227f44ffabff031f367b776171b28d87117f1"
+    },
+    {
+      "file": "tests/static-build.test.js",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": "b855f40cc9977615e490813473d13883a5fc36f6e7898d0c5de9b8738efb394a"
+    },
+    {
+      "file": "tests/storage.test.js",
+      "status": "unchanged",
+      "baselineSha256": "91cd763ed8403173759775127560e61eb74d0d5d050c3e5c2117e0d4c54525ff",
+      "releaseSha256": "91cd763ed8403173759775127560e61eb74d0d5d050c3e5c2117e0d4c54525ff"
+    },
+    {
+      "file": "tests/support/dom-harness.js",
+      "status": "unchanged",
+      "baselineSha256": "c39c19aed1fb42cccb7aa0ffd264af6b69751213264e38a15241708b5f99a383",
+      "releaseSha256": "c39c19aed1fb42cccb7aa0ffd264af6b69751213264e38a15241708b5f99a383"
+    },
+    {
+      "file": "tests/support/worker-adapter.js",
+      "status": "unchanged",
+      "baselineSha256": "b3227ed6997fd3d1f980f0506e50d690abcd781c7245ee0418d3247945d1eb20",
+      "releaseSha256": "b3227ed6997fd3d1f980f0506e50d690abcd781c7245ee0418d3247945d1eb20"
+    },
+    {
+      "file": "tests/test_server.py",
+      "status": "unchanged",
+      "baselineSha256": "c94db9a21ee7145bed17d28aab45c965a5235f999ef08a0e2d9f9f0f6ffa62a3",
+      "releaseSha256": "c94db9a21ee7145bed17d28aab45c965a5235f999ef08a0e2d9f9f0f6ffa62a3"
+    },
+    {
+      "file": "tests/v102-regression.test.js",
+      "status": "unchanged",
+      "baselineSha256": "7385fa894e43452bec6a1df89dd1f51c64a8167451fcecb3c129456dd827af8e",
+      "releaseSha256": "7385fa894e43452bec6a1df89dd1f51c64a8167451fcecb3c129456dd827af8e"
+    },
+    {
+      "file": "tools/api_fixture.mjs",
+      "status": "unchanged",
+      "baselineSha256": "29036198d2ba478fff1975e1cd56a742db6ae2387b45e7732d30257dfb1da26e",
+      "releaseSha256": "29036198d2ba478fff1975e1cd56a742db6ae2387b45e7732d30257dfb1da26e"
+    },
+    {
+      "file": "tools/audit_tangent_fix.js",
+      "status": "unchanged",
+      "baselineSha256": "eff60c719e5f0db0d0ed8200e58b395224abfde577332cd09a65b6315d9e0090",
+      "releaseSha256": "eff60c719e5f0db0d0ed8200e58b395224abfde577332cd09a65b6315d9e0090"
+    },
+    {
+      "file": "tools/backup_db.py",
+      "status": "unchanged",
+      "baselineSha256": "cce7a14680f1ffed39d8f3f86b777b51149c6ff63f3d3896d743eb704f52e65d",
+      "releaseSha256": "cce7a14680f1ffed39d8f3f86b777b51149c6ff63f3d3896d743eb704f52e65d"
+    },
+    {
+      "file": "tools/balance_pilot.mjs",
+      "status": "unchanged",
+      "baselineSha256": "b0750cfa8e602aa3934e3752a81dfc0495a153503d6ae8c515949dbac3d7b61b",
+      "releaseSha256": "b0750cfa8e602aa3934e3752a81dfc0495a153503d6ae8c515949dbac3d7b61b"
+    },
+    {
+      "file": "tools/balance_sweep.js",
+      "status": "unchanged",
+      "baselineSha256": "8e8c2c5e2c5264137070800088dd3b3f98696e65296af4bb6283ad2a1089f595",
+      "releaseSha256": "8e8c2c5e2c5264137070800088dd3b3f98696e65296af4bb6283ad2a1089f595"
+    },
+    {
+      "file": "tools/build_release.py",
+      "status": "modified",
+      "baselineSha256": "8033d92f03894c597728a34f4bc243b7836c4851646527e2a0c9a9e411a22f08",
+      "releaseSha256": "6c14fc9edb4fc832a02fd894aed91b951d8f1240d8ae6a804100068367341490"
+    },
+    {
+      "file": "tools/build_static.py",
+      "status": "modified",
+      "baselineSha256": "24173e6ac234e444d021faa98c7ff2debb3c18b4399efaa465a684287f3a82d8",
+      "releaseSha256": "86e927e21574cb0acded8c311ec622b11375e4fe383ba803b263db803d4ea4f4"
+    },
+    {
+      "file": "tools/calibrate_mission_score.mjs",
+      "status": "unchanged",
+      "baselineSha256": "09e9d6858b715299c931b28fb892a0b5d16f8fb30084bf1a669097bee2f08211",
+      "releaseSha256": "09e9d6858b715299c931b28fb892a0b5d16f8fb30084bf1a669097bee2f08211"
+    },
+    {
+      "file": "tools/compare_release.py",
+      "status": "unchanged",
+      "baselineSha256": "df3917a76c88338a40fd94a399ab6768e2d1c45f3bf86dc17da02269a09c9127",
+      "releaseSha256": "df3917a76c88338a40fd94a399ab6768e2d1c45f3bf86dc17da02269a09c9127"
+    },
+    {
+      "file": "tools/export_score_rules.mjs",
+      "status": "unchanged",
+      "baselineSha256": "466dfa7e950557aeda896bc4dc21c16cb8ecfd64889942df0c3ee93afc7172f4",
+      "releaseSha256": "466dfa7e950557aeda896bc4dc21c16cb8ecfd64889942df0c3ee93afc7172f4"
+    },
+    {
+      "file": "tools/fetch_horizons_v10.py",
+      "status": "unchanged",
+      "baselineSha256": "f4020602d7771c9c04a13995ef60a9ac0b9d95592cca207c52ea9fd2be54c072",
+      "releaseSha256": "f4020602d7771c9c04a13995ef60a9ac0b9d95592cca207c52ea9fd2be54c072"
+    },
+    {
+      "file": "tools/fetch_reference_sources.py",
+      "status": "unchanged",
+      "baselineSha256": "6a6d5d7519e54eabbcf6f51b261d327362afb42146807eff7cfc6653d8df1be1",
+      "releaseSha256": "6a6d5d7519e54eabbcf6f51b261d327362afb42146807eff7cfc6653d8df1be1"
+    },
+    {
+      "file": "tools/gmat.mjs",
+      "status": "unchanged",
+      "baselineSha256": "6c06a2b87178a285666dda21239e24dbe5b9a1af5f72c3db7d666c53be311348",
+      "releaseSha256": "6c06a2b87178a285666dda21239e24dbe5b9a1af5f72c3db7d666c53be311348"
+    },
+    {
+      "file": "tools/lib/canvas-svg.mjs",
+      "status": "unchanged",
+      "baselineSha256": "2a75e247d0fa7a5713ccd4f62796a6e06a8c22102fce6d11b4274b3d40c102d0",
+      "releaseSha256": "2a75e247d0fa7a5713ccd4f62796a6e06a8c22102fce6d11b4274b3d40c102d0"
+    },
+    {
+      "file": "tools/lib/research-io.mjs",
+      "status": "unchanged",
+      "baselineSha256": "82be7b639ab65b8380f81da07bfd980d0909200a6704991be874d07edaae4dd8",
+      "releaseSha256": "82be7b639ab65b8380f81da07bfd980d0909200a6704991be874d07edaae4dd8"
+    },
+    {
+      "file": "tools/rebuild_ephemeris.py",
+      "status": "unchanged",
+      "baselineSha256": "f214109d0f4fff0973bccbf05499a2ba4a9addee075b8a6deade06d5282bf6e4",
+      "releaseSha256": "f214109d0f4fff0973bccbf05499a2ba4a9addee075b8a6deade06d5282bf6e4"
+    },
+    {
+      "file": "tools/render_cockpit.mjs",
+      "status": "unchanged",
+      "baselineSha256": "f4b71bcf8e8b6cd13c8a70b986c2835cc414951510e5868feec6cc10a3355b82",
+      "releaseSha256": "f4b71bcf8e8b6cd13c8a70b986c2835cc414951510e5868feec6cc10a3355b82"
+    },
+    {
+      "file": "tools/render_visibility.mjs",
+      "status": "unchanged",
+      "baselineSha256": "51d5865d54887313df104fab5e335c4cfb4ed71be3c20945347441e9b645fbc1",
+      "releaseSha256": "51d5865d54887313df104fab5e335c4cfb4ed71be3c20945347441e9b645fbc1"
+    },
+    {
+      "file": "tools/research.mjs",
+      "status": "unchanged",
+      "baselineSha256": "c086761c260903682d6e7abe0a1490f43c7206422862e23b6ba884c0629c0504",
+      "releaseSha256": "c086761c260903682d6e7abe0a1490f43c7206422862e23b6ba884c0629c0504"
+    },
+    {
+      "file": "tools/test_browser.mjs",
+      "status": "added",
+      "baselineSha256": null,
+      "releaseSha256": "b4c1347cf223b75043a96b76ebbe560f8a2031cbf817e0c43ba4b2c8a319d5cf"
+    },
+    {
+      "file": "tools/verify_release.py",
+      "status": "unchanged",
+      "baselineSha256": "3bb0eba880379d32695149d913eabd285527453cf48abf1412dcc7c06670b236",
+      "releaseSha256": "3bb0eba880379d32695149d913eabd285527453cf48abf1412dcc7c06670b236"
+    }
+  ]
+}

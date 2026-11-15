@@ -1,0 +1,351 @@
+{
+  "schema": "twinbound-requirements-v1",
+  "scienceGoal": {
+    "id": "composition",
+    "name": "Compare surface composition",
+    "deliverable": "A spectral composition survey"
+  },
+  "missionResults": {
+    "status": "arrived",
+    "originalMissionComplete": false,
+    "flightScore": 11320
+  },
+  "requirements": [
+    {
+      "requirementId": "REQ-SCI-001",
+      "scienceGoal": "Compare surface composition",
+      "description": "Instrument matches the science objective",
+      "measurableCondition": {
+        "actual": "camera",
+        "operator": "equals",
+        "expected": "spectrometer",
+        "units": "instrument ID"
+      },
+      "verificationMethod": "Analysis using the existing designChecks function",
+      "result": "Fail",
+      "passed": false,
+      "enforcement": "Existing game rule",
+      "evidence": {
+        "recordField": "science.checks.instrument",
+        "designSelection": {
+          "objective": "composition",
+          "instrument": "camera",
+          "radio": "dish",
+          "launcher": "dedicated",
+          "budget": "expanded"
+        }
+      },
+      "sources": [
+        {
+          "id": "mission-development",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf",
+          "title": "Design and Develop Science Missions",
+          "author": "Julie Levri",
+          "date": "2025-03-26",
+          "pdfPages": [
+            10,
+            13,
+            18,
+            19
+          ],
+          "sections": [
+            "Mission segments",
+            "Design and development process",
+            "Concept of operations",
+            "Requirements and verification"
+          ],
+          "use": "Method"
+        }
+      ],
+      "thresholdOrigin": "Educational Assumption / existing mission configuration"
+    },
+    {
+      "requirementId": "REQ-LAUNCH-001",
+      "scienceGoal": "Compare surface composition",
+      "description": "Wet mass fits the injection service",
+      "measurableCondition": {
+        "actual": 716,
+        "operator": "<=",
+        "expected": 1100,
+        "units": "kg"
+      },
+      "verificationMethod": "Analysis using the existing designChecks function",
+      "result": "Pass",
+      "passed": true,
+      "enforcement": "Existing game rule",
+      "evidence": {
+        "recordField": "science.checks.mass",
+        "designSelection": {
+          "objective": "composition",
+          "instrument": "camera",
+          "radio": "dish",
+          "launcher": "dedicated",
+          "budget": "expanded"
+        }
+      },
+      "sources": [
+        {
+          "id": "mission-development",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf",
+          "title": "Design and Develop Science Missions",
+          "author": "Julie Levri",
+          "date": "2025-03-26",
+          "pdfPages": [
+            10,
+            13,
+            18,
+            19
+          ],
+          "sections": [
+            "Mission segments",
+            "Design and development process",
+            "Concept of operations",
+            "Requirements and verification"
+          ],
+          "use": "Method"
+        },
+        {
+          "id": "cubesat-101",
+          "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+          "title": "CubeSat 101",
+          "date": "2017-10",
+          "pdfPages": [
+            27,
+            29
+          ],
+          "printedPages": [
+            "19",
+            "21"
+          ],
+          "sections": [
+            "2.7 Mission Coordination; 2.9 Flight-Specific Documentation"
+          ],
+          "use": "Method"
+        }
+      ],
+      "thresholdOrigin": "Educational Assumption / existing mission configuration"
+    },
+    {
+      "requirementId": "REQ-COST-001",
+      "scienceGoal": "Compare surface composition",
+      "description": "Design stays within the selected budget",
+      "measurableCondition": {
+        "actual": 2630000,
+        "operator": "<=",
+        "expected": 3500000,
+        "units": "USD"
+      },
+      "verificationMethod": "Analysis using the existing designChecks function",
+      "result": "Pass",
+      "passed": true,
+      "enforcement": "Existing game rule",
+      "evidence": {
+        "recordField": "science.checks.budget",
+        "designSelection": {
+          "objective": "composition",
+          "instrument": "camera",
+          "radio": "dish",
+          "launcher": "dedicated",
+          "budget": "expanded"
+        }
+      },
+      "sources": [
+        {
+          "id": "mission-development",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf",
+          "title": "Design and Develop Science Missions",
+          "author": "Julie Levri",
+          "date": "2025-03-26",
+          "pdfPages": [
+            10,
+            13,
+            18,
+            19
+          ],
+          "sections": [
+            "Mission segments",
+            "Design and development process",
+            "Concept of operations",
+            "Requirements and verification"
+          ],
+          "use": "Method"
+        }
+      ],
+      "thresholdOrigin": "Educational Assumption / existing mission configuration"
+    },
+    {
+      "requirementId": "REQ-OPS-001",
+      "scienceGoal": "Compare surface composition",
+      "description": "Planned duration fits the scenario lifetime",
+      "measurableCondition": {
+        "actual": 359.7113056943356,
+        "operator": "<=",
+        "expected": 1095.75,
+        "units": "TDB days"
+      },
+      "verificationMethod": "Analysis using the existing designChecks function",
+      "result": "Pass",
+      "passed": true,
+      "enforcement": "Existing game rule",
+      "evidence": {
+        "recordField": "science.checks.lifetime",
+        "designSelection": {
+          "objective": "composition",
+          "instrument": "camera",
+          "radio": "dish",
+          "launcher": "dedicated",
+          "budget": "expanded"
+        }
+      },
+      "sources": [
+        {
+          "id": "mission-development",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf",
+          "title": "Design and Develop Science Missions",
+          "author": "Julie Levri",
+          "date": "2025-03-26",
+          "pdfPages": [
+            10,
+            13,
+            18,
+            19
+          ],
+          "sections": [
+            "Mission segments",
+            "Design and development process",
+            "Concept of operations",
+            "Requirements and verification"
+          ],
+          "use": "Method"
+        }
+      ],
+      "thresholdOrigin": "Educational Assumption / existing mission configuration"
+    },
+    {
+      "requirementId": "REQ-NAV-001",
+      "scienceGoal": "Compare surface composition",
+      "description": "Spacecraft reached the destination",
+      "measurableCondition": {
+        "actual": "arrived",
+        "operator": "equals",
+        "expected": "arrived",
+        "units": "flight status",
+        "targetDistanceKm": 99716.77979503076,
+        "flybyToleranceKm": 100000
+      },
+      "verificationMethod": "Inspection of the existing ScienceOperations.report and flight result",
+      "result": "Pass",
+      "passed": true,
+      "enforcement": "Existing game rule",
+      "evidence": {
+        "recordField": "science.checks.arrival",
+        "designSelection": {
+          "objective": "composition",
+          "instrument": "camera",
+          "radio": "dish",
+          "launcher": "dedicated",
+          "budget": "expanded"
+        }
+      },
+      "sources": [
+        {
+          "id": "mission-development",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf",
+          "title": "Design and Develop Science Missions",
+          "author": "Julie Levri",
+          "date": "2025-03-26",
+          "pdfPages": [
+            10,
+            13,
+            18,
+            19
+          ],
+          "sections": [
+            "Mission segments",
+            "Design and development process",
+            "Concept of operations",
+            "Requirements and verification"
+          ],
+          "use": "Method"
+        }
+      ],
+      "thresholdOrigin": "Existing game flyby criterion"
+    },
+    {
+      "requirementId": "REQ-DATA-001",
+      "scienceGoal": "Compare surface composition",
+      "description": "Required science data received on Earth",
+      "measurableCondition": {
+        "actual": 0,
+        "operator": ">=",
+        "expected": 6,
+        "units": "MB",
+        "delivery": "Received on Earth",
+        "inTransitMB": 0.004000000003003379
+      },
+      "verificationMethod": "Inspection of the existing ScienceOperations.report and flight result",
+      "result": "Fail",
+      "passed": false,
+      "enforcement": "Existing game rule",
+      "evidence": {
+        "recordField": "science.checks.science",
+        "designSelection": {
+          "objective": "composition",
+          "instrument": "camera",
+          "radio": "dish",
+          "launcher": "dedicated",
+          "budget": "expanded"
+        }
+      },
+      "sources": [
+        {
+          "id": "mission-development",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf",
+          "title": "Design and Develop Science Missions",
+          "author": "Julie Levri",
+          "date": "2025-03-26",
+          "pdfPages": [
+            10,
+            13,
+            18,
+            19
+          ],
+          "sections": [
+            "Mission segments",
+            "Design and development process",
+            "Concept of operations",
+            "Requirements and verification"
+          ],
+          "use": "Method"
+        }
+      ],
+      "thresholdOrigin": "Educational Assumption / existing mission configuration"
+    }
+  ],
+  "alignedWithGame": true,
+  "contradictions": [],
+  "decisionAuthority": "ScienceOperations.report; this trace does not change the game result or score",
+  "sources": [
+    {
+      "id": "mission-development",
+      "url": "https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf",
+      "title": "Design and Develop Science Missions",
+      "author": "Julie Levri",
+      "date": "2025-03-26",
+      "pdfPages": [
+        8,
+        10,
+        13,
+        18,
+        19
+      ],
+      "sections": [
+        "Mission segments",
+        "Design and development process",
+        "Concept of operations",
+        "Requirements and verification"
+      ],
+      "use": "Method"
+    }
+  ]
+}

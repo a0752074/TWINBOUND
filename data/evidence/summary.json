@@ -1,0 +1,66 @@
+{
+  "schema": "twinbound-evidence-summary-v1",
+  "execution": "Executed with the actual game dynamics and science classes",
+  "scenario": "Controlled coast flight; random encounters disabled. Study alternatives project the reference path.",
+  "results": [
+    {
+      "level": "moon",
+      "status": "arrived",
+      "scienceComplete": true,
+      "traceAligned": true,
+      "requirementsPass": 6,
+      "requirementsFail": [],
+      "tradeAlternatives": 8,
+      "officialCML": null,
+      "vizStatus": "Analyzed"
+    },
+    {
+      "level": "mars",
+      "status": "arrived",
+      "scienceComplete": true,
+      "traceAligned": true,
+      "requirementsPass": 6,
+      "requirementsFail": [],
+      "tradeAlternatives": 8,
+      "officialCML": null,
+      "vizStatus": "Analyzed"
+    },
+    {
+      "level": "pluto",
+      "status": "arrived",
+      "scienceComplete": true,
+      "traceAligned": true,
+      "requirementsPass": 6,
+      "requirementsFail": [],
+      "tradeAlternatives": 8,
+      "officialCML": null,
+      "vizStatus": "Analyzed"
+    },
+    {
+      "level": "proxima",
+      "status": "arrived",
+      "scienceComplete": true,
+      "traceAligned": true,
+      "requirementsPass": 6,
+      "requirementsFail": [],
+      "tradeAlternatives": 8,
+      "officialCML": null,
+      "vizStatus": "Not Applicable"
+    },
+    {
+      "level": "mars",
+      "status": "arrived",
+      "scienceComplete": false,
+      "traceAligned": true,
+      "requirementsPass": 4,
+      "requirementsFail": [
+        "REQ-SCI-001",
+        "REQ-DATA-001"
+      ],
+      "tradeAlternatives": 8,
+      "officialCML": null,
+      "vizStatus": "Analyzed",
+      "scenario": "incompatible-instrument"
+    }
+  ]
+}

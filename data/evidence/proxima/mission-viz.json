@@ -1,0 +1,24 @@
+{
+  "schema": "twinbound-mission-viz-v1",
+  "status": "Not Applicable",
+  "reason": "Ideal relativistic trajectory; Newtonian Kepler elements are not used.",
+  "source": {
+    "id": "mission-viz",
+    "url": "https://nasa.github.io/mission-viz/RMarkdown/Elliptical_Orbit_Design.html",
+    "title": "Elliptical Orbit Simulator",
+    "author": "Daniel A. O’Neil",
+    "date": "2017-04-14",
+    "sections": [
+      "Generate a flat surface ellipse",
+      "Transform the flat ellipse into a 3D orbit",
+      "Propagate a Keplerian orbit"
+    ],
+    "repository": "https://github.com/nasa/mission-viz",
+    "commit": "c6f22701dc5fc3bf25172557a46557b1b5481eec",
+    "tree": "7b0271acb85cbc782cbc6f51619dc19800563912",
+    "path": "RMarkdown/Elliptical_Orbit_Design.html",
+    "implementation": "Tutorial-derived Implementation",
+    "use": "Method",
+    "codeReuse": false
+  }
+}

@@ -1,0 +1,624 @@
+{
+  "date": "2026-11-14T17:33:06.399Z",
+  "baseline": "Unchanged v10.2 arcade formula; v10.3 observation telemetry and 3D visibility correction do not affect these 2D runs",
+  "launchDate": "2026-11-14",
+  "controller": "tools/balance_pilot.mjs",
+  "stepSeconds": 0.03333333333333333,
+  "seeds": [
+    12,
+    77,
+    429
+  ],
+  "modes": [
+    "2d"
+  ],
+  "assumptions": "A deterministic smoke pilot is a repeatable balancing sample, not a human difficulty or fairness guarantee.",
+  "records": [
+    {
+      "level": "moon",
+      "seed": 12,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "arrived",
+      "reason": "Arrived Moon!",
+      "arcadeScore": 27008,
+      "seconds": 282.1666666666755,
+      "collected": 30,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 77,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 18788,
+      "seconds": 278.46666666667255,
+      "collected": 26,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 429,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "arrived",
+      "reason": "Arrived Moon!",
+      "arcadeScore": 21480,
+      "seconds": 281.63333333334174,
+      "collected": 25,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 12,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "arrived",
+      "reason": "Arrived Moon!",
+      "arcadeScore": 16206,
+      "seconds": 282.03333333334206,
+      "collected": 25,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 77,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "arrived",
+      "reason": "Arrived Moon!",
+      "arcadeScore": 18672,
+      "seconds": 281.13333333334134,
+      "collected": 28,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 429,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "arrived",
+      "reason": "Arrived Moon!",
+      "arcadeScore": 16993,
+      "seconds": 282.1000000000088,
+      "collected": 25,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 12,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "reason": "Arrived Moon!",
+      "arcadeScore": 11685,
+      "seconds": 281.9000000000086,
+      "collected": 22,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 77,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "reason": "Arrived Moon!",
+      "arcadeScore": 9871,
+      "seconds": 281.86666666667526,
+      "collected": 19,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 429,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "reason": "Arrived Moon!",
+      "arcadeScore": 9783,
+      "seconds": 281.86666666667526,
+      "collected": 19,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 12,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 15764,
+      "seconds": 167.8666666666597,
+      "collected": 14,
+      "hits": 1,
+      "sciencePercent": 20.800000000000008
+    },
+    {
+      "level": "mars",
+      "seed": 77,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 22704,
+      "seconds": 205.4999999999909,
+      "collected": 20,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 429,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "arrived",
+      "reason": "Arrived Mars!",
+      "arcadeScore": 58204,
+      "seconds": 449.5666666668087,
+      "collected": 42,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 12,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "arrived",
+      "reason": "Arrived Mars!",
+      "arcadeScore": 43122,
+      "seconds": 449.5666666668087,
+      "collected": 40,
+      "hits": 2,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 77,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "arrived",
+      "reason": "Arrived Mars!",
+      "arcadeScore": 41369,
+      "seconds": 449.63333333347543,
+      "collected": 37,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 429,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "arrived",
+      "reason": "Arrived Mars!",
+      "arcadeScore": 37727,
+      "seconds": 449.6666666668088,
+      "collected": 38,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 12,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "reason": "Arrived Mars!",
+      "arcadeScore": 26640,
+      "seconds": 449.63333333347543,
+      "collected": 30,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 77,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "reason": "Arrived Mars!",
+      "arcadeScore": 27872,
+      "seconds": 449.7333333334755,
+      "collected": 34,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 429,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "reason": "Arrived Mars!",
+      "arcadeScore": 25805,
+      "seconds": 449.63333333347543,
+      "collected": 30,
+      "hits": 0,
+      "sciencePercent": 100
+    },
+    {
+      "level": "pluto",
+      "seed": 12,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 14407,
+      "seconds": 114.23333333332941,
+      "collected": 9,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "pluto",
+      "seed": 77,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 33950,
+      "seconds": 196.39999999999142,
+      "collected": 20,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "pluto",
+      "seed": 429,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 41452,
+      "seconds": 240.19999999998893,
+      "collected": 22,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "pluto",
+      "seed": 12,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 60858,
+      "seconds": 562.2333333334793,
+      "collected": 42,
+      "hits": 3,
+      "sciencePercent": 100
+    },
+    {
+      "level": "pluto",
+      "seed": 77,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 23327,
+      "seconds": 222.39999999998994,
+      "collected": 17,
+      "hits": 4,
+      "sciencePercent": 0
+    },
+    {
+      "level": "pluto",
+      "seed": 429,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "arrived",
+      "reason": "Arrived Pluto!",
+      "arcadeScore": 85512,
+      "seconds": 599.933333333445,
+      "collected": 56,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "pluto",
+      "seed": 12,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "failed",
+      "reason": "Course deviation exceeds the mission limit",
+      "arcadeScore": 47105,
+      "seconds": 622.700000000091,
+      "collected": 40,
+      "hits": 4,
+      "sciencePercent": 100
+    },
+    {
+      "level": "pluto",
+      "seed": 77,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "reason": "Arrived Pluto!",
+      "arcadeScore": 52006,
+      "seconds": 600.0000000001116,
+      "collected": 44,
+      "hits": 2,
+      "sciencePercent": 100
+    },
+    {
+      "level": "pluto",
+      "seed": 429,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "reason": "Arrived Pluto!",
+      "arcadeScore": 47477,
+      "seconds": 599.9666666667783,
+      "collected": 39,
+      "hits": 2,
+      "sciencePercent": 100
+    },
+    {
+      "level": "proxima",
+      "seed": 12,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 12281,
+      "seconds": 106.39999999999652,
+      "collected": 6,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "proxima",
+      "seed": 77,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 62342,
+      "seconds": 294.2666666666851,
+      "collected": 25,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "proxima",
+      "seed": 429,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 18015,
+      "seconds": 113.76666666666277,
+      "collected": 11,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "proxima",
+      "seed": 12,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 20350,
+      "seconds": 194.53333333332486,
+      "collected": 9,
+      "hits": 3,
+      "sciencePercent": 49.166666666666494
+    },
+    {
+      "level": "proxima",
+      "seed": 77,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "reason": "Hull destroyed; flight ended",
+      "arcadeScore": 53106,
+      "seconds": 411.0666666667781,
+      "collected": 25,
+      "hits": 5,
+      "sciencePercent": 100
+    },
+    {
+      "level": "proxima",
+      "seed": 429,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "arrived",
+      "reason": "Arrived Proxima Centauri!",
+      "arcadeScore": 116096,
+      "seconds": 750.0333333333085,
+      "collected": 59,
+      "hits": 2,
+      "sciencePercent": 100
+    },
+    {
+      "level": "proxima",
+      "seed": 12,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "reason": "Arrived Proxima Centauri!",
+      "arcadeScore": 77090,
+      "seconds": 750.0333333333085,
+      "collected": 43,
+      "hits": 3,
+      "sciencePercent": 100
+    },
+    {
+      "level": "proxima",
+      "seed": 77,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "reason": "Arrived Proxima Centauri!",
+      "arcadeScore": 85798,
+      "seconds": 750.0333333333085,
+      "collected": 51,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "proxima",
+      "seed": 429,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "reason": "Arrived Proxima Centauri!",
+      "arcadeScore": 74969,
+      "seconds": 750.0333333333085,
+      "collected": 46,
+      "hits": 2,
+      "sciencePercent": 100
+    }
+  ],
+  "levels": {
+    "moon": {
+      "samples": 9,
+      "arrivals": 8,
+      "failures": 1,
+      "medianSuccessfulArcade": 16599.5,
+      "suggestedBonusCap": 9960
+    },
+    "mars": {
+      "samples": 9,
+      "arrivals": 7,
+      "failures": 2,
+      "medianSuccessfulArcade": 37727,
+      "suggestedBonusCap": 22636
+    },
+    "pluto": {
+      "samples": 9,
+      "arrivals": 3,
+      "failures": 6,
+      "medianSuccessfulArcade": 52006,
+      "suggestedBonusCap": 31204
+    },
+    "proxima": {
+      "samples": 9,
+      "arrivals": 4,
+      "failures": 5,
+      "medianSuccessfulArcade": 81444,
+      "suggestedBonusCap": 48866
+    }
+  }
+}

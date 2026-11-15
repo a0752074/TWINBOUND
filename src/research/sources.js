@@ -1,0 +1,14 @@
+export const SOURCES={
+  development:{id:'mission-development',url:'https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf',title:'Design and Develop Science Missions',author:'Julie Levri',date:'2025-03-26',pdfPages:[8,10,13,18,19],sections:['Mission segments','Design and development process','Concept of operations','Requirements and verification'],use:'Method'},
+  mdl:{id:'mission-design-lab',url:'https://etd.gsfc.nasa.gov/capabilities/integrated-design-center/mission-design-lab',title:'Mission Design Lab',sections:['Tailored Trade Study','MDL Capabilities','MDL Disciplines'],use:'Method'},
+  cubesat:{id:'cubesat-101',url:'https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf',title:'CubeSat 101',date:'2017-10',pdfPages:[19,21,22,23,27,29,30,33,37,61],printedPages:['11','13','14','15','19','21','22','25','29','53'],sections:['2.1 Concept Development','2.2 Securing Funding','2.3 Merit and Feasibility Reviews','2.4 CubeSat Design','2.7 Mission Coordination','2.9 Flight-Specific Documentation','2.10 Ground Station Design, Development, and Testing','2.12 Mission Readiness Reviews','2.16 Mission Operations','6 Flight Certification Documentation'],use:'Method'},
+  viz:{id:'mission-viz',url:'https://nasa.github.io/mission-viz/RMarkdown/Elliptical_Orbit_Design.html',title:'Elliptical Orbit Simulator',author:'Daniel A. O’Neil',date:'2017-04-14',sections:['Generate a flat surface ellipse','Transform the flat ellipse into a 3D orbit','Propagate a Keplerian orbit'],repository:'https://github.com/nasa/mission-viz',commit:'c6f22701dc5fc3bf25172557a46557b1b5481eec',tree:'7b0271acb85cbc782cbc6f51619dc19800563912',path:'RMarkdown/Elliptical_Orbit_Design.html',implementation:'Tutorial-derived Implementation',use:'Method',codeReuse:false},
+  cml:{id:'concept-maturity',url:'https://hdl.handle.net/2014/44299',download:'https://dataverse.jpl.nasa.gov/api/access/datafile/50237',title:'Space Mission Concept Development Using Concept Maturity Levels',authors:['Randii R. Wessen','Chester Borden','John Ziemer','Johnny Kwok'],year:2013,pdfPages:[2,3,4,5,11,14],sections:['II Concept Maturity Levels','III Early CML Phases','IV Concept Maturity Level Matrix','V Concept Maturity Level Checklists'],use:'Method'},
+  horizons:{id:'jpl-horizons',url:'https://ssd-api.jpl.nasa.gov/doc/horizons.html',title:'NASA/JPL Horizons',use:'Data'},
+  gmat:{id:'gmat',url:'https://software.nasa.gov/software/GSC-19468-1',title:'GMAT R2025a',use:'Reference Only',executionStatus:'Not Executed'}
+};
+export const cite=(key,pages,section)=>{
+  const source=SOURCES[key],selected=pages??source.pdfPages;
+  return {...source,...(pages?{pdfPages:pages}:{}),...(key==='cubesat'&&selected?{printedPages:selected.map(p=>String(p-8))}:{}),...(section?{sections:[section]}:{})};
+};
+export const assumption=(value,units,path)=>({value,units,classification:'Educational Assumption',parameterSource:path});

@@ -1,0 +1,50 @@
+{
+  "launchDate": "2026-11-14",
+  "testType": "Controlled coast-only missions; encounters disabled",
+  "kit": {
+    "engine": 2,
+    "hull": 2,
+    "power": 2
+  },
+  "mission": {
+    "launcher": "dedicated",
+    "budget": "expanded"
+  },
+  "warning": "These runs verify trajectory/science integration and do not measure normal player success rates or validate browser layout.",
+  "results": [
+    {
+      "destination": "moon",
+      "status": "arrived",
+      "controlSeconds": 281.867,
+      "score": 6024,
+      "receivedMB": 15.936,
+      "scienceComplete": true
+    },
+    {
+      "destination": "mars",
+      "status": "arrived",
+      "controlSeconds": 449.633,
+      "score": 11320,
+      "receivedMB": 34.232,
+      "scienceComplete": true
+    },
+    {
+      "destination": "pluto",
+      "status": "arrived",
+      "controlSeconds": 599.933,
+      "score": 18934,
+      "receivedMB": 3.19,
+      "scienceComplete": true
+    },
+    {
+      "destination": "proxima",
+      "status": "arrived",
+      "controlSeconds": 750.033,
+      "score": 28682,
+      "receivedMB": 3.54e-07,
+      "storedMB": 14.133,
+      "scienceComplete": true,
+      "scienceCriterion": "Onboard archive; not Earth delivery"
+    }
+  ]
+}

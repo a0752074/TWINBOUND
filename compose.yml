@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    environment:
+      TWINBOUND_DOMAIN: ${TWINBOUND_DOMAIN:?Set TWINBOUND_DOMAIN in .env}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      - app
+volumes:
+  caddy-data:
+  caddy-config:

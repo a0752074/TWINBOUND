@@ -1,0 +1,1360 @@
+{
+  "schema": "twinbound-mission-viz-v1",
+  "implementation": "Tutorial-derived Implementation",
+  "source": {
+    "id": "mission-viz",
+    "url": "https://nasa.github.io/mission-viz/RMarkdown/Elliptical_Orbit_Design.html",
+    "title": "Elliptical Orbit Simulator",
+    "author": "Daniel A. O’Neil",
+    "date": "2017-04-14",
+    "sections": [
+      "Generate a flat surface ellipse",
+      "Transform the flat ellipse into a 3D orbit",
+      "Propagate a Keplerian orbit"
+    ],
+    "repository": "https://github.com/nasa/mission-viz",
+    "commit": "c6f22701dc5fc3bf25172557a46557b1b5481eec",
+    "tree": "7b0271acb85cbc782cbc6f51619dc19800563912",
+    "path": "RMarkdown/Elliptical_Orbit_Design.html",
+    "implementation": "Tutorial-derived Implementation",
+    "use": "Method",
+    "codeReuse": false
+  },
+  "initial": {
+    "status": "Analyzed",
+    "frame": "Ecliptic J2000",
+    "origin": "sun",
+    "timeScale": "TDB",
+    "epochJD": 2461358.5,
+    "positionKm": [
+      92307156.98036109,
+      114793965.46649991,
+      93041.73719487916
+    ],
+    "velocityKmS": [
+      -40.36101635331984,
+      -12.781877761093067,
+      4.794658568407502
+    ],
+    "gmKm3S2": 132712440041.27942,
+    "elements": {
+      "a": -9842469130.251862,
+      "e": 1.0047463786046074,
+      "i": 0.20264798840194267,
+      "raan": 0.8904792247603277,
+      "argPeriapsis": 1.944872985801954,
+      "trueAnomaly": 4.341450662725652,
+      "p": 93653902.01851386,
+      "specificEnergyKm2S2": 6.741826582588601,
+      "eccentricAnomaly": null,
+      "meanAnomaly": null,
+      "periodSeconds": null,
+      "conic": "hyperbolic",
+      "singularConventions": {
+        "equatorial": false,
+        "circular": false,
+        "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+      }
+    },
+    "tutorialEuler": null,
+    "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+  },
+  "osculatingStates": [
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2461358.5,
+      "positionKm": [
+        92307156.98036109,
+        114793965.46649991,
+        93041.73719487916
+      ],
+      "velocityKmS": [
+        -40.36101635331984,
+        -12.781877761093067,
+        4.794658568407502
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -9842469130.251862,
+        "e": 1.0047463786046074,
+        "i": 0.20264798840194267,
+        "raan": 0.8904792247603277,
+        "argPeriapsis": 1.944872985801954,
+        "trueAnomaly": 4.341450662725652,
+        "p": 93653902.01851386,
+        "specificEnergyKm2S2": 6.741826582588601,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2461563.952965891,
+      "positionKm": [
+        259720464.7108351,
+        -374170041.0772829,
+        -89794494.90615143
+      ],
+      "velocityKmS": [
+        19.02160351164363,
+        -14.104787363619641,
+        -4.858343559926439
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10505874264.522743,
+        "e": 1.0044488354765102,
+        "i": 0.20253118365135891,
+        "raan": 0.8903606456853872,
+        "argPeriapsis": 1.945053675295787,
+        "trueAnomaly": 2.4892455398239566,
+        "p": 93685745.98329498,
+        "specificEnergyKm2S2": 6.316106432447782,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2461769.4059317815,
+      "positionKm": [
+        558778783.2234042,
+        -575436203.5044948,
+        -163526334.23005772
+      ],
+      "velocityKmS": [
+        15.255773173986855,
+        -9.527713151844331,
+        -3.6654920868199032
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10443053358.297985,
+        "e": 1.0044776526433479,
+        "i": 0.2025166234934571,
+        "raan": 0.8899553694565006,
+        "argPeriapsis": 1.9456254137375542,
+        "trueAnomaly": 2.649935675338675,
+        "p": 93730107.62288475,
+        "specificEnergyKm2S2": 6.354101405401082,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2461974.8588976725,
+      "positionKm": [
+        812045342.7238177,
+        -727338763.0780369,
+        -223563425.29986894
+      ],
+      "velocityKmS": [
+        13.444482843647904,
+        -7.785208904444009,
+        -3.1508201539097174
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10383836504.303936,
+        "e": 1.004508082895846,
+        "i": 0.2025065421506625,
+        "raan": 0.8893382327131878,
+        "argPeriapsis": 1.9465312191648199,
+        "trueAnomaly": 2.71788764396182,
+        "p": 93833420.22747041,
+        "specificEnergyKm2S2": 6.390337520543213,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2462180.311863563,
+      "positionKm": [
+        1039948297.0425845,
+        -856157890.7605101,
+        -276563658.4237886
+      ],
+      "velocityKmS": [
+        12.306790157711042,
+        -6.805394481259118,
+        -2.84232455007299
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10342746895.1114,
+        "e": 1.0045326016148206,
+        "i": 0.20250353486594855,
+        "raan": 0.8887361537506351,
+        "argPeriapsis": 1.947459272565581,
+        "trueAnomaly": 2.758357382099984,
+        "p": 93971588.88675012,
+        "specificEnergyKm2S2": 6.415725019047272,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2462385.764829454,
+      "positionKm": [
+        1250886477.6528032,
+        -970862782.223358,
+        -325027809.610422
+      ],
+      "velocityKmS": [
+        11.49984961031534,
+        -6.1567460958548486,
+        -2.629545653209649
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10315788064.588612,
+        "e": 1.0045551449597494,
+        "i": 0.20250407369422319,
+        "raan": 0.8883065593346391,
+        "argPeriapsis": 1.9483473691228834,
+        "trueAnomaly": 2.7860506449408344,
+        "p": 94193865.8682452,
+        "specificEnergyKm2S2": 6.432491594939137,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2462591.217795345,
+      "positionKm": [
+        1449341289.8646288,
+        -1075781604.7953868,
+        -370233615.89546216
+      ],
+      "velocityKmS": [
+        10.885241073083526,
+        -5.686892568031586,
+        -2.470691297585498
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10303705202.354433,
+        "e": 1.0045723308501406,
+        "i": 0.2025055342035159,
+        "raan": 0.8881033691502669,
+        "argPeriapsis": 1.9490111554031877,
+        "trueAnomaly": 2.8066432015686793,
+        "p": 94439309.75354567,
+        "specificEnergyKm2S2": 6.440034795005303,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2462796.6707612355,
+      "positionKm": [
+        1638063478.841143,
+        -1173393211.2077434,
+        -412942559.3121659
+      ],
+      "velocityKmS": [
+        10.394754832337048,
+        -5.325508319199822,
+        -2.34587233192441
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10311265151.58418,
+        "e": 1.0045840300593007,
+        "i": 0.20250187303945255,
+        "raan": 0.8884484378550281,
+        "argPeriapsis": 1.9492039944043018,
+        "trueAnomaly": 2.8226930670550097,
+        "p": 94750972.84225173,
+        "specificEnergyKm2S2": 6.435313130362573,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2463002.1237271265,
+      "positionKm": [
+        1818883255.8050103,
+        -1265273013.3873224,
+        -453653474.2488819
+      ],
+      "velocityKmS": [
+        9.990152966970953,
+        -5.036478234073753,
+        -2.2442073192727916
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10330470128.145248,
+        "e": 1.0045910076147424,
+        "i": 0.20249287062892374,
+        "raan": 0.889123801231877,
+        "argPeriapsis": 1.949046234079436,
+        "trueAnomaly": 2.8357227514122414,
+        "p": 95072272.98841365,
+        "specificEnergyKm2S2": 6.423349489182776,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2463207.576693017,
+      "positionKm": [
+        1993099828.0733144,
+        -1352493156.2464886,
+        -492714917.1726915
+      ],
+      "velocityKmS": [
+        9.647390941843659,
+        -4.797982087015296,
+        -2.159167783340293
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10372434770.518606,
+        "e": 1.0045873070196627,
+        "i": 0.20246978897427367,
+        "raan": 0.8905996111922523,
+        "argPeriapsis": 1.9480308084291433,
+        "trueAnomaly": 2.846636776528351,
+        "p": 95381356.81303038,
+        "specificEnergyKm2S2": 6.397361997324182,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2463413.029658908,
+      "positionKm": [
+        2161668889.6818013,
+        -1435831453.0026655,
+        -530382225.24672896
+      ],
+      "velocityKmS": [
+        9.351764455217307,
+        -4.597059756755136,
+        -2.0865624219826797
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10422265121.388205,
+        "e": 1.0045786105191035,
+        "i": 0.2024382426490622,
+        "raan": 0.8924037236778108,
+        "argPeriapsis": 1.9466112582499182,
+        "trueAnomaly": 2.8559908781984067,
+        "p": 95657474.4066675,
+        "specificEnergyKm2S2": 6.366775288076852,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2463618.482624799,
+      "positionKm": [
+        2325322318.887002,
+        -1515868086.2445416,
+        -566849397.2462732
+      ],
+      "velocityKmS": [
+        9.092110101363685,
+        -4.424982828527469,
+        -2.0235565385372705
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10488020614.161087,
+        "e": 1.004556888883211,
+        "i": 0.20239244524873373,
+        "raan": 0.8948360672766285,
+        "argPeriapsis": 1.9443455850530889,
+        "trueAnomaly": 2.8643037851152293,
+        "p": 95803275.31342547,
+        "specificEnergyKm2S2": 6.326858275911903,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2463823.9355906895,
+      "positionKm": [
+        2484636657.937145,
+        -1593062446.844117,
+        -602268221.5902562
+      ],
+      "velocityKmS": [
+        8.861721121143475,
+        -4.275689198147622,
+        -1.968165345034602
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10556351850.66719,
+        "e": 1.004529464272536,
+        "i": 0.2023401786147044,
+        "raan": 0.8974516705891213,
+        "argPeriapsis": 1.9417401409238089,
+        "trueAnomaly": 2.871763131428418,
+        "p": 95845811.71828622,
+        "specificEnergyKm2S2": 6.2859045396867685,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2464029.3885565805,
+      "positionKm": [
+        2640074341.185616,
+        -1667780588.1820855,
+        -636760368.6948181
+      ],
+      "velocityKmS": [
+        8.65487272699136,
+        -4.145501874015804,
+        -1.9189455800901933
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10624933629.8171,
+        "e": 1.0044905727256772,
+        "i": 0.2022868353451877,
+        "raan": 0.9000157032759919,
+        "argPeriapsis": 1.9388336245161657,
+        "trueAnomaly": 2.878747899605793,
+        "p": 95638328.7131725,
+        "specificEnergyKm2S2": 6.245330308174545,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2464234.841522471,
+      "positionKm": [
+        2792024271.0118723,
+        -1740329544.0659704,
+        -670425288.7554076
+      ],
+      "velocityKmS": [
+        8.468070001821232,
+        -4.030715059797759,
+        -1.8748105964359603
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10686836665.978016,
+        "e": 1.004447652055962,
+        "i": 0.20223762115128968,
+        "raan": 0.9022919994644303,
+        "argPeriapsis": 1.9360112475030924,
+        "trueAnomaly": 2.8852439727720203,
+        "p": 95274064.96068625,
+        "specificEnergyKm2S2": 6.20915450424048,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2464440.294488362,
+      "positionKm": [
+        2940811465.5831976,
+        -1810965396.8794787,
+        -703345573.9478327
+      ],
+      "velocityKmS": [
+        8.298477287463378,
+        -3.92955408214694,
+        -1.8349314935315404
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10731800777.185936,
+        "e": 1.0044006336370837,
+        "i": 0.20220984096796296,
+        "raan": 0.9035375820009142,
+        "argPeriapsis": 1.9339020579747785,
+        "trueAnomaly": 2.8914570149675196,
+        "p": 94661274.48107249,
+        "specificEnergyKm2S2": 6.183139381575387,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2464645.747454253,
+      "positionKm": [
+        3086724471.284624,
+        -1879903036.5198088,
+        -735590777.4060119
+      ],
+      "velocityKmS": [
+        8.143770947236163,
+        -3.839260572121025,
+        -1.798660216188587
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10762845460.504368,
+        "e": 1.0043541747912423,
+        "i": 0.20219873808580932,
+        "raan": 0.9040193797173695,
+        "argPeriapsis": 1.9324225514721949,
+        "trueAnomaly": 2.8972947700483296,
+        "p": 93930671.81704739,
+        "specificEnergyKm2S2": 6.165304543686176,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2464851.2004201435,
+      "positionKm": [
+        3230012648.278062,
+        -1947326388.7403028,
+        -767220200.043356
+      ],
+      "velocityKmS": [
+        8.002694014125709,
+        -3.758517609882162,
+        -1.7654792229135672
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10768219732.342878,
+        "e": 1.0043145643736902,
+        "i": 0.20222637998401902,
+        "raan": 0.9028841145702229,
+        "argPeriapsis": 1.932479506678666,
+        "trueAnomaly": 2.9027545091570808,
+        "p": 93120809.87591784,
+        "specificEnergyKm2S2": 6.162227524140832,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2465056.6533860345,
+      "positionKm": [
+        3370902117.476393,
+        -2013383215.7820373,
+        -798284947.2479109
+      ],
+      "velocityKmS": [
+        7.8731822686643005,
+        -3.6853951870100525,
+        -1.7349758421083348
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10759317612.103289,
+        "e": 1.0042803354598577,
+        "i": 0.20227786305432807,
+        "raan": 0.9008655816553599,
+        "argPeriapsis": 1.9334310363113225,
+        "trueAnomaly": 2.9078177951750668,
+        "p": 92304101.77864295,
+        "specificEnergyKm2S2": 6.167326071496838,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2465262.106351925,
+      "positionKm": [
+        3509592465.051291,
+        -2078200730.1903493,
+        -828829440.4594104
+      ],
+      "velocityKmS": [
+        7.754608264399402,
+        -3.6184953378883717,
+        -1.7068093168821963
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10729558413.034174,
+        "e": 1.0042613178942883,
+        "i": 0.20236671607360263,
+        "raan": 0.8975471333699501,
+        "argPeriapsis": 1.9358944773554931,
+        "trueAnomaly": 2.912323422378851,
+        "p": 91638954.75584954,
+        "specificEnergyKm2S2": 6.184431592266719,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2465467.559317816,
+      "positionKm": [
+        3646259464.8689756,
+        -2141877050.8997183,
+        -858892569.0988795
+      ],
+      "velocityKmS": [
+        7.645080741963273,
+        -3.556900006153569,
+        -1.6806934023172289
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10690922044.438831,
+        "e": 1.0042500724925842,
+        "i": 0.2024778238189523,
+        "raan": 0.8936160713900714,
+        "argPeriapsis": 1.9391009968950215,
+        "trueAnomaly": 2.916408964601782,
+        "p": 91067498.76995936,
+        "specificEnergyKm2S2": 6.206781767261756,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2465673.012283707,
+      "positionKm": [
+        3781061871.7993393,
+        -2204497621.5585527,
+        -888508611.877173
+      ],
+      "velocityKmS": [
+        7.544029644848682,
+        -3.4992187877040397,
+        -1.6563932809339603
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10643396863.482903,
+        "e": 1.0042557107597243,
+        "i": 0.20260704842889005,
+        "raan": 0.8892728835649084,
+        "argPeriapsis": 1.9430891550245946,
+        "trueAnomaly": 2.919874710877762,
+        "p": 90783200.4528377,
+        "specificEnergyKm2S2": 6.234496455572884,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2465878.4652495976,
+      "positionKm": [
+        3914133975.4360447,
+        -2266128349.714325,
+        -917707931.5301946
+      ],
+      "velocityKmS": [
+        7.4501503859323,
+        -3.4452737489195226,
+        -1.6337060203496616
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10591755760.44203,
+        "e": 1.004270899295631,
+        "i": 0.20275079296391446,
+        "raan": 0.8846836223857002,
+        "argPeriapsis": 1.9475340990200163,
+        "trueAnomaly": 2.922913253043191,
+        "p": 90665844.21023256,
+        "specificEnergyKm2S2": 6.264893330383067,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2466083.9182154885,
+      "positionKm": [
+        4045598762.7827783,
+        -2326825101.762286,
+        -946517533.4332298
+      ],
+      "velocityKmS": [
+        7.362512676601365,
+        -3.3938420310688167,
+        -1.6124549593561106
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10543655701.12965,
+        "e": 1.004299199468862,
+        "i": 0.20288093396408205,
+        "raan": 0.8807134254268831,
+        "argPeriapsis": 1.9517351900611537,
+        "trueAnomaly": 2.9254041291869477,
+        "p": 90853437.59247869,
+        "specificEnergyKm2S2": 6.2934737155283145,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2466289.371181379,
+      "positionKm": [
+        4175557271.6598854,
+        -2386635986.2397037,
+        -974961573.2007257
+      ],
+      "velocityKmS": [
+        7.280556394169217,
+        -3.3451646001661977,
+        -1.5924946561782292
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10495081705.025293,
+        "e": 1.0043369355198755,
+        "i": 0.20301359670917216,
+        "raan": 0.8768300634072856,
+        "argPeriapsis": 1.9560739393000404,
+        "trueAnomaly": 2.92750871447166,
+        "p": 91230387.35466634,
+        "specificEnergyKm2S2": 6.322601565728334,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2466494.82414727,
+      "positionKm": [
+        4304102840.647167,
+        -2445598287.6690016,
+        -1003061735.1397069
+      ],
+      "velocityKmS": [
+        7.203104896093895,
+        -3.298335240595352,
+        -1.5736941104779951
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10457167979.172514,
+        "e": 1.0043819331142623,
+        "i": 0.2031049027577072,
+        "raan": 0.8742477883139879,
+        "argPeriapsis": 1.9593916644693703,
+        "trueAnomaly": 2.9292159787411656,
+        "p": 91846012.91366135,
+        "specificEnergyKm2S2": 6.345524921546737,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2466700.277113161,
+      "positionKm": [
+        4431311863.007618,
+        -2503749137.203074,
+        -1030837522.940936
+      ],
+      "velocityKmS": [
+        7.130031675294532,
+        -3.2534242467588204,
+        -1.5559353426415166
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10423835778.262835,
+        "e": 1.004435501540185,
+        "i": 0.20317594138351466,
+        "raan": 0.8722915960964848,
+        "argPeriapsis": 1.962321964884893,
+        "trueAnomaly": 2.9305688486791475,
+        "p": 92674954.44426079,
+        "specificEnergyKm2S2": 6.365815946469006,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2466905.7300790516,
+      "positionKm": [
+        4557251236.274825,
+        -2561115960.3611236,
+        -1058306563.5236075
+      ],
+      "velocityKmS": [
+        7.060084470878459,
+        -3.210270250779136,
+        -1.5391226100234445
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10404449228.844826,
+        "e": 1.0044872904876536,
+        "i": 0.2031917121651623,
+        "raan": 0.8718658905602119,
+        "argPeriapsis": 1.963804221264537,
+        "trueAnomaly": 2.9317561897757827,
+        "p": 93585073.76598887,
+        "specificEnergyKm2S2": 6.377677334104021,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2467111.1830449426,
+      "positionKm": [
+        4681979298.217644,
+        -2617730290.498128,
+        -1085484837.0456285
+      ],
+      "velocityKmS": [
+        6.99339848182407,
+        -3.1684777430469753,
+        -1.5231663941827676
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10394033673.02979,
+        "e": 1.004544846955891,
+        "i": 0.2031635877223243,
+        "raan": 0.8726129799033533,
+        "argPeriapsis": 1.9643240726947457,
+        "trueAnomaly": 2.932653554313216,
+        "p": 94693279.9503979,
+        "specificEnergyKm2S2": 6.3840682172138195,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2467316.636010833,
+      "positionKm": [
+        4805541661.244603,
+        -2673616349.715471,
+        -1112386826.297047
+      ],
+      "velocityKmS": [
+        6.928907202327001,
+        -3.1284685078818417,
+        -1.5079839786312843
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10397929058.127708,
+        "e": 1.0045931844123088,
+        "i": 0.20308185544934604,
+        "raan": 0.8747839121956584,
+        "argPeriapsis": 1.9633323578926607,
+        "trueAnomaly": 2.93357371650799,
+        "p": 95738580.01646774,
+        "specificEnergyKm2S2": 6.381676548251818,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2467522.088976724,
+      "positionKm": [
+        4927980977.387665,
+        -2728803223.3804836,
+        -1139025708.3236322
+      ],
+      "velocityKmS": [
+        6.866514683309678,
+        -3.0897438260034154,
+        -1.4935105748523403
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10415613314.814745,
+        "e": 1.004637474223261,
+        "i": 0.2029403640448557,
+        "raan": 0.8785609725874206,
+        "argPeriapsis": 1.9607690903302917,
+        "trueAnomaly": 2.9344054589334885,
+        "p": 96828276.45496549,
+        "specificEnergyKm2S2": 6.370841352784989,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2467727.541942615,
+      "positionKm": [
+        5049327370.644239,
+        -2783320229.578999,
+        -1165413530.7738194
+      ],
+      "velocityKmS": [
+        6.805912849464558,
+        -3.053050914771318,
+        -1.4796851409674259
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10443257354.47747,
+        "e": 1.004667087241849,
+        "i": 0.20277100878124324,
+        "raan": 0.8831424338560785,
+        "argPeriapsis": 1.9571550897911987,
+        "trueAnomaly": 2.9354185921992837,
+        "p": 97706658.25827461,
+        "specificEnergyKm2S2": 6.353977285850373,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    },
+    {
+      "status": "Analyzed",
+      "frame": "Ecliptic J2000",
+      "origin": "sun",
+      "timeScale": "TDB",
+      "epochJD": 2467932.9949085056,
+      "positionKm": [
+        5169612739.983929,
+        -2837198389.391696,
+        -1191561330.352817
+      ],
+      "velocityKmS": [
+        6.746812512127626,
+        -3.0187284575930784,
+        -1.4672595211211246
+      ],
+      "gmKm3S2": 132712440041.27942,
+      "elements": {
+        "a": -10477405843.747631,
+        "e": 1.0046753873830738,
+        "i": 0.202361293615486,
+        "raan": 0.8945999151992616,
+        "argPeriapsis": 1.9463784241529236,
+        "trueAnomaly": 2.9367820881425644,
+        "p": 98200890.38256933,
+        "specificEnergyKm2S2": 6.333268082789562,
+        "eccentricAnomaly": null,
+        "meanAnomaly": null,
+        "periodSeconds": null,
+        "conic": "hyperbolic",
+        "singularConventions": {
+          "equatorial": false,
+          "circular": false,
+          "angles": "Radians; circular periapsis and equatorial RAAN set to zero"
+        }
+      },
+      "tutorialEuler": null,
+      "interpretation": "Instantaneous osculating conic, not a replacement for the 11-body trajectory."
+    }
+  ],
+  "tutorialEllipsePointsKm": [],
+  "tutorialReconstructionErrorKm": null,
+  "columns": [
+    "x_km",
+    "y_km",
+    "z_km"
+  ],
+  "format": "Project-defined JSON and XYZ CSV; the NASA tutorial does not define an interchange API.",
+  "scope": "Flat focus-centered ellipse, sequential Y/Z/X rotations and Kepler timing follow the tutorial method. Classical elements use the standard Z/X/Z orbital convention; an explicit Euler conversion connects the conventions. Independent source implementation; no NASA repository code copied."
+}

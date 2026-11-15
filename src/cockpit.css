@@ -1,0 +1,14 @@
+.flight-mode-button{font:9px var(--mono);letter-spacing:.5px;border:1px solid #65789a;border-radius:6px;padding:8px 9px;color:#c5d4ef;background:#23324a;white-space:nowrap}
+.flight-mode-button[aria-pressed="true"]{color:#a9f1d9;border-color:#74b4a4;background:#24413c}
+.three-d-bonus{display:block;color:#c7aff5;font:9px var(--mono);letter-spacing:1px;margin-top:8px}
+.cockpit-score-breakdown{font:11px var(--mono)!important;color:#bba4ee!important}
+.flight-tip{font-size:12px;line-height:1.9;color:#a7b8d4;border:1px solid #35435d;background:#172238;padding:15px;border-radius:9px;margin:18px 0}
+.touch-controls-3d{display:none;position:absolute;bottom:130px;right:12px;grid-template-columns:repeat(3,42px);gap:6px;z-index:8}
+.touch-controls-3d button{height:38px;border:1px solid #a4d3df65;background:#1b304b9c;border-radius:8px;color:#d6f4f3;font:10px var(--mono);touch-action:none;user-select:none}
+.touch-controls-3d .coast-control{grid-column:1/4;font-size:9px;height:29px}
+.touch-controls-3d button.pressed{background:#80c7b46e;border-color:#b0f3dd}
+.source-formulas{display:grid;gap:8px;margin:14px 0;padding:15px;background:#152438;border:1px solid #3b5169;border-radius:10px;font-size:11px;line-height:1.8;color:#b2c7dd}
+.source-formulas code{color:#b2e5d5;font-size:10px}
+.source-cards .source-location{color:#c2b1ee;font-size:10px;margin-top:7px}
+@media(pointer:coarse){.touch-controls-3d{display:grid}}
+@media(max-width:520px){.flight-mode-button{font-size:8px;padding:7px 6px}.flight-top-right{gap:7px}#caption3D{font-size:9px;line-height:1.9}.touch-controls-3d{bottom:122px;grid-template-columns:repeat(3,35px);gap:4px}.touch-controls-3d button{height:34px}}

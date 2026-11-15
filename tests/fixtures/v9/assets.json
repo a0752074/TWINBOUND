@@ -1,0 +1,47 @@
+{
+  "src/art.js": {
+    "bytes": 6116,
+    "sha256": "875260b35d4624b61e6b09b46aacbf547788364ee366494ec32908676fb03da6"
+  },
+  "src/audio.js": {
+    "bytes": 1473,
+    "sha256": "dff509dd1c611cb00e90a53c5f9d5356a8b9a7806f6509a230081468a92bd805"
+  },
+  "src/render.js": {
+    "bytes": 14544,
+    "sha256": "745a29bbfc4f6c7268b26df4d11c4ecafca300e8bcb0fa1c11c7ee2f36248f7a",
+    "flight_renderer_sha256": "408d5cd45caaed7647ba5959388a232e75cfbdc13581e0aab87f5ac5a9390298"
+  },
+  "src/style.css": {
+    "bytes": 34888,
+    "sha256": "67da1ba4b30cd69adbdf0506fff9587e93fe408e63634e7048bf890a939ba0ff"
+  },
+  "assets/favicon.svg": {
+    "bytes": 383,
+    "sha256": "8b056b707659a092ded0be3bab70effa79fdfb42a140c6bcb613d8e95ca87bfb"
+  },
+  "assets/photos/PIA00407.jpg": {
+    "bytes": 185636,
+    "sha256": "b97cb7e1fe54a68f0dc1949015752875c86ee18921b91c43046e5fe20f195a4e"
+  },
+  "assets/photos/PIA02653.jpg": {
+    "bytes": 116487,
+    "sha256": "9904cc710b0b688db8e27102b37dbce377f2af13118127f71a9c130aa12e4370"
+  },
+  "assets/photos/proxima_wfc3.jpg": {
+    "bytes": 243864,
+    "sha256": "22733c1ade944756ddcfe39208cee5845ac05710aefbd343c231e38022029bfb"
+  },
+  "assets/photos/PIA12954.jpg": {
+    "bytes": 55335,
+    "sha256": "772422234452b24748e7cc8fa111a91c8e1d27e0947fdb815d289eee11881428"
+  },
+  "assets/photos/proxima_wfpc2.jpg": {
+    "bytes": 72014,
+    "sha256": "e4231858c5bc750bd4dabec5b6cdf216bb18f7666f85c9fcdddc536c87f57692"
+  },
+  "assets/photos/PIA13008.jpg": {
+    "bytes": 68820,
+    "sha256": "839bf582379dc0abbf691e934b8a9c218154fdfa49c39aa11c8ed52394253aa2"
+  }
+}

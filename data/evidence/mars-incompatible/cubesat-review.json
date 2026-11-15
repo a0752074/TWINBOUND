@@ -1,0 +1,364 @@
+{
+  "schema": "twinbound-cubesat-review-v1",
+  "checks": [
+    {
+      "id": "CS-CONOPS",
+      "topic": "Concept of operations",
+      "condition": "A selected goal, injection epoch, operations duration and delivery mode are defined",
+      "result": "Pass",
+      "passed": true,
+      "details": {
+        "goal": "Compare surface composition",
+        "launchDate": "2026-11-14",
+        "physicalDurationDays": 403.2000000000001,
+        "delivery": "Earth"
+      },
+      "enforcement": "Analysis only",
+      "sources": [
+        {
+          "id": "cubesat-101",
+          "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+          "title": "CubeSat 101",
+          "date": "2017-10",
+          "pdfPages": [
+            19,
+            37
+          ],
+          "printedPages": [
+            "11",
+            "29"
+          ],
+          "sections": [
+            "2.1 Concept Development; 2.16 Mission Operations"
+          ],
+          "use": "Method"
+        }
+      ]
+    },
+    {
+      "id": "CS-REQ",
+      "topic": "Requirements",
+      "condition": "Every existing mission check has a measured condition and source",
+      "result": "Pass",
+      "passed": true,
+      "details": {
+        "requirementIds": [
+          "REQ-SCI-001",
+          "REQ-LAUNCH-001",
+          "REQ-COST-001",
+          "REQ-OPS-001",
+          "REQ-NAV-001",
+          "REQ-DATA-001"
+        ],
+        "alignment": true
+      },
+      "enforcement": "Analysis only",
+      "sources": [
+        {
+          "id": "cubesat-101",
+          "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+          "title": "CubeSat 101",
+          "date": "2017-10",
+          "pdfPages": [
+            27,
+            29,
+            33
+          ],
+          "printedPages": [
+            "19",
+            "21",
+            "25"
+          ],
+          "sections": [
+            "2.7 Mission Coordination; 2.9 Documentation; 2.12 Mission Readiness Reviews"
+          ],
+          "use": "Method"
+        }
+      ]
+    },
+    {
+      "id": "CS-LAUNCH",
+      "topic": "Launch accommodation",
+      "condition": "Wet mass <= selected service capacity",
+      "result": "Pass",
+      "passed": true,
+      "details": {
+        "wetMassKg": 716,
+        "capacityKg": 1100,
+        "capacityClassification": "Educational Assumption"
+      },
+      "enforcement": "Existing mass check",
+      "sources": [
+        {
+          "id": "cubesat-101",
+          "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+          "title": "CubeSat 101",
+          "date": "2017-10",
+          "pdfPages": [
+            27,
+            29
+          ],
+          "printedPages": [
+            "19",
+            "21"
+          ],
+          "sections": [
+            "2.7 Mission Coordination; 2.9 Flight-Specific Documentation"
+          ],
+          "use": "Method"
+        }
+      ]
+    },
+    {
+      "id": "CS-POWER",
+      "topic": "Spacecraft resources",
+      "condition": "Final stored energy is positive and within battery capacity",
+      "result": "Pass",
+      "passed": true,
+      "details": {
+        "energyWh": 276.0053240738584,
+        "capacityWh": 400,
+        "scope": "Control-time energy economy; no multi-year energy autonomy claim"
+      },
+      "enforcement": "Analysis only",
+      "sources": [
+        {
+          "id": "cubesat-101",
+          "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+          "title": "CubeSat 101",
+          "date": "2017-10",
+          "pdfPages": [
+            23,
+            25
+          ],
+          "printedPages": [
+            "15",
+            "17"
+          ],
+          "sections": [
+            "2.4 CubeSat Design"
+          ],
+          "use": "Method"
+        }
+      ]
+    },
+    {
+      "id": "CS-DATA",
+      "topic": "Spacecraft resources",
+      "condition": "Generated = stored + transmitted + dropped, within 1e-7 MB; storage <= capacity",
+      "result": "Pass",
+      "passed": true,
+      "details": {
+        "balanceErrorMB": 0,
+        "storedMB": 0,
+        "capacityMB": 32
+      },
+      "enforcement": "Analysis only",
+      "sources": [
+        {
+          "id": "cubesat-101",
+          "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+          "title": "CubeSat 101",
+          "date": "2017-10",
+          "pdfPages": [
+            23,
+            37
+          ],
+          "printedPages": [
+            "15",
+            "29"
+          ],
+          "sections": [
+            "2.4 CubeSat Design; 2.16 Mission Operations"
+          ],
+          "use": "Method"
+        }
+      ]
+    },
+    {
+      "id": "CS-GROUND",
+      "topic": "Ground communications",
+      "condition": "The mission delivery criterion uses actual receipts or the stated interstellar archive",
+      "result": "Fail",
+      "passed": false,
+      "details": {
+        "receivedMB": 34.23199999999978,
+        "inTransitMB": 0.004000000003003379,
+        "oneWayLightSeconds": 1094.401682443259,
+        "delivery": "Ground receipt"
+      },
+      "enforcement": "Existing science check",
+      "sources": [
+        {
+          "id": "cubesat-101",
+          "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+          "title": "CubeSat 101",
+          "date": "2017-10",
+          "pdfPages": [
+            30,
+            37
+          ],
+          "printedPages": [
+            "22",
+            "29"
+          ],
+          "sections": [
+            "2.10 Ground Station Design, Development, and Testing; 2.16 Mission Operations"
+          ],
+          "use": "Method"
+        }
+      ]
+    },
+    {
+      "id": "CS-OPS",
+      "topic": "Mission operations",
+      "condition": "The result includes a finite duration, flight status, state and resource account",
+      "result": "Pass",
+      "passed": true,
+      "details": {
+        "status": "arrived",
+        "controlSeconds": 449.63333333347543,
+        "physicalDays": 359.7113056943356,
+        "fuelUsedKg": 0
+      },
+      "enforcement": "Analysis only",
+      "sources": [
+        {
+          "id": "cubesat-101",
+          "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+          "title": "CubeSat 101",
+          "date": "2017-10",
+          "pdfPages": [
+            37
+          ],
+          "printedPages": [
+            "29"
+          ],
+          "sections": [
+            "2.16 Mission Operations"
+          ],
+          "use": "Method"
+        }
+      ]
+    },
+    {
+      "id": "CS-RESERVE",
+      "topic": "Cost reserve",
+      "condition": "Available budget reserve >= 10% of design cost (advisory)",
+      "result": "Pass",
+      "passed": true,
+      "details": {
+        "reserveFractionOfCost": 0.33079847908745247,
+        "recommendation": "The document recommends reserves when possible; the cost denominator is the project convention."
+      },
+      "enforcement": "Analysis only",
+      "sources": [
+        {
+          "id": "cubesat-101",
+          "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+          "title": "CubeSat 101",
+          "date": "2017-10",
+          "pdfPages": [
+            21
+          ],
+          "printedPages": [
+            "13"
+          ],
+          "sections": [
+            "2.2 Securing Funding"
+          ],
+          "use": "Method"
+        }
+      ]
+    },
+    {
+      "id": "CS-VERIFY",
+      "topic": "Design verification",
+      "condition": "A measured trace and final result are present",
+      "result": "Pass",
+      "passed": true,
+      "details": {
+        "traceSchema": "twinbound-requirements-v1",
+        "requirements": 6
+      },
+      "enforcement": "Analysis only",
+      "sources": [
+        {
+          "id": "cubesat-101",
+          "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+          "title": "CubeSat 101",
+          "date": "2017-10",
+          "pdfPages": [
+            33,
+            61
+          ],
+          "printedPages": [
+            "25",
+            "53"
+          ],
+          "sections": [
+            "2.12 Mission Readiness Reviews; 6 Flight Certification Documentation"
+          ],
+          "use": "Method"
+        }
+      ]
+    }
+  ],
+  "conOps": [
+    "Define science goal",
+    "Check spacecraft and injection service",
+    "Propagate and navigate",
+    "Observe and store",
+    "Transmit and receive",
+    "Evaluate science delivery"
+  ],
+  "notApplicable": [
+    {
+      "item": "1U/3U/6U form factor, dispenser envelope and deployment hardware",
+      "reason": "The game uses a generic spacecraft and fictional injection services; no CubeSat-standard hardware model exists.",
+      "source": {
+        "id": "cubesat-101",
+        "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+        "title": "CubeSat 101",
+        "date": "2017-10",
+        "pdfPages": [
+          12,
+          13,
+          14
+        ],
+        "printedPages": [
+          "4",
+          "5",
+          "6"
+        ],
+        "sections": [
+          "1.1 CubeSats; 1.2 Dispenser Systems"
+        ],
+        "use": "Method"
+      }
+    },
+    {
+      "item": "RF licenses, environmental qualification, acceptance testing and flight certification",
+      "reason": "These real-world hardware and regulatory processes are outside the simulation.",
+      "source": {
+        "id": "cubesat-101",
+        "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+        "title": "CubeSat 101",
+        "date": "2017-10",
+        "pdfPages": [
+          28,
+          61
+        ],
+        "printedPages": [
+          "20",
+          "53"
+        ],
+        "sections": [
+          "2.8 Regulatory Licensing; 6 Flight Certification Documentation"
+        ],
+        "use": "Method"
+      }
+    }
+  ],
+  "scope": "Document-derived educational systems checks; no NASA flight certification, CubeSat qualification, or new gameplay requirement"
+}

@@ -1,0 +1,281 @@
+{
+  "epoch": "2026-11-14 00:00 TDB",
+  "frame": "Initial Sun-centered geometric Ecliptic J2000; integrated in mass-weighted barycentric frame; giant planets are system barycenters",
+  "source_url": "https://ssd.jpl.nasa.gov/horizons/manual.html",
+  "retrieved_utc": "2026-11-04T09:16:30.325167+00:00",
+  "bodies": {
+    "earth": {
+      "state_km_kms": [
+        92655684.17210735,
+        115450423.7436057,
+        -7413.860123932362,
+        -23.72704234550072,
+        18.53055829829302,
+        -0.001806657866366912
+      ],
+      "jd_tdb": 2461358.5,
+      "target": "399",
+      "source": "bundled_v1_Horizons",
+      "sha256": "6e5953d7b57f8f51862d03b148278c95133f4bfc7f2c56a643f02dec1e53bb63",
+      "gm_km3_s2": 398600.43550702266,
+      "radius_km": 6371.0084
+    },
+    "venus": {
+      "state_km_kms": [
+        47661365.83147267,
+        96825934.95450136,
+        -1419393.264356524,
+        -31.53327960692336,
+        15.30784457309789,
+        2.029833351585794
+      ],
+      "jd_tdb": 2461358.5,
+      "target": "299",
+      "source": "bundled_v1_Horizons",
+      "sha256": "0d3b8ae7935f8ae43b7c546161c0b6ac233bae7e30dd2b59c4519338b19eb4ca",
+      "gm_km3_s2": 324858.592,
+      "radius_km": 6051.8
+    },
+    "mars": {
+      "state_km_kms": [
+        -68547262.27038102,
+        230462476.5425132,
+        6510418.151751354,
+        -22.3067423634229,
+        -4.849166871209153,
+        0.4453309925432525
+      ],
+      "jd_tdb": 2461358.5,
+      "target": "499",
+      "source": "bundled_v1_Horizons",
+      "sha256": "2ab76169493f5cb1c5e266117fe1d9de7f50e2e7be89c7566e32d10090e575df",
+      "gm_km3_s2": 42828.37485735626,
+      "radius_km": 3389.5
+    },
+    "mercury": {
+      "state_km_kms": [
+        -8237101.79498438,
+        45676044.87732964,
+        4488314.679800889,
+        -57.71378672664877,
+        -6.871455715826914,
+        4.731726029173297
+      ],
+      "jd_tdb": 2461358.5,
+      "target": "199",
+      "query": {
+        "format": "json",
+        "COMMAND": "'199'",
+        "OBJ_DATA": "'NO'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'VECTORS'",
+        "CENTER": "'500@10'",
+        "START_TIME": "'2026-11-14'",
+        "STOP_TIME": "'2026-11-15'",
+        "STEP_SIZE": "'1 d'",
+        "OUT_UNITS": "'KM-S'",
+        "REF_PLANE": "'ECLIPTIC'",
+        "REF_SYSTEM": "'ICRF'",
+        "VEC_CORR": "'NONE'",
+        "VEC_TABLE": "'2'",
+        "CSV_FORMAT": "'YES'",
+        "TIME_TYPE": "'TDB'"
+      },
+      "sha256": "823d026c3afd98eec5cd7b73b8f95c9e64068fbcbcc01b7cada62d42213a6658",
+      "source": "NASA/JPL Horizons",
+      "gm_km3_s2": 22031.868551400003,
+      "radius_km": 2439.4
+    },
+    "jupiter": {
+      "state_km_kms": [
+        -559163562.6962488,
+        566451859.3939264,
+        10157508.09678769,
+        -9.458369080612437,
+        -8.57696658609548,
+        0.2472537665322321
+      ],
+      "jd_tdb": 2461358.5,
+      "target": "5",
+      "query": {
+        "format": "json",
+        "COMMAND": "'5'",
+        "OBJ_DATA": "'NO'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'VECTORS'",
+        "CENTER": "'500@10'",
+        "START_TIME": "'2026-11-14'",
+        "STOP_TIME": "'2026-11-15'",
+        "STEP_SIZE": "'1 d'",
+        "OUT_UNITS": "'KM-S'",
+        "REF_PLANE": "'ECLIPTIC'",
+        "REF_SYSTEM": "'ICRF'",
+        "VEC_CORR": "'NONE'",
+        "VEC_TABLE": "'2'",
+        "CSV_FORMAT": "'YES'",
+        "TIME_TYPE": "'TDB'"
+      },
+      "sha256": "ea67bab775b0e4895d867824acd14a3cc834f600a44fcc930eecc6c35c298c96",
+      "source": "NASA/JPL Horizons",
+      "gm_km3_s2": 126712761.8414429,
+      "radius_km": 69911
+    },
+    "saturn": {
+      "state_km_kms": [
+        1375758792.079558,
+        300177530.603725,
+        -59991437.62320044,
+        -2.594301890759996,
+        9.412532736818115,
+        -0.06067825107044378
+      ],
+      "jd_tdb": 2461358.5,
+      "target": "6",
+      "query": {
+        "format": "json",
+        "COMMAND": "'6'",
+        "OBJ_DATA": "'NO'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'VECTORS'",
+        "CENTER": "'500@10'",
+        "START_TIME": "'2026-11-14'",
+        "STOP_TIME": "'2026-11-15'",
+        "STEP_SIZE": "'1 d'",
+        "OUT_UNITS": "'KM-S'",
+        "REF_PLANE": "'ECLIPTIC'",
+        "REF_SYSTEM": "'ICRF'",
+        "VEC_CORR": "'NONE'",
+        "VEC_TABLE": "'2'",
+        "CSV_FORMAT": "'YES'",
+        "TIME_TYPE": "'TDB'"
+      },
+      "sha256": "6587be209b4bb580e34e041df6629b10419fa9c304240b4f69e90ff335eed0fa",
+      "source": "NASA/JPL Horizons",
+      "gm_km3_s2": 37940584.92052428,
+      "radius_km": 58232
+    },
+    "uranus": {
+      "state_km_kms": [
+        1312742738.191634,
+        2593905670.873274,
+        -7387591.981777668,
+        -6.136365081829792,
+        2.75310001551254,
+        0.08982557625595555
+      ],
+      "jd_tdb": 2461358.5,
+      "target": "7",
+      "query": {
+        "format": "json",
+        "COMMAND": "'7'",
+        "OBJ_DATA": "'NO'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'VECTORS'",
+        "CENTER": "'500@10'",
+        "START_TIME": "'2026-11-14'",
+        "STOP_TIME": "'2026-11-15'",
+        "STEP_SIZE": "'1 d'",
+        "OUT_UNITS": "'KM-S'",
+        "REF_PLANE": "'ECLIPTIC'",
+        "REF_SYSTEM": "'ICRF'",
+        "VEC_CORR": "'NONE'",
+        "VEC_TABLE": "'2'",
+        "CSV_FORMAT": "'YES'",
+        "TIME_TYPE": "'TDB'"
+      },
+      "sha256": "b00ad642977f53d8f8f8c3352834f65ee225e6ee6d26d9f5cc20aaf4f1e195d9",
+      "source": "NASA/JPL Horizons",
+      "gm_km3_s2": 5794556.3999999985,
+      "radius_km": 25362
+    },
+    "neptune": {
+      "state_km_kms": [
+        4462462149.915558,
+        227211462.2663019,
+        -107515483.3921088,
+        -0.3214166591784012,
+        5.45552186408016,
+        -0.1050558365678658
+      ],
+      "jd_tdb": 2461358.5,
+      "target": "8",
+      "query": {
+        "format": "json",
+        "COMMAND": "'8'",
+        "OBJ_DATA": "'NO'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'VECTORS'",
+        "CENTER": "'500@10'",
+        "START_TIME": "'2026-11-14'",
+        "STOP_TIME": "'2026-11-15'",
+        "STEP_SIZE": "'1 d'",
+        "OUT_UNITS": "'KM-S'",
+        "REF_PLANE": "'ECLIPTIC'",
+        "REF_SYSTEM": "'ICRF'",
+        "VEC_CORR": "'NONE'",
+        "VEC_TABLE": "'2'",
+        "CSV_FORMAT": "'YES'",
+        "TIME_TYPE": "'TDB'"
+      },
+      "sha256": "eb27f560f979e3b871ea04a9d0c324ffa2923dc267c00e6db1ca18fc2c413c53",
+      "source": "NASA/JPL Horizons",
+      "gm_km3_s2": 6836531.640925204,
+      "radius_km": 24622
+    },
+    "moon": {
+      "state_km_kms": [
+        92748059.88893868,
+        115056207.7348226,
+        -31060.95494651794,
+        -22.78743344071108,
+        18.75018908159175,
+        0.06143824787756902
+      ],
+      "jd_tdb": 2461358.5,
+      "target": "301",
+      "query": {
+        "format": "json",
+        "COMMAND": "'301'",
+        "OBJ_DATA": "'NO'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'VECTORS'",
+        "CENTER": "'500@10'",
+        "START_TIME": "'2026-11-14'",
+        "STOP_TIME": "'2026-11-15'",
+        "STEP_SIZE": "'1 d'",
+        "OUT_UNITS": "'KM-S'",
+        "REF_PLANE": "'ECLIPTIC'",
+        "REF_SYSTEM": "'ICRF'",
+        "VEC_CORR": "'NONE'",
+        "VEC_TABLE": "'2'",
+        "CSV_FORMAT": "'YES'",
+        "TIME_TYPE": "'TDB'"
+      },
+      "sha256": "2279d1e60d2465be7815a3dde73eaab5962acae5aa28139fdde7af622b1e9a5b",
+      "source": "NASA/JPL Horizons",
+      "gm_km3_s2": 4902.80011845755,
+      "radius_km": 1737.4,
+      "radius_source": "https://ssd.jpl.nasa.gov/sats/phys_par/sep.html"
+    },
+    "sun": {
+      "state_km_kms": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target": "10",
+      "jd_tdb": 2461358.5,
+      "source": "heliocentric origin",
+      "gm_km3_s2": 132712440041.27942,
+      "radius_km": 695700,
+      "radius_source": "https://www.iau.org/static/resolutions/IAU2015_English.pdf",
+      "radius_note": "IAU 2015 nominal solar radius; used as spherical surface boundary"
+    }
+  },
+  "gm_source": "https://ssd.jpl.nasa.gov/ftp/xfr/gm_Horizons.pck",
+  "gm_sha256": "169cfed3b0927e73929d0a1b5c931f9afb5167a83b921064127ffc54a673df0c",
+  "radii_source": "https://ssd.jpl.nasa.gov/planets/phys_par.html"
+}

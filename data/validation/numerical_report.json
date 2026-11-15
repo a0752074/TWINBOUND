@@ -1,0 +1,75 @@
+{
+  "coastStepErrorKm": 0.0004607549506870237,
+  "coupled30vs120HzErrorKm": 0.1584271947322701,
+  "fuelDifferenceKg": 1.4459544672718039e-12,
+  "referenceDate": "2026-11-12",
+  "defaults": {
+    "moon": {
+      "closestKm": 8981.90553328632,
+      "encounterDays": 5.0348078187242375,
+      "settings": {
+        "heading": 312.97356492880914,
+        "pitch": 1.3040447134549138,
+        "speed": 3.737452585612003,
+        "launchDate": "2026-11-12",
+        "durationDays": 5,
+        "offsetKm": [
+          26958.654321085112,
+          -42103.25802047353,
+          739.3383918549208
+        ],
+        "baseHeading": 312.97356492880914,
+        "basePitch": 1.3040447134549138,
+        "presetFor": "2026-11-12"
+      }
+    },
+    "mars": {
+      "closestKm": 31704.536888470666,
+      "encounterDays": 280.0065729680325,
+      "settings": {
+        "heading": 119.21225536827802,
+        "pitch": 11.742352124068889,
+        "speed": 3.330186721136937,
+        "launchDate": "2026-11-12",
+        "durationDays": 280,
+        "offsetKm": [
+          -361988.5145666698,
+          650298.3709658883,
+          92608.5527417854
+        ],
+        "baseHeading": 119.21225536827802,
+        "basePitch": 11.742352124068889,
+        "presetFor": "2026-11-12"
+      }
+    },
+    "pluto": {
+      "closestKm": 159965.89864089538,
+      "encounterDays": 6574.494888314606,
+      "settings": {
+        "heading": 240.7166681227291,
+        "pitch": 7.493747264294809,
+        "speed": 36.192168008471945,
+        "launchDate": "2026-11-12",
+        "durationDays": 6574.5,
+        "offsetKm": [
+          -363565.5143570664,
+          -648667.3064884517,
+          97728.41072737766
+        ],
+        "baseHeading": 240.7166681227291,
+        "basePitch": 7.493747264294809,
+        "presetFor": "2026-11-12"
+      }
+    },
+    "proxima": {
+      "closestKm": 0.0024600087649780077,
+      "encounterDays": 2292.6158390637793,
+      "settings": {
+        "heading": 90,
+        "pitch": 0,
+        "speed": 0.8,
+        "launchDate": "2026-11-12"
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101222">
+  <meta name="description" content="TWINBOUND: design a science mission, plan a JPL-based trajectory, and fly a space adventure.">
+  <meta name="ai-assistance" content="Substantial OpenAI ChatGPT / Codex assistance with code, localization, documentation and tests. See docs/AI_USAGE.md.">
+  <title>TWINBOUND · Space Mission Design Game</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/cockpit.css">
+  <link rel="stylesheet" href="src/final.css">
+</head>
+<body>
+<div class="page-stars" aria-hidden="true"></div>
+<main id="app">
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="TWINBOUND Home"><span class="brand-orbit">✦</span><span>TWINBOUND<small>LITTLE EXPEDITION</small></span></a>
+    <div class="top-actions"><button class="text-button" id="sourcesBtn">Data &amp; sources</button><button id="leaderboardBtn" class="text-button leaderboard-entry">Local Leaderboard ↗</button><span class="version">10.3.1</span><button class="text-button" id="albumBtn"><span>▧</span> Collection <b id="albumCount">0</b></button><button class="icon-button" id="soundBtn" aria-label="Enable sound" aria-pressed="false">♫</button><button class="icon-button" id="helpBtn" aria-label="How to play and science notes">?</button></div>
+  </header>
+  <div class="player-strip"><span>PLAYER <b id="playerTag">—</b></span><button class="quiet-button" id="switchPlayerBtn">Switch Player</button><span id="deviceStatus">Records on this device</span></div>
+
+  <section id="hangar" aria-labelledby="pageTitle">
+    <div class="intro-row"><div><p class="eyebrow"><i></i> A LITTLE ROCKET. A BIG ADVENTURE.</p><h1 id="pageTitle">Choose your <span>space adventure</span></h1><p class="intro-sub">Build your mission. Challenge your friends for the top score.</p></div><div class="flight-duration"><b id="playDuration">4–6<span>min</span></b><small>Estimated play time</small></div></div>
+    <div id="levelCards" class="level-cards" role="group" aria-label="Choose destination"></div>
+
+    <div class="planning-grid">
+      <article class="orbit-card">
+        <div class="panel-heading"><div><span class="live-dot"></span><h2>Plan your trajectory</h2><span class="small-tag" id="orbitFrame">3D gravity model</span></div><button class="quiet-button" id="viewBtn" aria-label="Change trajectory projection">Top XY ↗</button></div>
+        <div class="orbit-stage"><canvas id="orbitCanvas" tabindex="0" role="img" aria-label="Trajectory preview. Drag the arrow near Earth to set direction and speed."></canvas><div class="orbit-label"><span>TRAJECTORY LAB</span><small id="orbitModel">NASA/JPL · NEWTONIAN GRAVITY</small></div><div class="orbit-tip" id="orbitTip"><span>↗</span> Drag the arrow, or load a reference transfer.</div><div id="orbitBusy" class="orbit-busy">Calculating trajectory...</div></div>
+        <div class="orbit-legend"><span><i class="legend-ship"></i>Predicted path</span><span><i class="legend-target"></i>Target orbit</span><span>◎ Closest encounter</span><span id="projectionNote">Top projection / checks use 3D distance</span></div>
+        <div class="orbit-metrics" id="orbitMetrics"><div><small>Closest approach</small><strong>Calculating</strong></div><div><small>Encounter time</small><strong>—</strong></div><div><small>Forecast</small><strong>Ready to plan</strong></div></div>
+        <p class="orbit-footnote" id="orbitFootnote">The enlarged icon marks the injection handoff. This is a preflight trajectory preview.</p>
+      </article>
+
+      <aside class="mission-console">
+        <div class="console-title"><span id="missionNumber" class="eyebrow">MISSION 01</span><span class="difficulty" id="missionDifficulty">Beginner</span></div>
+        <h2><span id="missionName">Moon</span><span class="tiny-star">✧</span></h2><p class="mission-description" id="missionDescription"></p>
+        <div class="sliders">
+          <label class="slider-label" for="launchDate">Launch date <span class="date-timescale">00:00 TDB</span></label><input id="launchDate" type="date" min="2025-01-01" max="2030-12-31" aria-label="Launch date">
+          <label class="slider-label" for="heading">Heading <output id="headingOut">51.8°</output></label><input id="heading" type="range" min="0" max="360" step=".1" value="51.8">
+          <label class="slider-label" for="speed"><span id="speedLabel">Injection speed</span> <output id="speedOut">3.77 km/s</output></label><input id="speed" type="range" min="2.6" max="4.8" step=".005" value="3.77">
+          <label class="slider-label" for="pitch">Out-of-plane angle <output id="pitchOut">10.1°</output></label><input id="pitch" type="range" min="-45" max="45" step=".1" value="10.1">
+        </div>
+        <button id="presetBtn" class="preset-button"><span>✧</span> Load reference transfer <small>Start here</small></button>
+        <div class="kit-summary"><div class="kit-top"><span>Mission equipment</span><button id="equipmentBtn" class="quiet-button">Configure mission ↗</button></div><div id="kitPills" class="kit-pills"></div><div class="invoice-summary"><span>Estimated cost <small>Game estimates / USD</small></span><b id="kitPrice"></b></div><div class="multiplier-row"><span>Flight score multiplier</span><strong id="kitMultiplier">×1.48</strong></div></div>
+        <p id="missionBrief" class="mission-brief"></p><details id="missionReadiness" class="mission-readiness"></details><button class="start-button" id="startBtn">Launch expedition <span>↗</span></button><p class="start-note">Fly any trajectory; use the forecast to improve it.</p>
+      </aside>
+    </div>
+    <div class="hangar-bottom"><div class="controls-summary"><span class="key">←</span><span class="key">↑</span><span class="key">→</span> Thrust uses fuel <span class="control-divider"></span><span class="key">↓</span> Coast <span class="control-divider"></span><span class="small-dot mint"></span> Energy crystal <span class="small-dot peach"></span> Fuel crystal</div><div class="log-actions"><button id="recordsBtn" class="quiet-button">My Flights ↗</button></div></div>
+    <p class="science-disclosure">Coasting is time-compressed. Fuel is charged per control second. Pickups and black holes are fictional.<button id="scienceBtn">Physics and sources</button></p>
+  </section>
+
+  <section id="flightScreen" hidden aria-label="Flight game">
+    <div class="flight-top"><div class="flight-mission"><span class="live-dot"></span><span id="flightDestination">MOON / Moon</span><small id="phaseName">Departure lane</small></div><div class="flight-top-right"><button id="modeBtn" class="flight-mode-button" aria-label="Switch between 2D and 3D cockpit" aria-pressed="false" title="Switch view / V">2D VIEW</button><span id="liveMultiplier">×1.48</span><button id="pauseBtn" class="icon-button" aria-label="Pause flight">Ⅱ</button><button id="fullBtn" class="icon-button" aria-label="Toggle fullscreen">⛶</button></div></div>
+    <div class="game-wrap" id="gameWrap">
+      <canvas id="gameCanvas" tabindex="0" aria-label="Arrow keys or WASD to thrust. Down to coast. P or Escape to pause."></canvas>
+      <div class="score-hud"><span>ARCADE SCORE</span><strong id="score">000000</strong><small id="threeDBonus" class="three-d-bonus" hidden></small><div id="comboLabel" class="combo-label" hidden>COMBO ×<b>1</b></div></div>
+      <div class="distance-hud"><span>Distance traveled <small>Physical path</small></span><strong id="mileage">0 km</strong><span id="flightTimer">Flight progress 0%</span></div>
+      <div id="clocks" class="clock-hud" hidden><div><small>Earth time</small><b id="earthClock">0 d</b></div><div><small>Onboard time</small><b id="shipClock">0 d</b></div></div>
+      <div class="navigation-hint" id="navigationHint" hidden><b id="navigationArrow">←</b><span id="navigationHintText">Correct course</span></div>
+      <div class="flight-toast" id="flightToast" role="status" hidden></div>
+      <div class="tutorial-hint" id="tutorialHint"><b>Start by coasting.</b><span>Left/right: dodge / Up: thrust / Down: coast<br>Approach glowing crystals to collect supplies.</span></div>
+      <div class="flight-status"><span class="engine-state" id="engineState"><i></i>Coasting / no fuel use</span><span id="localSpeed">Speed relative to route 0 m/s</span></div>
+      <div class="touch-controls" id="touchControls" aria-label="Touch flight controls"><button data-key="left" aria-label="Thrust left">←</button><div><button data-key="up" aria-label="Thrust forward">↑</button><button data-key="down" aria-label="Coast">↓</button></div><button data-key="right" aria-label="Thrust right">→</button></div>
+      <div id="touch3DControls" class="touch-controls-3d" aria-label="3D flight controls" hidden><button data-key="fall" aria-label="Descend">Q −Z</button><button data-key="up" aria-label="Forward thrust">W ↑</button><button data-key="rise" aria-label="Ascend">E +Z</button><button data-key="left" aria-label="Left thrust">A ←</button><button data-key="reverse" aria-label="Reverse thrust">S ↓</button><button data-key="right" aria-label="Right thrust">D →</button><button data-key="coast" aria-label="Coast" class="coast-control">COAST</button></div><div class="journey-progress"><div id="journeyFill"></div><i id="journeyRocket">✦</i></div>
+    </div>
+    <div class="resource-hud"><div class="resource"><div><span class="resource-icon peach">◈</span> Fuel <b id="fuelValue">220 kg</b></div><div class="bar"><i id="fuelBar" class="peach-bar"></i></div></div><div class="resource"><div><span class="resource-icon mint">ϟ</span> Energy <b id="energyValue">180 Wh</b></div><div class="bar"><i id="energyBar" class="mint-bar"></i></div></div><div class="resource"><div><span class="resource-icon lilac">◇</span> Hull <b id="healthValue">Intact</b></div><div id="healthCells" class="health-cells"></div></div><div class="resource"><div><span class="resource-icon mint">⌁</span> Route stability <b id="stabilityValue">100%</b></div><div class="bar"><i id="stabilityBar" class="mint-bar"></i></div></div></div>
+    <div class="science-hud" id="scienceHud" role="status"></div><div class="flight-caption" id="caption2D"><span><kbd>← ↑ →</kbd> / <kbd>A W D</kbd> Thrust　<kbd>↓ S</kbd> Coast　<kbd>P</kbd> Pause</span><span>No friction brake / momentum remains after release</span></div><div class="flight-caption" id="caption3D" hidden><span><kbd>W S</kbd> forward/reverse · <kbd>A D</kbd> left/right · <kbd>Q E</kbd> descend/ascend · <kbd>Space</kbd> coast · <kbd>V</kbd> view</span><span>3D awards earn an extra 25%</span></div>
+  </section>
+
+  <section id="resultScreen" hidden aria-labelledby="resultTitle"></section>
+  <footer id="footer"><span>TWINBOUND <i>✦</i> LITTLE EXPEDITION</span><span>Mission data and methods · Sources</span></footer>
+</main>
+
+<dialog id="equipmentDialog" class="equipment-dialog"><div class="modal-head"><div><p class="eyebrow">MAKE IT YOURS</p><h2>Build your mission.</h2><p>Compare cost, mass, endurance, and science return.</p></div><button class="icon-button close-dialog" aria-label="Close mission configuration">✕</button></div><div id="missionDesign"></div><div id="tradeEstimate" class="trade-estimate" aria-live="polite"></div><div id="equipmentOptions"></div><div class="bill-box"><div><small>INVOICE / Game estimates; not supplier quotations</small><div id="billLines"></div></div><div class="bill-total"><span>Mission cost</span><b id="billTotal"></b><small>Score multiplier <strong id="billMultiplier"></strong></small></div></div><div class="modal-actions"><span id="equipmentImpact"></span><button class="primary-button" id="saveEquipment">Use this design ↗</button></div></dialog>
+
+<dialog id="helpDialog" class="help-dialog"><div class="modal-head"><div><p class="eyebrow">FLIGHT NOTES</p><h2>Ready for departure.</h2></div><button class="icon-button close-dialog" aria-label="Close help">✕</button></div>
+<div class="help-grid"><article><span>01</span><h3>Design and plan</h3><p>Choose a destination and load a reference transfer. Configure a science objective and check its instrument, launch mass, and budget. Drag the arrow or change the date to compare trajectories.</p></article><article><span>02</span><h3>Thrust, then coast</h3><p>Left, right, and up (A, D, W) use fuel. Down, S, or releasing the keys stops thrust while momentum remains. Counter-thrust can reduce sideways velocity.</p></article><article><span>03</span><h3>Collect and navigate</h3><p>Orange crystals add fuel, green crystals add energy, and repair pickups restore hull cells. Skim a comet's glow and avoid its core. Use short burns and correct course early. A large departure from the route can exceed your remaining correction fuel.</p></article><article><span>04</span><h3>Deliver the mission</h3><p>Science runs automatically near the destination. Instruments use power and storage; the radio sends data to Earth with light-time delay. Reach the destination, then review the flight score and science requirements separately.</p></article></div>
+<p class="flight-tip">Optional 3D cockpit: press V during flight. W/S controls forward/reverse thrust, A/D moves left/right, and Q/E descends/ascends. Space coasts. Only points earned while 3D is active receive the extra 25%; switching views gives no points. The contact radar shows the same obstacles and supplies as 2D; edge arrows mark objects above or below the window.</p><details id="scienceDetails"><summary>Physics, operations, and sources</summary><div class="science-text">
+<p><b>Moon, Mars, and Pluto:</b> sampled NASA/JPL Horizons positions and velocities drive the 11-body Newtonian gravity model. A Dormand–Prince 5(4) adaptive integrator propagates the spacecraft. The live flight starts from the predicted initial state. Pluto and outer planets use system barycenters.</p>
+<p><b>Launch epoch:</b> dates mean 00:00 TDB, not local midnight. Launches are supported from 2025-01-01 through 2030-12-31, with trajectory data through 2051-01-01. No extrapolation. Flight starts at an external injection-service handoff, not at ground liftoff.</p>
+<p><b>Controls and time:</b> the 2D controls produce 3D delta-v using rocket-equation fuel accounting. Active burns use control seconds; the remaining interval is compressed coast time. Displayed relative speed comes from the 3D velocity difference. The local dodge scene uses a separate display scale.</p>
+<p><b>Route stability:</b> position, velocity, future encounter, and remaining correction fuel determine a smoothed risk indicator. Corrections can restore it. Limited navigation assistance also consumes fuel. Arrival means a flyby within a distance tolerance, not orbit insertion or landing.</p>
+<p><b>Science design:</b> objectives require a compatible instrument. Payload and radio mass change acceleration and delta-v; their power load drains the existing battery. Full storage drops observations. The link rate uses inverse-square distance and a cap; solar occultation blocks the link. Distance and light time use the live JPL-based state.</p>
+<p><b>Operations time:</b> observation and data rates use control seconds, like the original battery economy. Signal delay uses physical TDB days. This mixed-time model is educational; it is not an end-to-end engineering link budget. Equipment, prices, capacities, and rates are game estimates. Ground access is continuous except solar occultation.</p>
+<p><b>Proxima Centauri:</b> an ideal external drive accelerates at 1g up to 0.8c and later decelerates. Earth and onboard clocks use special relativity. The local dodge state is separate from the relativistic drive. Science completion uses an onboard archive; Earth delivery is reported separately. This route does not use a measured Proxima trajectory.</p>
+<p><b>Fictional encounters:</b> random rocks, rapid resource collection, repairs, and black holes are game mechanics. Fixed power generation preserves the original game economy and does not model sunlight or years of energy autonomy. Archived NASA and partner images are collection rewards, not new photographs taken by the player.</p>
+<p class="source-links"><button type="button" data-open-sources>Open NASA data and resource trace ↗</button></p>
+</div></details><div class="help-footer">Progress follows the physical trajectory. Pause and inactive tabs stop the game. A depleted battery or destroyed hull ends the flight. Empty fuel still allows coasting.</div></dialog>
+
+<dialog id="albumDialog" class="album-dialog"><div class="modal-head"><div><p class="eyebrow">POSTCARDS FROM SPACE</p><h2>Postcards from space.</h2><p>Reach a destination to unlock an archived observation.</p></div><button class="icon-button close-dialog" aria-label="Close collection">✕</button></div><div id="albumGrid" class="album-grid"></div><p class="dialog-fine">Progress is stored in this browser. Postcards are archived observations, not images taken by the player.</p></dialog>
+<dialog id="recordsDialog" class="records-dialog community-dialog"><div class="modal-head"><div><p class="eyebrow">FLIGHT CLUB</p><h2 id="boardTitle">Local Leaderboard</h2></div><button class="icon-button close-dialog" aria-label="Close leaderboard">✕</button></div><p id="boardHint" class="mission-explainer">Compete with players on this device.</p><div class="board-actions"><button class="secondary-button" id="localBoardBtn">Local Leaderboard</button><button class="quiet-button" id="myFlightsBtn">My Flights</button><button class="quiet-button" id="legacyFlightsBtn">Legacy History</button><button class="quiet-button" id="boardRefreshBtn">Refresh ↻</button></div><div id="boardTabs" class="board-tabs" role="group" aria-label="Leaderboard destination"></div><p id="boardStatus" class="mission-explainer" role="status"></p><div id="ownBest"></div><div id="recordList"></div><div id="boardPagination" class="board-pagination"><button class="quiet-button" id="boardPrevBtn">← Previous 50</button><button class="quiet-button" id="boardNextBtn">Next 50 →</button></div></dialog>
+<dialog id="flightReportDialog" class="community-dialog report-dialog"><div class="modal-head"><div><p class="eyebrow">MISSION ARCHIVE</p><h2>Flight Report</h2></div><button class="icon-button close-dialog" aria-label="Close flight report">✕</button></div><div id="flightReportContent"></div></dialog>
+<dialog id="playerDialog" class="player-dialog" aria-labelledby="welcomeTitle"><div class="welcome-orbit" aria-hidden="true">✦</div><p class="eyebrow">WELCOME TO TWINBOUND</p><h2 id="welcomeTitle">Ready to explore?</h2><form id="playerForm"><label for="playerInput">Enter your Player ID</label><input id="playerInput" name="playerId" type="text" minlength="2" maxlength="20" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Your Player ID" required aria-describedby="playerNote playerError"><p id="playerError" class="player-error" role="alert"></p><button class="primary-button" type="submit">Start Exploring ↗</button></form><p id="playerNote" class="dialog-fine">A public play name, with no password. Anyone using the same ID can play as that name.</p></dialog>
+<dialog id="pauseDialog" class="pause-dialog"><div class="pause-planet">☾</div><p class="eyebrow">TAKE A LITTLE BREATH</p><h2>Flight paused.</h2><p>Time, fuel use, and energy use are paused.</p><button class="primary-button" id="resumeBtn">Resume flight ↗</button><button class="text-button" id="quitBtn">End flight and keep the score</button></dialog>
+<dialog id="sourcesDialog" class="sources-dialog"><div class="modal-head"><div><p class="eyebrow">DATA &amp; DESIGN REFERENCES</p><h2>NASA resources in this game</h2></div><button class="icon-button close-dialog" aria-label="Close sources">✕</button></div><div id="sourcesContent">Loading resource trace...</div></dialog>
+<div class="global-toast" id="globalToast" role="status" hidden></div>
+<script type="module" src="src/app.js"></script>
+<noscript>Enable JavaScript and start the game with start_windows.bat or python run.py.</noscript>
+</body>
+</html>

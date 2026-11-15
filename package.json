@@ -1,0 +1,21 @@
+{
+  "name": "twinbound-little-expedition",
+  "version": "10.3.1",
+  "private": true,
+  "type": "module",
+  "description": "TWINBOUND: GitHub Pages, local multiplayer records and the full 2D/3D space mission game.",
+  "scripts": {
+    "dev": "python3 run.py --no-browser --port 3000",
+    "test": "node --test tests/*.test.js",
+    "verify": "python3 tools/verify_release.py",
+    "evidence": "node tools/research.mjs generate",
+    "gmat:prepare": "node tools/gmat.mjs prepare",
+    "test:api": "python3 -m unittest discover -s tests -p test_server.py -v",
+    "rules:check": "node tools/export_score_rules.mjs --check",
+    "test:browser": "node tools/test_browser.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "ai_assistance": "OpenAI ChatGPT / Codex; docs/AI_USAGE.md"
+}

@@ -1,0 +1,140 @@
+{
+  "release": "v10.0.0 tangent/physics correction",
+  "launchDate": "2026-11-13",
+  "units": {
+    "position": "km",
+    "velocity": "km/s",
+    "coastError": "metres"
+  },
+  "missions": [
+    {
+      "id": "moon",
+      "frame": "earth",
+      "settings": {
+        "heading": 325.08706967228215,
+        "pitch": 2.4031077710547524,
+        "speed": 3.7345414284575376,
+        "launchDate": "2026-11-13",
+        "durationDays": 5,
+        "offsetKm": [
+          35224.67424007798,
+          -35445.32149648592,
+          1688.641078246206
+        ],
+        "baseHeading": 325.08706967228215,
+        "basePitch": 2.4031077710547524,
+        "presetFor": "2026-11-13"
+      },
+      "initialBarycentricState": [
+        0.6322207933993098,
+        0.75565619138155,
+        0.00005183272994858637,
+        -0.011739491981709198,
+        0.009707240446985562,
+        0.00008934666685185781
+      ],
+      "initialDisplayVelocity": [
+        3.0597156626697584,
+        -2.1355139212180307,
+        0.15658875043569642
+      ],
+      "earthToDisplayVelocity": [
+        0,
+        0,
+        0
+      ],
+      "closestKm": 8990.949958581132,
+      "good": true,
+      "initialStateMatchesLive": true,
+      "coastSimulatedDays": 1.0068652287054647,
+      "coastPositionDifferenceMetres": 0.07575540745391332,
+      "maxDisplayCubicErrorKm": 3.3613609268546544e-7
+    },
+    {
+      "id": "mars",
+      "frame": "sun",
+      "settings": {
+        "heading": 118.39768096871603,
+        "pitch": 16.383660609666496,
+        "speed": 3.41493662408157,
+        "launchDate": "2026-11-13",
+        "durationDays": 280,
+        "offsetKm": [
+          -353215.89264321385,
+          656048.4160305181,
+          85668.01624939096
+        ],
+        "baseHeading": 118.39768096871603,
+        "basePitch": 16.383660609666496,
+        "presetFor": "2026-11-13"
+      },
+      "initialBarycentricState": [
+        0.6296242285881551,
+        0.7602785415145523,
+        0.0006132001797537711,
+        -0.014406536773018421,
+        0.012605114777434525,
+        0.0005552290028219101
+      ],
+      "initialDisplayVelocity": [
+        -24.954514367999003,
+        21.820229953367157,
+        0.9615780907569133
+      ],
+      "earthToDisplayVelocity": [
+        -23.39635709268976,
+        18.938199552926008,
+        -0.001665815441072898
+      ],
+      "closestKm": 31836.450720910794,
+      "good": true,
+      "initialStateMatchesLive": true,
+      "coastSimulatedDays": 37.335321097880296,
+      "coastPositionDifferenceMetres": 2.3088785298599985,
+      "maxDisplayCubicErrorKm": 0.0002380424879595055
+    },
+    {
+      "id": "pluto",
+      "frame": "sun",
+      "settings": {
+        "heading": 241.37015509707217,
+        "pitch": 7.597549031902921,
+        "speed": 35.985790175601394,
+        "launchDate": "2026-11-13",
+        "durationDays": 6574.5,
+        "offsetKm": [
+          -356057.64600418473,
+          -652615.6549165902,
+          99074.51579366211
+        ],
+        "baseHeading": 241.37015509707217,
+        "basePitch": 7.597549031902921,
+        "presetFor": "2026-11-13"
+      },
+      "initialBarycentricState": [
+        0.6296052326402337,
+        0.7515306625185239,
+        0.0007028170939621036,
+        -0.02337761436969925,
+        -0.0071416538909235185,
+        0.002746782878019504
+      ],
+      "initialDisplayVelocity": [
+        -40.487548006285174,
+        -12.370447662279112,
+        4.756159031195496
+      ],
+      "earthToDisplayVelocity": [
+        -23.39635709268976,
+        18.938199552926008,
+        -0.001665815441072898
+      ],
+      "closestKm": 159966.05841539055,
+      "good": true,
+      "initialStateMatchesLive": true,
+      "coastSimulatedDays": 657.4494897195634,
+      "coastPositionDifferenceMetres": 0.7646121855857106,
+      "maxDisplayCubicErrorKm": 108.4588619975726
+    }
+  ]
+}

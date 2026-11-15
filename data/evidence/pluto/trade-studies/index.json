@@ -1,0 +1,165 @@
+{
+  "schema": "twinbound-trade-index-v1",
+  "alternatives": [
+    {
+      "id": "pluto-imaging-camera-compact-dedicated-expanded",
+      "selection": {
+        "level": "pluto",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "camera",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1898.5732589213417,
+      "endEnergyWh": 249.80833333334567,
+      "receivedMB": 0.2126502359830489
+    },
+    {
+      "id": "pluto-imaging-camera-dish-dedicated-expanded",
+      "selection": {
+        "level": "pluto",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "camera",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": true,
+      "deltaVMS": 1858.3473295381516,
+      "endEnergyWh": 240.8958333333485,
+      "receivedMB": 3.189753539745733
+    },
+    {
+      "id": "pluto-imaging-spectrometer-compact-dedicated-expanded",
+      "selection": {
+        "level": "pluto",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "spectrometer",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1845.3210909709865,
+      "endEnergyWh": 238.57083333332537,
+      "receivedMB": 0.2126502359830489
+    },
+    {
+      "id": "pluto-imaging-spectrometer-dish-dedicated-expanded",
+      "selection": {
+        "level": "pluto",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "spectrometer",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1807.332663463366,
+      "endEnergyWh": 229.65833333333055,
+      "receivedMB": 3.189753539745733
+    },
+    {
+      "id": "pluto-imaging-magnetometer-compact-dedicated-expanded",
+      "selection": {
+        "level": "pluto",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "magnetometer",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1912.3786886311084,
+      "endEnergyWh": 252.13333333331354,
+      "receivedMB": 0.2126502359830489
+    },
+    {
+      "id": "pluto-imaging-magnetometer-dish-dedicated-expanded",
+      "selection": {
+        "level": "pluto",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "magnetometer",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1871.5619584605306,
+      "endEnergyWh": 243.2208333333197,
+      "receivedMB": 3.189753539745733
+    },
+    {
+      "id": "pluto-imaging-clock-compact-dedicated-expanded",
+      "selection": {
+        "level": "pluto",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "clock",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1919.3583303978066,
+      "endEnergyWh": 252.9083333333626,
+      "receivedMB": 0.2126502359830489
+    },
+    {
+      "id": "pluto-imaging-clock-dish-dedicated-expanded",
+      "selection": {
+        "level": "pluto",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "imaging",
+        "instrument": "clock",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1878.2412225700657,
+      "endEnergyWh": 243.99583333336204,
+      "receivedMB": 3.189753539745733
+    }
+  ]
+}

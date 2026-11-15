@@ -1,0 +1,80 @@
+test_all_real_records_and_cross_language_scoring (test_server.SharedFlightsTest.test_all_real_records_and_cross_language_scoring) ... 127.0.0.1 - - [15/Nov/2026 01:59:05] "POST /api/flights HTTP/1.1" 201 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "GET /api/flights/2bd69880-ee02-4bbd-a21d-dd79ecab5b76 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "POST /api/flights HTTP/1.1" 201 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "GET /api/flights/f022e823-2784-41a0-a852-6eccc88e1390 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "POST /api/flights HTTP/1.1" 201 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "GET /api/flights/876c9c2e-5088-42f0-be6d-b763a0e31080 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "POST /api/flights HTTP/1.1" 201 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "GET /api/flights/11e9bc27-8761-40ed-8f8e-f7e2535cc976 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "POST /api/flights HTTP/1.1" 201 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "GET /api/flights/ec5bee74-9ac3-4a92-a329-2ece73135fdd HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "POST /api/flights HTTP/1.1" 201 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "GET /api/flights/9c88928a-7563-4331-ab4f-e4453fe4f07c HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:05] "GET /api/players/alice/flights HTTP/1.1" 200 -
+ok
+test_best_per_player_ties_details_and_independent_clients (test_server.SharedFlightsTest.test_best_per_player_ties_details_and_independent_clients) ... 127.0.0.1 - - [15/Nov/2026 01:59:06] "POST /api/flights HTTP/1.1" 201 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "POST /api/flights HTTP/1.1" 201 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "POST /api/flights HTTP/1.1" 201 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "GET /api/leaderboard?level=moon&playerId=alice HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "GET /api/leaderboard?level=moon&playerId=bob HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "GET /api/flights/00536da6-b27a-4c06-817d-3f03071bee3b HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "GET /api/leaderboard?level=mars HTTP/1.1" 200 -
+ok
+test_cors_size_json_pagination_and_static_service (test_server.SharedFlightsTest.test_cors_size_json_pagination_and_static_service) ... 127.0.0.1 - - [15/Nov/2026 01:59:06] "GET /api/health HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "POST /api/players HTTP/1.1" 403 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "OPTIONS /api/players HTTP/1.1" 204 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "POST /api/players HTTP/1.1" 413 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "POST /api/players HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "GET /api/leaderboard?limit=500 HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "GET /api/players/alice/flights?offset=-1 HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] code 404, message Not Found
+127.0.0.1 - - [15/Nov/2026 01:59:06] "GET /.gitignore HTTP/1.1" 404 -
+127.0.0.1 - - [15/Nov/2026 01:59:06] code 403, message Directory listing is disabled.
+127.0.0.1 - - [15/Nov/2026 01:59:06] "GET /data/ HTTP/1.1" 403 -
+ok
+test_immutable_idempotent_submission_under_concurrency (test_server.SharedFlightsTest.test_immutable_idempotent_submission_under_concurrency) ... 127.0.0.1 - - [15/Nov/2026 01:59:07] "POST /api/flights HTTP/1.1" 201 -
+127.0.0.1 - - [15/Nov/2026 01:59:07] "POST /api/flights HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:07] "POST /api/flights HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:07] "POST /api/flights HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:07] "POST /api/flights HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:07] "POST /api/flights HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:07] "POST /api/flights HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:07] "POST /api/flights HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:07] "POST /api/flights HTTP/1.1" 409 -
+127.0.0.1 - - [15/Nov/2026 01:59:07] "GET /api/players/alice/flights HTTP/1.1" 200 -
+ok
+test_paginated_history_and_large_best_query (test_server.SharedFlightsTest.test_paginated_history_and_large_best_query) ... 127.0.0.1 - - [15/Nov/2026 01:59:08] "GET /api/leaderboard?level=moon&offset=50&limit=50 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:08] "GET /api/players/history/flights?offset=50&limit=50 HTTP/1.1" 200 -
+ok
+test_player_normalization_and_invalid_ids (test_server.SharedFlightsTest.test_player_normalization_and_invalid_ids) ... 127.0.0.1 - - [15/Nov/2026 01:59:08] "POST /api/players HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:08] "POST /api/players HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:08] "POST /api/players HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:08] "POST /api/players HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:08] "POST /api/players HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:08] "POST /api/players HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:08] "POST /api/players HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:08] "POST /api/players HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:08] "POST /api/players HTTP/1.1" 400 -
+ok
+test_request_limit (test_server.SharedFlightsTest.test_request_limit) ... ok
+test_restart_retains_records (test_server.SharedFlightsTest.test_restart_retains_records) ... 127.0.0.1 - - [15/Nov/2026 01:59:09] "POST /api/flights HTTP/1.1" 201 -
+127.0.0.1 - - [15/Nov/2026 01:59:10] "GET /api/flights/379957cc-e6bd-4d43-8c85-2ec2924f1844 HTTP/1.1" 200 -
+127.0.0.1 - - [15/Nov/2026 01:59:10] "GET /api/leaderboard?level=moon HTTP/1.1" 200 -
+ok
+test_score_tampering_negative_nonfinite_and_legacy_rejected (test_server.SharedFlightsTest.test_score_tampering_negative_nonfinite_and_legacy_rejected) ... 127.0.0.1 - - [15/Nov/2026 01:59:10] "POST /api/flights HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:10] "POST /api/flights HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:10] "POST /api/flights HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:10] "POST /api/flights HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:10] "POST /api/flights HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:10] "POST /api/flights HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:10] "POST /api/flights HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:10] "POST /api/flights HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:10] "POST /api/flights HTTP/1.1" 400 -
+127.0.0.1 - - [15/Nov/2026 01:59:10] "POST /api/flights HTTP/1.1" 400 -
+ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 15.656s
+
+OK

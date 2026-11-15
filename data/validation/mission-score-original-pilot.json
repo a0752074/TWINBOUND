@@ -1,0 +1,588 @@
+{
+  "date": "2026-11-14T17:17:16.190Z",
+  "baseline": "Unchanged v10.2 arcade formula; v10.3 observation telemetry and 3D visibility correction do not affect these 2D runs",
+  "launchDate": "2026-11-14",
+  "controller": "tools/balance_sweep.js",
+  "stepSeconds": 0.03333333333333333,
+  "seeds": [
+    12,
+    77,
+    429
+  ],
+  "modes": [
+    "2d"
+  ],
+  "assumptions": "A deterministic smoke pilot is a repeatable balancing sample, not a human difficulty or fairness guarantee.",
+  "records": [
+    {
+      "level": "moon",
+      "seed": 12,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 9964,
+      "seconds": 170.0666666666596,
+      "collected": 10,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 77,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 13345,
+      "seconds": 201.93333333332444,
+      "collected": 10,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 429,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 10169,
+      "seconds": 186.26666666665867,
+      "collected": 7,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 12,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "arrived",
+      "arcadeScore": 17028,
+      "seconds": 281.4333333333416,
+      "collected": 17,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 77,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "arrived",
+      "arcadeScore": 17930,
+      "seconds": 281.70000000000846,
+      "collected": 14,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 429,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "arrived",
+      "arcadeScore": 15680,
+      "seconds": 282.0666666666754,
+      "collected": 9,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 12,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "arcadeScore": 11788,
+      "seconds": 281.4333333333416,
+      "collected": 17,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 77,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "arcadeScore": 11025,
+      "seconds": 281.6666666666751,
+      "collected": 12,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "moon",
+      "seed": 429,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "arcadeScore": 9600,
+      "seconds": 281.7333333333418,
+      "collected": 8,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 12,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 9529,
+      "seconds": 135.26666666666156,
+      "collected": 3,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "mars",
+      "seed": 77,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 19759,
+      "seconds": 213.69999999999044,
+      "collected": 11,
+      "hits": 1,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 429,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 6014,
+      "seconds": 93.09999999999728,
+      "collected": 3,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "mars",
+      "seed": 12,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "arcadeScore": 17895,
+      "seconds": 219.73333333332343,
+      "collected": 9,
+      "hits": 3,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 77,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "arcadeScore": 16806,
+      "seconds": 240.66666666665557,
+      "collected": 10,
+      "hits": 3,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 429,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "arcadeScore": 33421,
+      "seconds": 388.8666666667604,
+      "collected": 17,
+      "hits": 4,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 12,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "arcadeScore": 28669,
+      "seconds": 449.1000000001417,
+      "collected": 15,
+      "hits": 4,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 77,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "failed",
+      "arcadeScore": 17098,
+      "seconds": 303.63333333335925,
+      "collected": 10,
+      "hits": 5,
+      "sciencePercent": 100
+    },
+    {
+      "level": "mars",
+      "seed": 429,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "arrived",
+      "arcadeScore": 29845,
+      "seconds": 449.6666666668088,
+      "collected": 17,
+      "hits": 5,
+      "sciencePercent": 100
+    },
+    {
+      "level": "pluto",
+      "seed": 12,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 15807,
+      "seconds": 117.99999999999586,
+      "collected": 6,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "pluto",
+      "seed": 77,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 16261,
+      "seconds": 118.63333333332916,
+      "collected": 9,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "pluto",
+      "seed": 429,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 41431,
+      "seconds": 257.86666666665616,
+      "collected": 16,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "pluto",
+      "seed": 12,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "arcadeScore": 56352,
+      "seconds": 394.96666666676526,
+      "collected": 22,
+      "hits": 6,
+      "sciencePercent": 57.734097873765336
+    },
+    {
+      "level": "pluto",
+      "seed": 77,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "arcadeScore": 16541,
+      "seconds": 150.6666666666607,
+      "collected": 7,
+      "hits": 3,
+      "sciencePercent": 0
+    },
+    {
+      "level": "pluto",
+      "seed": 429,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "arcadeScore": 33842,
+      "seconds": 296.6000000000203,
+      "collected": 13,
+      "hits": 3,
+      "sciencePercent": 0
+    },
+    {
+      "level": "pluto",
+      "seed": 12,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "failed",
+      "arcadeScore": 36143,
+      "seconds": 396.23333333343294,
+      "collected": 17,
+      "hits": 6,
+      "sciencePercent": 58.45447623487704
+    },
+    {
+      "level": "pluto",
+      "seed": 77,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "failed",
+      "arcadeScore": 21570,
+      "seconds": 240.1666666666556,
+      "collected": 15,
+      "hits": 6,
+      "sciencePercent": 0
+    },
+    {
+      "level": "pluto",
+      "seed": 429,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "failed",
+      "arcadeScore": 40635,
+      "seconds": 455.93333333348045,
+      "collected": 17,
+      "hits": 5,
+      "sciencePercent": 94.43311098406384
+    },
+    {
+      "level": "proxima",
+      "seed": 12,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 12231,
+      "seconds": 100.36666666666353,
+      "collected": 3,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "proxima",
+      "seed": 77,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 12636,
+      "seconds": 101.39999999999681,
+      "collected": 5,
+      "hits": 1,
+      "sciencePercent": 0
+    },
+    {
+      "level": "proxima",
+      "seed": 429,
+      "kit": {
+        "engine": 0,
+        "hull": 0,
+        "power": 0
+      },
+      "status": "failed",
+      "arcadeScore": 43585,
+      "seconds": 196.8999999999914,
+      "collected": 12,
+      "hits": 1,
+      "sciencePercent": 61.00000000000003
+    },
+    {
+      "level": "proxima",
+      "seed": 12,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "arcadeScore": 23787,
+      "seconds": 193.66666666665824,
+      "collected": 4,
+      "hits": 3,
+      "sciencePercent": 44.833333333333215
+    },
+    {
+      "level": "proxima",
+      "seed": 77,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "arcadeScore": 69842,
+      "seconds": 372.6000000000808,
+      "collected": 18,
+      "hits": 3,
+      "sciencePercent": 100
+    },
+    {
+      "level": "proxima",
+      "seed": 429,
+      "kit": {
+        "engine": 1,
+        "hull": 1,
+        "power": 1
+      },
+      "status": "failed",
+      "arcadeScore": 37985,
+      "seconds": 242.23333333332215,
+      "collected": 12,
+      "hits": 3,
+      "sciencePercent": 100
+    },
+    {
+      "level": "proxima",
+      "seed": 12,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "failed",
+      "arcadeScore": 23882,
+      "seconds": 255.29999999998807,
+      "collected": 8,
+      "hits": 7,
+      "sciencePercent": 100
+    },
+    {
+      "level": "proxima",
+      "seed": 77,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "failed",
+      "arcadeScore": 51874,
+      "seconds": 477.60000000016436,
+      "collected": 17,
+      "hits": 5,
+      "sciencePercent": 100
+    },
+    {
+      "level": "proxima",
+      "seed": 429,
+      "kit": {
+        "engine": 2,
+        "hull": 2,
+        "power": 2
+      },
+      "status": "failed",
+      "arcadeScore": 35232,
+      "seconds": 310.60000000003146,
+      "collected": 12,
+      "hits": 6,
+      "sciencePercent": 100
+    }
+  ],
+  "levels": {
+    "moon": {
+      "samples": 9,
+      "arrivals": 6,
+      "failures": 3,
+      "medianSuccessfulArcade": 13734,
+      "suggestedBonusCap": 8240
+    },
+    "mars": {
+      "samples": 9,
+      "arrivals": 2,
+      "failures": 7,
+      "medianSuccessfulArcade": 29257,
+      "suggestedBonusCap": 17554
+    },
+    "pluto": {
+      "samples": 9,
+      "arrivals": 0,
+      "failures": 9,
+      "medianSuccessfulArcade": null,
+      "suggestedBonusCap": null
+    },
+    "proxima": {
+      "samples": 9,
+      "arrivals": 0,
+      "failures": 9,
+      "medianSuccessfulArcade": null,
+      "suggestedBonusCap": null
+    }
+  }
+}

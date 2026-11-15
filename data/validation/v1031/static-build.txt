@@ -1,0 +1,2 @@
+Complete static game built at /workspace/scratch/f0a51890aeb3/TWINBOUND_v10.3.1/dist
+Player profiles and flight records are saved in each browser.

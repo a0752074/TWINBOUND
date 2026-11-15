@@ -1,0 +1,375 @@
+{
+  "note": "Explicit player-controlled launch handoff states; references are only optional examples, never hidden navigation.",
+  "levels": {
+    "orbit": {
+      "id": "orbit",
+      "name": "Earth orbit",
+      "subtitle": "Practice circularizing an orbit",
+      "target": "earth",
+      "view": "earth",
+      "goal": "Stay between 10,000 and 16,000 km geocentric distance for six hours.",
+      "duration_days": 0.25,
+      "start_offset_km": [
+        12000,
+        0,
+        0
+      ],
+      "departure_day": 0,
+      "reference": {
+        "launch_heading_deg": 90,
+        "launch_speed_kms": 5.763393354519251,
+        "launch_pitch_deg": 0,
+        "burn_enabled": false,
+        "burn_day": 0.06,
+        "burn_heading_deg": 90,
+        "burn_pitch_deg": 0,
+        "burn_dv_kms": 0.2,
+        "parts": {
+          "hull": "alli2195",
+          "engine": "oms",
+          "tank": "ti_tank",
+          "power": "multijunction",
+          "battery": "liion",
+          "cabin": "water",
+          "thermal": "heatpipe",
+          "navigation": "star_imu",
+          "comms": "xband",
+          "instrument": "wide_camera"
+        },
+        "fuel_kg": 12000,
+        "supplies_kg": 1200,
+        "launch_class": "standard"
+      },
+      "ranges": {
+        "speed": [
+          3,
+          8.5,
+          0.01
+        ],
+        "wait": [
+          0,
+          3,
+          0.1
+        ],
+        "duration": [
+          0.25,
+          0.25,
+          0.01
+        ],
+        "burn": [
+          0,
+          0.23,
+          0.005
+        ]
+      },
+      "precision_km": 0,
+      "color": "#92c5b3",
+      "defaults": {
+        "launch_heading_deg": 90,
+        "launch_speed_kms": 5.2,
+        "launch_pitch_deg": 0,
+        "burn_enabled": false,
+        "burn_day": 0.06,
+        "burn_heading_deg": 90,
+        "burn_pitch_deg": 0,
+        "burn_dv_kms": 0.2
+      }
+    },
+    "moon": {
+      "id": "moon",
+      "name": "Lunar snapshot",
+      "subtitle": "Aim for the moving Moon",
+      "target": "moon",
+      "view": "earth",
+      "goal": "Fly past the target and return at least one valid observation to Earth. No return flight is required.",
+      "duration_days": 14,
+      "start_offset_km": [
+        31024.857881820677,
+        38272.978244934086,
+        8522.753643913371
+      ],
+      "departure_day": 0.0,
+      "reference": {
+        "launch_heading_deg": 51.78670010044817,
+        "launch_speed_kms": 3.7708823643311233,
+        "launch_pitch_deg": 10.076562754690135,
+        "burn_enabled": false,
+        "burn_day": 7.0,
+        "burn_heading_deg": 36.5334189588917,
+        "burn_pitch_deg": 20.12385686679651,
+        "burn_dv_kms": 1.4643509588757728,
+        "parts": {
+          "hull": "alli2195",
+          "engine": "oms",
+          "tank": "ti_tank",
+          "power": "multijunction",
+          "battery": "liion",
+          "cabin": "water",
+          "thermal": "heatpipe",
+          "navigation": "star_imu",
+          "comms": "xband",
+          "instrument": "wide_camera"
+        },
+        "fuel_kg": 12000,
+        "supplies_kg": 1200,
+        "launch_class": "standard"
+      },
+      "ranges": {
+        "speed": [
+          2.6,
+          4.8,
+          0.005
+        ],
+        "wait": [
+          0,
+          27,
+          0.1
+        ],
+        "duration": [
+          12,
+          24,
+          0.5
+        ],
+        "burn": [
+          0.1,
+          12,
+          0.1
+        ]
+      },
+      "precision_km": 60000,
+      "color": "#c8cadd",
+      "defaults": {
+        "launch_heading_deg": 56.78670010044817,
+        "launch_speed_kms": 3.7008823643311235,
+        "launch_pitch_deg": 10.076562754690135,
+        "burn_enabled": false,
+        "burn_day": 7.0,
+        "burn_heading_deg": 36.5334189588917,
+        "burn_pitch_deg": 20.12385686679651,
+        "burn_dv_kms": 1.4643509588757728
+      }
+    },
+    "mars": {
+      "id": "mars",
+      "name": "Mars postcard",
+      "subtitle": "Depart with the velocity of Earth",
+      "target": "mars",
+      "view": "sun",
+      "goal": "Fly past the target and return at least one valid observation to Earth. No return flight is required.",
+      "duration_days": 150,
+      "start_offset_km": [
+        -732622.5546630707,
+        153838.7363042145,
+        45802.135444603045
+      ],
+      "departure_day": 796.286140684655,
+      "reference": {
+        "launch_heading_deg": 168.86240955271947,
+        "launch_speed_kms": 5.960737471425201,
+        "launch_pitch_deg": 3.5952872604908213,
+        "burn_enabled": false,
+        "burn_day": 75.0,
+        "burn_heading_deg": 0,
+        "burn_pitch_deg": 0,
+        "burn_dv_kms": 0.2,
+        "parts": {
+          "hull": "alli2195",
+          "engine": "oms",
+          "tank": "ti_tank",
+          "power": "multijunction",
+          "battery": "liion",
+          "cabin": "water",
+          "thermal": "heatpipe",
+          "navigation": "star_imu",
+          "comms": "xband",
+          "instrument": "wide_camera"
+        },
+        "fuel_kg": 12000,
+        "supplies_kg": 1200,
+        "launch_class": "standard"
+      },
+      "ranges": {
+        "speed": [
+          4,
+          8,
+          0.01
+        ],
+        "wait": [
+          -70,
+          70,
+          0.5
+        ],
+        "duration": [
+          130,
+          220,
+          1
+        ],
+        "burn": [
+          1,
+          148,
+          1
+        ]
+      },
+      "precision_km": 500000,
+      "color": "#e6a28c",
+      "defaults": {
+        "launch_heading_deg": 171.86240955271947,
+        "launch_speed_kms": 5.750737471425201,
+        "launch_pitch_deg": 3.5952872604908213,
+        "burn_enabled": false,
+        "burn_day": 75.0,
+        "burn_heading_deg": 0,
+        "burn_pitch_deg": 0,
+        "burn_dv_kms": 0.2
+      }
+    },
+    "venus": {
+      "id": "venus",
+      "name": "Venus gravity assist",
+      "subtitle": "See how gravity bends a trajectory",
+      "target": "venus",
+      "view": "sun",
+      "goal": "Fly past the target and return at least one valid observation to Earth. No return flight is required.",
+      "duration_days": 260,
+      "start_offset_km": [
+        -744918.8191518249,
+        -87077.2944948349,
+        -3673.915744164871
+      ],
+      "departure_day": 878.4969256787641,
+      "reference": {
+        "launch_heading_deg": 185.5416923417858,
+        "launch_speed_kms": 6.859662076531481,
+        "launch_pitch_deg": -0.3358690302057269,
+        "burn_enabled": false,
+        "burn_day": 130.0,
+        "burn_heading_deg": 0,
+        "burn_pitch_deg": 0,
+        "burn_dv_kms": 0.2,
+        "parts": {
+          "hull": "alli2195",
+          "engine": "oms",
+          "tank": "ti_tank",
+          "power": "multijunction",
+          "battery": "liion",
+          "cabin": "water",
+          "thermal": "heatpipe",
+          "navigation": "star_imu",
+          "comms": "xband",
+          "instrument": "wide_camera"
+        },
+        "fuel_kg": 12000,
+        "supplies_kg": 1200,
+        "launch_class": "standard"
+      },
+      "ranges": {
+        "speed": [
+          4,
+          8,
+          0.01
+        ],
+        "wait": [
+          -70,
+          70,
+          0.5
+        ],
+        "duration": [
+          255,
+          310,
+          1
+        ],
+        "burn": [
+          1,
+          258,
+          1
+        ]
+      },
+      "precision_km": 500000,
+      "color": "#dfc18e",
+      "defaults": {
+        "launch_heading_deg": 183.5416923417858,
+        "launch_speed_kms": 6.639662076531481,
+        "launch_pitch_deg": -0.3358690302057269,
+        "burn_enabled": false,
+        "burn_day": 130.0,
+        "burn_heading_deg": 0,
+        "burn_pitch_deg": 0,
+        "burn_dv_kms": 0.2
+      }
+    },
+    "return": {
+      "id": "return",
+      "name": "Observe and return",
+      "subtitle": "Bring the spacecraft and data home",
+      "target": "moon",
+      "view": "earth",
+      "goal": "Approach the Moon, return observations, and enter the Earth recovery region. More burns are not always better.",
+      "duration_days": 22,
+      "start_offset_km": [
+        31024.857881820677,
+        38272.978244934086,
+        8522.753643913371
+      ],
+      "departure_day": 0.0,
+      "reference": {
+        "launch_heading_deg": 51.78670010044817,
+        "launch_speed_kms": 3.7708823643311233,
+        "launch_pitch_deg": 10.076562754690135,
+        "burn_enabled": true,
+        "burn_day": 10.0,
+        "burn_heading_deg": 36.5334189588917,
+        "burn_pitch_deg": 20.12385686679651,
+        "burn_dv_kms": 1.4643509588757728,
+        "parts": {
+          "hull": "alli2195",
+          "engine": "oms",
+          "tank": "ti_tank",
+          "power": "multijunction",
+          "battery": "liion",
+          "cabin": "water",
+          "thermal": "heatpipe",
+          "navigation": "star_imu",
+          "comms": "xband",
+          "instrument": "wide_camera"
+        },
+        "fuel_kg": 18000,
+        "supplies_kg": 1200,
+        "launch_class": "standard"
+      },
+      "ranges": {
+        "speed": [
+          2.6,
+          4.8,
+          0.005
+        ],
+        "wait": [
+          0,
+          27,
+          0.1
+        ],
+        "duration": [
+          20,
+          30,
+          0.5
+        ],
+        "burn": [
+          1,
+          18,
+          0.1
+        ]
+      },
+      "precision_km": 60000,
+      "color": "#dcb3c8",
+      "defaults": {
+        "launch_heading_deg": 56.78670010044817,
+        "launch_speed_kms": 3.7008823643311235,
+        "launch_pitch_deg": 10.076562754690135,
+        "burn_enabled": true,
+        "burn_day": 10.0,
+        "burn_heading_deg": 30,
+        "burn_pitch_deg": 20.12385686679651,
+        "burn_dv_kms": 1.2
+      }
+    }
+  }
+}

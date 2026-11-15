@@ -1,0 +1,364 @@
+{
+  "gameVersion": "10.3.1",
+  "scoreVersion": "10.3.0-1",
+  "bonusCaps": {
+    "moon": 9960,
+    "mars": 22636,
+    "pluto": 31204,
+    "proxima": 48866
+  },
+  "equipment": {
+    "engine": {
+      "name": "Engine",
+      "icon": "engine",
+      "color": "#ffbe87",
+      "items": [
+        {
+          "name": "Spark",
+          "tier": "Basic",
+          "tag": "Lower cost; more refueling",
+          "price": 85000,
+          "mass": 58,
+          "thrust": 14000,
+          "isp": 180,
+          "fuel": 180,
+          "bonus": 0.35,
+          "detail": "Isp 180 s · Thrust 14 kN · Fuel 180 kg",
+          "note": "Lower specific impulse uses more fuel for each maneuver."
+        },
+        {
+          "name": "Cruiser",
+          "tier": "Standard",
+          "tag": "Balanced propulsion",
+          "price": 240000,
+          "mass": 78,
+          "thrust": 15000,
+          "isp": 285,
+          "fuel": 220,
+          "bonus": 0.16,
+          "detail": "Isp 285 s · Thrust 15 kN · Fuel 220 kg",
+          "note": "A balance of thrust, fuel capacity, and cost."
+        },
+        {
+          "name": "Meteor",
+          "tier": "Advanced",
+          "tag": "Higher fuel efficiency",
+          "price": 680000,
+          "mass": 95,
+          "thrust": 16000,
+          "isp": 420,
+          "fuel": 260,
+          "bonus": 0,
+          "detail": "Isp 420 s · Thrust 16 kN · Fuel 260 kg",
+          "note": "Higher specific impulse and a larger tank support repeated maneuvers."
+        }
+      ]
+    },
+    "hull": {
+      "name": "Hull",
+      "icon": "hull",
+      "color": "#bbaff5",
+      "items": [
+        {
+          "name": "Lightframe",
+          "tier": "Basic",
+          "tag": "One hit ends the flight",
+          "price": 65000,
+          "mass": 65,
+          "health": 1,
+          "bonus": 0.35,
+          "detail": "Impact capacity 1  hits · Structure 65 kg",
+          "note": "A direct impact ends the flight. Near misses do not count as impacts."
+        },
+        {
+          "name": "Reinforced",
+          "tier": "Standard",
+          "tag": "Room for mistakes",
+          "price": 190000,
+          "mass": 105,
+          "health": 3,
+          "bonus": 0.16,
+          "detail": "Impact capacity 3  hits · Structure 105 kg",
+          "note": "Brief protection follows an impact. A repair pickup restores one cell."
+        },
+        {
+          "name": "Heavy shield",
+          "tier": "Advanced",
+          "tag": "More impact protection",
+          "price": 520000,
+          "mass": 155,
+          "health": 5,
+          "bonus": 0,
+          "detail": "Impact capacity 5  hits · Structure 155 kg",
+          "note": "Heavier protection reduces acceleration at the same thrust."
+        }
+      ]
+    },
+    "power": {
+      "name": "Power system",
+      "icon": "power",
+      "color": "#9ce4cf",
+      "items": [
+        {
+          "name": "Battery pack",
+          "tier": "Basic",
+          "tag": "Collect energy crystals",
+          "price": 55000,
+          "mass": 35,
+          "battery": 100,
+          "generation": 0,
+          "bonus": 0.35,
+          "detail": "100 Wh · Generation 0 W",
+          "note": "About three minutes of baseline endurance. Collect energy to keep flying."
+        },
+        {
+          "name": "Solar wing",
+          "tier": "Standard",
+          "tag": "More battery capacity",
+          "price": 210000,
+          "mass": 65,
+          "battery": 180,
+          "generation": 350,
+          "bonus": 0.16,
+          "detail": "180 Wh · Average generation 350 W",
+          "note": "Generation is a gameplay constant; sunlight and solar distance are not modeled."
+        },
+        {
+          "name": "Continuous power unit",
+          "tier": "Advanced",
+          "tag": "Longer endurance",
+          "price": 730000,
+          "mass": 110,
+          "battery": 400,
+          "generation": 950,
+          "bonus": 0,
+          "detail": "400 Wh · Generation 950 W",
+          "note": "Long endurance, with the highest cost and mass."
+        }
+      ]
+    }
+  },
+  "instruments": {
+    "camera": {
+      "name": "Survey camera",
+      "mass": 12,
+      "powerW": 65,
+      "dataMBps": 0.12,
+      "price": 80000,
+      "storageMB": 32,
+      "measures": "visible imaging"
+    },
+    "spectrometer": {
+      "name": "Imaging spectrometer",
+      "mass": 28,
+      "powerW": 210,
+      "dataMBps": 0.4,
+      "price": 280000,
+      "storageMB": 64,
+      "measures": "spectral composition"
+    },
+    "magnetometer": {
+      "name": "Fields and particles package",
+      "mass": 8,
+      "powerW": 35,
+      "dataMBps": 0.045,
+      "price": 60000,
+      "storageMB": 16,
+      "measures": "local environment"
+    },
+    "clock": {
+      "name": "Clock comparison package",
+      "mass": 6,
+      "powerW": 25,
+      "dataMBps": 0.025,
+      "price": 75000,
+      "storageMB": 16,
+      "measures": "elapsed proper time"
+    }
+  },
+  "radios": {
+    "compact": {
+      "name": "Compact radio",
+      "mass": 7,
+      "powerW": 45,
+      "price": 45000,
+      "rateAtAU": 0.8,
+      "maxMBps": 0.25
+    },
+    "dish": {
+      "name": "High-gain radio",
+      "mass": 19,
+      "powerW": 160,
+      "price": 150000,
+      "rateAtAU": 12,
+      "maxMBps": 1.2
+    }
+  },
+  "launchers": {
+    "shared": {
+      "name": "Shared injection service",
+      "capacityKg": 650,
+      "extraCost": 0
+    },
+    "dedicated": {
+      "name": "Dedicated injection service",
+      "capacityKg": 1100,
+      "extraCost": 350000
+    }
+  },
+  "budgets": {
+    "lean": 1600000,
+    "expanded": 3500000
+  },
+  "objectives": {
+    "imaging": {
+      "name": "Map visible features",
+      "instrument": "camera",
+      "requiredMB": 2,
+      "deliverable": "A visible-light flyby survey"
+    },
+    "composition": {
+      "name": "Compare surface composition",
+      "instrument": "spectrometer",
+      "requiredMB": 6,
+      "deliverable": "A spectral composition survey"
+    },
+    "environment": {
+      "name": "Measure the local environment",
+      "instrument": "magnetometer",
+      "requiredMB": 1,
+      "deliverable": "An in-situ fields and particles record"
+    },
+    "clocks": {
+      "name": "Compare Earth and onboard clocks",
+      "instrument": "clock",
+      "requiredMB": 0.5,
+      "deliverable": "An onboard record of the ideal relativistic journey"
+    }
+  },
+  "levels": {
+    "moon": {
+      "objectives": [
+        "imaging",
+        "composition",
+        "environment"
+      ],
+      "range": [
+        2.6,
+        5.5,
+        0.005
+      ],
+      "multiplier": 1,
+      "maxDays": 20
+    },
+    "mars": {
+      "objectives": [
+        "imaging",
+        "composition",
+        "environment"
+      ],
+      "range": [
+        1,
+        30,
+        0.01
+      ],
+      "multiplier": 1.35,
+      "maxDays": 1095.75
+    },
+    "pluto": {
+      "objectives": [
+        "imaging",
+        "composition",
+        "environment"
+      ],
+      "range": [
+        10,
+        75,
+        0.01
+      ],
+      "multiplier": 1.8,
+      "maxDays": 7305
+    },
+    "proxima": {
+      "objectives": [
+        "clocks",
+        "environment"
+      ],
+      "range": [
+        0.3,
+        0.8,
+        0.005
+      ],
+      "multiplier": 2.3,
+      "maxDays": 18262.5
+    }
+  },
+  "costBenchmarks": {
+    "moon:imaging": {
+      "minimumValidCost": 450000,
+      "referenceCost": 1325000,
+      "validDesigns": 101,
+      "referenceBudget": 3500000
+    },
+    "moon:composition": {
+      "minimumValidCost": 650000,
+      "referenceCost": 1520000,
+      "validDesigns": 99,
+      "referenceBudget": 3500000
+    },
+    "moon:environment": {
+      "minimumValidCost": 430000,
+      "referenceCost": 1312500,
+      "validDesigns": 102,
+      "referenceBudget": 3500000
+    },
+    "mars:imaging": {
+      "minimumValidCost": 450000,
+      "referenceCost": 1325000,
+      "validDesigns": 101,
+      "referenceBudget": 3500000
+    },
+    "mars:composition": {
+      "minimumValidCost": 650000,
+      "referenceCost": 1520000,
+      "validDesigns": 99,
+      "referenceBudget": 3500000
+    },
+    "mars:environment": {
+      "minimumValidCost": 430000,
+      "referenceCost": 1312500,
+      "validDesigns": 102,
+      "referenceBudget": 3500000
+    },
+    "pluto:imaging": {
+      "minimumValidCost": 450000,
+      "referenceCost": 1325000,
+      "validDesigns": 101,
+      "referenceBudget": 3500000
+    },
+    "pluto:composition": {
+      "minimumValidCost": 650000,
+      "referenceCost": 1520000,
+      "validDesigns": 99,
+      "referenceBudget": 3500000
+    },
+    "pluto:environment": {
+      "minimumValidCost": 430000,
+      "referenceCost": 1312500,
+      "validDesigns": 102,
+      "referenceBudget": 3500000
+    },
+    "proxima:clocks": {
+      "minimumValidCost": 445000,
+      "referenceCost": 1327500,
+      "validDesigns": 102,
+      "referenceBudget": 3500000
+    },
+    "proxima:environment": {
+      "minimumValidCost": 430000,
+      "referenceCost": 1312500,
+      "validDesigns": 102,
+      "referenceBudget": 3500000
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Status: BLOCKED BEFORE TEST EXECUTION
+Local Chromium launch failed: process_singleton_posix.cc: socket() failed: Operation not permitted (AF_UNIX is unavailable in the execution environment).
+The available remote browser could not connect to the local preview: net::ERR_CONNECTION_REFUSED.
+No real-browser, native IndexedDB, visual-layout, audible-audio or public Pages success is claimed.
+Optional reproducible suite: tools/test_browser.mjs.

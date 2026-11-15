@@ -1,0 +1,32 @@
+.player-strip{display:flex;align-items:center;gap:14px;padding:10px 0 0;font:9px var(--mono);color:#8c9cba;min-height:30px}
+.player-strip b{color:var(--mint);margin-left:5px}.player-strip .quiet-button{font-size:9px}
+#deviceStatus{margin-left:auto;color:#98abc2}
+body.flying .player-strip{display:none}
+.player-dialog{width:420px;text-align:center;padding:32px 34px;background:radial-gradient(ellipse at 30% 0,#57457b55,transparent 65%),#1a2036}
+.welcome-orbit{margin:0 auto 24px;width:64px;height:64px;display:grid;place-items:center;border:1px solid #a393c77a;box-shadow:0 0 60px #a195dc16;border-radius:50%;font-size:39px;color:var(--lilac)}
+.player-dialog h2{font-size:27px;margin:14px 0 26px}.player-dialog form{text-align:left}
+.player-dialog label{font-size:12px;color:#b6c1db}.player-dialog input{width:100%;margin-top:10px;padding:13px 14px;border:1px solid #635d82;border-radius:9px;background:#10192c;color:#e4ebff;font:15px var(--mono)}
+.player-dialog .primary-button{width:100%;margin:9px 0 15px}.player-dialog .dialog-fine{line-height:1.8}
+.player-error{min-height:32px;font-size:11px;color:var(--peach);line-height:1.6;padding-top:8px}
+.log-actions{display:flex;gap:20px}.log-actions button:first-child{color:var(--mint);letter-spacing:.8px}
+.mission-readiness{margin:2px 0 14px;border-top:1px solid #55516c66;padding-top:10px}
+.mission-readiness summary{font-size:10px;color:#c5c4df;cursor:pointer;line-height:1.7}.mission-readiness summary>span{float:right;color:#95c9b8;font-size:9px}
+.readiness-list{display:grid;gap:8px;margin:12px 0}.readiness-list>div{display:grid;grid-template-columns:1fr auto;gap:3px;font-size:9px}.readiness-list b{font-weight:500;color:#b7c4dd}.readiness-list small{grid-column:1/-1;font-size:8px;color:#8c9cb8;line-height:1.6}.readiness-pass{color:var(--mint)}.readiness-warning,.readiness-fail{color:var(--peach)}
+.trade-estimate{border:1px solid #53627c;border-radius:10px;background:#15273b80;padding:14px 16px;margin:0 0 22px;min-height:70px;color:#afc5da;font-size:11px;line-height:1.8}
+.trade-estimate>small{color:var(--mint);font:8px var(--mono);letter-spacing:1px}.trade-estimate p{margin-top:5px}.trade-estimate span{font-size:9px;color:#8398b3}
+.community-dialog{width:1000px;max-width:94vw}.board-actions{display:flex;gap:20px;align-items:center;flex-wrap:wrap}.board-actions .secondary-button{font-size:11px;padding:8px 14px}
+.board-tabs{display:flex;gap:6px;margin-top:20px;border-bottom:1px solid #45506c;padding-bottom:12px;flex-wrap:wrap}.board-tab{padding:9px 13px;font-size:11px;border:1px solid #4a4f6d;border-radius:7px;color:#adb8ce}.board-tab[aria-pressed="true"]{border-color:#a198ca;background:#403650;color:#e9defe}
+.leaderboard-table{min-width:700px!important}.leaderboard-table td{font-size:11px;padding:14px 8px!important}.leaderboard-table td b{font:14px var(--mono);color:#e2d6fc}.flight-record-link{color:var(--mint);text-decoration:underline;text-underline-offset:4px;font-size:inherit;text-align:left;padding:2px 0}
+.board-pagination{display:flex;justify-content:space-between;margin-top:18px}.board-pagination button:disabled{opacity:.25;cursor:default}
+.report-dialog{width:850px}.flight-report>section{border-top:1px solid #424c6759;padding:20px 0 4px}.flight-report h3{font-size:16px;color:#d8c9f6;margin:0 0 17px}.flight-report h4{color:#adc5d7;font-size:12px;margin:17px 0 8px}.flight-report ul{font-size:12px;color:#a8bad3;line-height:1.9;padding-left:18px}.flight-report p{font-size:12px;color:#a8bad3;line-height:1.9}.report-values{display:grid;grid-template-columns:1fr 1fr;gap:13px 25px;margin:0 0 18px}.report-values>div{min-width:0;padding-bottom:10px;border-bottom:1px solid #46516a24}.report-values dt{font-size:10px;color:#8e9fbd;margin-bottom:7px}.report-values dd{margin:0;font:12px var(--mono);color:#d1dcee;line-height:1.6;overflow-wrap:anywhere}
+.mission-details>summary,.trajectory-analysis>summary,.flight-report details>summary{cursor:pointer;font-size:12px;color:var(--lilac);padding:13px 0}.trajectory-analysis .report-values{margin-top:16px}
+.mission-score-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:19px}.mission-score-cards>div{border:1px solid #42546b;border-radius:10px;padding:15px 12px}.mission-score-cards small{font:8px var(--mono);color:#9eb7ce;letter-spacing:.7px}.mission-score-cards strong{display:block;font:25px var(--mono);color:var(--mint);margin:10px 0}.mission-score-cards span{color:#92a6c0;font-size:9px;line-height:1.6;display:block}
+.final-breakdown{max-width:310px;margin:12px auto 16px;display:grid;gap:9px}.final-breakdown>span{font-size:10px;color:#9eafc9;display:flex;justify-content:space-between;gap:10px;text-align:left}.final-breakdown b{font:11px var(--mono);color:#dcd2f6;text-align:right}
+.result-leaderboard{display:block;margin:8px auto;color:var(--mint)}
+@media(max-width:850px){.mission-readiness{grid-column:1/-1;margin-top:15px}.community-dialog{padding:22px}.report-values{gap:12px 16px}}
+@media(max-width:540px){.player-strip{gap:8px;font-size:8px;flex-wrap:wrap}.player-strip .quiet-button{font-size:8px}#deviceStatus{font-size:7px}.log-actions{gap:10px;flex-wrap:wrap;justify-content:flex-end}.log-actions button{font-size:8px!important}.player-dialog{padding:28px 23px}.report-values{grid-template-columns:1fr}.mission-score-cards{gap:6px}.mission-score-cards>div{padding:12px 8px}.mission-score-cards small{font-size:7px}.mission-score-cards strong{font-size:21px}.board-actions{gap:13px}.board-tab{font-size:10px;padding:8px 10px}.community-dialog{padding:20px 16px}.mission-readiness summary{font-size:11px}.readiness-list>div{font-size:10px}.readiness-list small{font-size:9px}}
+
+.top-actions .leaderboard-entry{color:var(--mint);border:1px solid #709f9380;border-radius:8px;padding:8px 12px;background:#243d3d88}
+.source-paths ul{padding-left:18px;margin:8px 0;line-height:1.8;overflow-wrap:anywhere}.source-paths code{font-size:10px}
+@media(max-width:540px){.top-actions .leaderboard-entry{font-size:9px;padding:7px 8px}}
+@media(max-width:850px){.topbar{height:auto;min-height:78px;flex-wrap:wrap;padding:14px 0;gap:12px}.top-actions{flex:1 1 100%;flex-wrap:wrap;justify-content:flex-start}.top-actions .text-button{width:auto}}

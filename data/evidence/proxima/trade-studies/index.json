@@ -1,0 +1,165 @@
+{
+  "schema": "twinbound-trade-index-v1",
+  "alternatives": [
+    {
+      "id": "proxima-clocks-camera-compact-dedicated-expanded",
+      "selection": {
+        "level": "proxima",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "clocks",
+        "instrument": "camera",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1898.5732589213417,
+      "endEnergyWh": 204.58333333334622,
+      "receivedMB": 3.676510930077777e-8
+    },
+    {
+      "id": "proxima-clocks-camera-dish-dedicated-expanded",
+      "selection": {
+        "level": "proxima",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "clocks",
+        "instrument": "camera",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1858.3473295381516,
+      "endEnergyWh": 185.41666666668561,
+      "receivedMB": 5.514766395116664e-7
+    },
+    {
+      "id": "proxima-clocks-spectrometer-compact-dedicated-expanded",
+      "selection": {
+        "level": "proxima",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "clocks",
+        "instrument": "spectrometer",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1845.3210909709865,
+      "endEnergyWh": 180.41666666664995,
+      "receivedMB": 3.676510930077777e-8
+    },
+    {
+      "id": "proxima-clocks-spectrometer-dish-dedicated-expanded",
+      "selection": {
+        "level": "proxima",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "clocks",
+        "instrument": "spectrometer",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1807.332663463366,
+      "endEnergyWh": 161.24999999999315,
+      "receivedMB": 5.514766395116664e-7
+    },
+    {
+      "id": "proxima-clocks-magnetometer-compact-dedicated-expanded",
+      "selection": {
+        "level": "proxima",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "clocks",
+        "instrument": "magnetometer",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1912.3786886311084,
+      "endEnergyWh": 209.5833333332939,
+      "receivedMB": 3.676510930077777e-8
+    },
+    {
+      "id": "proxima-clocks-magnetometer-dish-dedicated-expanded",
+      "selection": {
+        "level": "proxima",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "clocks",
+        "instrument": "magnetometer",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1871.5619584605306,
+      "endEnergyWh": 190.41666666663855,
+      "receivedMB": 5.514766395116664e-7
+    },
+    {
+      "id": "proxima-clocks-clock-compact-dedicated-expanded",
+      "selection": {
+        "level": "proxima",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "clocks",
+        "instrument": "clock",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": true,
+      "deltaVMS": 1919.3583303978066,
+      "endEnergyWh": 211.25000000003237,
+      "receivedMB": 3.676510930077777e-8
+    },
+    {
+      "id": "proxima-clocks-clock-dish-dedicated-expanded",
+      "selection": {
+        "level": "proxima",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "clocks",
+        "instrument": "clock",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": true,
+      "deltaVMS": 1878.2412225700657,
+      "endEnergyWh": 192.0833333333664,
+      "receivedMB": 5.514766395116664e-7
+    }
+  ]
+}

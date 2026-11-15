@@ -1,0 +1,6 @@
+import fs from 'node:fs';import path from 'node:path';
+import {CockpitRenderer} from '../src/cockpit.js';import {Flight} from '../src/physics.js';import {LEVELS,buildCraft} from '../src/config.js';import {SVGCanvas} from './lib/canvas-svg.mjs';
+const out=path.resolve(process.argv[2]||'docs/images');fs.mkdirSync(out,{recursive:true});
+const f=new Flight(LEVELS[1],buildCraft({engine:1,hull:1,power:1}),77);f.setFlightMode('3d');f.objects=[];f.x=0;f.y=1000;f.time=136;f.progress=.54;f.vx=-12;f.pilot3D.z=24;f.pilot3D.vz=1.8;f.pilot3D.bonus=488;f.pilot3D.activeSeconds=76;
+for(const [kind,x,ahead,z,radius]of [['rock',-130,470,70,38],['ice',250,800,140,31],['rock',380,1450,-130,44],['rock',-420,1250,-90,37],['rock',100,1700,220,51],['fuel',80,400,-30,13],['energy',-100,950,15,13],['repair',310,1350,70,13],['hole',-430,1650,150,43],['comet',180,1900,-90,29]])f.add(kind,x,f.y+ahead,{z,radius});
+for(const [name,width,height]of [['cockpit-desktop',1400,840],['cockpit-mobile',390,700]]){const recorder=new SVGCanvas(width,height),renderer=new CockpitRenderer(null,f.seed);renderer.drawScene(recorder,width,height,f,1/60);const svg=recorder.svg();if(/(?:NaN|Infinity)/.test(svg))throw Error('Invalid renderer coordinate');fs.writeFileSync(path.join(out,name+'.svg'),svg);console.log(path.join(out,name+'.svg'));}

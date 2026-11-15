@@ -1,0 +1,291 @@
+{
+  "schema": "twinbound-trade-study-v1",
+  "id": "moon-imaging-camera-dish-dedicated-expanded",
+  "selection": {
+    "level": "moon",
+    "kit": {
+      "engine": 2,
+      "hull": 2,
+      "power": 2
+    },
+    "objective": "imaging",
+    "instrument": "camera",
+    "radio": "dish",
+    "launcher": "dedicated",
+    "budget": "expanded"
+  },
+  "mass": {
+    "dryKg": 456,
+    "propellantKg": 260,
+    "wetKg": 716,
+    "payloadKg": 12,
+    "radioKg": 19,
+    "capacityKg": 1100,
+    "marginKg": 384
+  },
+  "propulsion": {
+    "thrustN": 16000,
+    "ispSeconds": 420,
+    "initialDeltaVMS": 1858.3473295381516,
+    "busOnlyDeltaVMS": 1966.0221007608802,
+    "payloadPenaltyMS": 107.67477122272862
+  },
+  "power": {
+    "generationW": 950,
+    "batteryWh": 400,
+    "baseLoadW": 1800,
+    "thrusterPeakExtraW": 600,
+    "instrumentW": 65,
+    "radioW": 160,
+    "coastObservationPeakW": 2025,
+    "projectedLoadWh": 159.453125,
+    "endBatteryWh": 319.71354166667425,
+    "minBatteryWh": 319.71354166667425,
+    "operationsControlSeconds": 300,
+    "timeBasis": "Control seconds; fixed generation; no pickups or thrust"
+  },
+  "communications": {
+    "rateAtOneAU_MBps": 12,
+    "rateCapMBps": 1.2,
+    "endRateMBps": 1.2,
+    "endRangeKm": 389895.0231091897,
+    "endLightSeconds": 1.3005498060567946,
+    "receivedMB": 18.11999999999993,
+    "inTransitMB": 0.030000000000001137,
+    "solarOccultationAtEnd": false
+  },
+  "storage": {
+    "capacityMB": 32,
+    "generatedMB": 18.14999999999993,
+    "storedMB": 0,
+    "droppedMB": 0,
+    "transmittedMB": 18.14999999999993
+  },
+  "cost": {
+    "designUSD": 2630000,
+    "capUSD": 3500000,
+    "marginUSD": 870000,
+    "reserveFractionOfCost": 0.33079847908745247
+  },
+  "feasibility": {
+    "designChecks": [
+      {
+        "id": "instrument",
+        "label": "Instrument matches the science objective",
+        "pass": true
+      },
+      {
+        "id": "mass",
+        "label": "Wet mass fits the injection service",
+        "pass": true
+      },
+      {
+        "id": "budget",
+        "label": "Design stays within the selected budget",
+        "pass": true
+      },
+      {
+        "id": "lifetime",
+        "label": "Planned duration fits the scenario lifetime",
+        "pass": true
+      }
+    ],
+    "projectedScienceComplete": true,
+    "powerSurvives": true,
+    "referenceTrajectoryGood": true,
+    "feasibleInStudy": true,
+    "scope": "Projection on the unchanged reference track, without maneuvers, obstacles or pickups; not an observed player outcome."
+  },
+  "numericalInputs": {
+    "engine": {
+      "value": {
+        "name": "Meteor",
+        "tier": "Advanced",
+        "tag": "Higher fuel efficiency",
+        "price": 680000,
+        "mass": 95,
+        "thrust": 16000,
+        "isp": 420,
+        "fuel": 260,
+        "bonus": 0,
+        "detail": "Isp 420 s · Thrust 16 kN · Fuel 260 kg",
+        "note": "Higher specific impulse and a larger tank support repeated maneuvers."
+      },
+      "units": "mixed",
+      "classification": "Educational Assumption",
+      "parameterSource": "src/config.js:EQUIPMENT.engine"
+    },
+    "hull": {
+      "value": {
+        "name": "Heavy shield",
+        "tier": "Advanced",
+        "tag": "More impact protection",
+        "price": 520000,
+        "mass": 155,
+        "health": 5,
+        "bonus": 0,
+        "detail": "Impact capacity 5  hits · Structure 155 kg",
+        "note": "Heavier protection reduces acceleration at the same thrust."
+      },
+      "units": "mixed",
+      "classification": "Educational Assumption",
+      "parameterSource": "src/config.js:EQUIPMENT.hull"
+    },
+    "power": {
+      "value": {
+        "name": "Continuous power unit",
+        "tier": "Advanced",
+        "tag": "Longer endurance",
+        "price": 730000,
+        "mass": 110,
+        "battery": 400,
+        "generation": 950,
+        "bonus": 0,
+        "detail": "400 Wh · Generation 950 W",
+        "note": "Long endurance, with the highest cost and mass."
+      },
+      "units": "mixed",
+      "classification": "Educational Assumption",
+      "parameterSource": "src/config.js:EQUIPMENT.power"
+    },
+    "instrument": {
+      "value": {
+        "name": "Survey camera",
+        "mass": 12,
+        "powerW": 65,
+        "dataMBps": 0.12,
+        "price": 80000,
+        "storageMB": 32,
+        "measures": "visible imaging"
+      },
+      "units": "mixed",
+      "classification": "Educational Assumption",
+      "parameterSource": "src/mission.js:INSTRUMENTS"
+    },
+    "radio": {
+      "value": {
+        "name": "High-gain radio",
+        "mass": 19,
+        "powerW": 160,
+        "price": 150000,
+        "rateAtAU": 12,
+        "maxMBps": 1.2
+      },
+      "units": "mixed",
+      "classification": "Educational Assumption",
+      "parameterSource": "src/mission.js:RADIOS"
+    },
+    "launcher": {
+      "value": {
+        "name": "Dedicated injection service",
+        "capacityKg": 1100,
+        "extraCost": 350000
+      },
+      "units": "mixed",
+      "classification": "Educational Assumption",
+      "parameterSource": "src/mission.js:LAUNCHERS"
+    },
+    "budget": {
+      "value": 3500000,
+      "units": "USD",
+      "classification": "Educational Assumption",
+      "parameterSource": "src/mission.js:BUDGETS"
+    }
+  },
+  "projection": {
+    "objective": "Map visible features",
+    "deliverable": "A visible-light flyby survey",
+    "selection": {
+      "objective": "imaging",
+      "instrument": "camera",
+      "radio": "dish",
+      "launcher": "dedicated",
+      "budget": "expanded"
+    },
+    "checks": [
+      {
+        "id": "instrument",
+        "label": "Instrument matches the science objective",
+        "pass": true
+      },
+      {
+        "id": "mass",
+        "label": "Wet mass fits the injection service",
+        "pass": true
+      },
+      {
+        "id": "budget",
+        "label": "Design stays within the selected budget",
+        "pass": true
+      },
+      {
+        "id": "lifetime",
+        "label": "Planned duration fits the scenario lifetime",
+        "pass": true
+      },
+      {
+        "id": "arrival",
+        "label": "Spacecraft reached the destination",
+        "pass": true
+      },
+      {
+        "id": "science",
+        "label": "Required science data received on Earth",
+        "pass": true
+      }
+    ],
+    "complete": true,
+    "sciencePercent": 100,
+    "requiredMB": 2,
+    "generatedMB": 18.14999999999993,
+    "storedMB": 0,
+    "transmittedMB": 18.14999999999993,
+    "receivedMB": 18.11999999999993,
+    "inTransitMB": 0.030000000000001137,
+    "droppedMB": 0,
+    "exposureControlSeconds": 151.25,
+    "extraEnergyWh": 9.453125,
+    "oneWayLightSeconds": 1.3005498060567946,
+    "distanceToEarthKm": 389895.0231091897,
+    "linkBlockedBySun": false,
+    "rateMBps": 1.2,
+    "wetMassKg": 716,
+    "injectionCapacityKg": 1100,
+    "designCostUSD": 2630000,
+    "budgetUSD": 3500000,
+    "initialDeltaVMS": 1858.3473295381516,
+    "resourceIds": [
+      "jpl-horizons",
+      "mission-development",
+      "mission-design-lab",
+      "cubesat-101",
+      "telescope-game",
+      "concept-maturity"
+    ],
+    "interpretation": "Educational flyby mission. Science completion requires data received before the end of the flight.",
+    "timeModel": "Data rates, exposure and power use active control seconds; packet propagation uses physical TDB days. Continuous ground access except solar occultation. Rates and equipment values are tutorial assumptions."
+  },
+  "source": {
+    "id": "mission-design-lab",
+    "url": "https://etd.gsfc.nasa.gov/capabilities/integrated-design-center/mission-design-lab",
+    "title": "Mission Design Lab",
+    "sections": [
+      "Tailored Trade Study",
+      "MDL Capabilities",
+      "MDL Disciplines"
+    ],
+    "use": "Method"
+  },
+  "reusedFunctions": [
+    "configureMission",
+    "designChecks",
+    "ScienceOperations.step",
+    "ScienceOperations.report",
+    "Navigation.remainingDV",
+    "atTime",
+    "linkGeometry",
+    "downlinkRate"
+  ],
+  "physicalDurationDays": 5.033569071862004,
+  "readOnlyAnalysis": true
+}

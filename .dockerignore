@@ -1,0 +1,11 @@
+.git
+node_modules
+__pycache__
+**/__pycache__
+*.pyc
+*.zip
+*.sqlite3*
+*.db*
+.env
+dist
+research-sources

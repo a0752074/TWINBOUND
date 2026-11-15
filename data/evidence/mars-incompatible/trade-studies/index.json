@@ -1,0 +1,165 @@
+{
+  "schema": "twinbound-trade-index-v1",
+  "alternatives": [
+    {
+      "id": "mars-composition-camera-compact-dedicated-expanded",
+      "selection": {
+        "level": "mars",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "composition",
+        "instrument": "camera",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1898.5732589213417,
+      "endEnergyWh": 285.0187500000085,
+      "receivedMB": 34.26000000000054
+    },
+    {
+      "id": "mars-composition-camera-dish-dedicated-expanded",
+      "selection": {
+        "level": "mars",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "composition",
+        "instrument": "camera",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1858.3473295381516,
+      "endEnergyWh": 275.89062500001137,
+      "receivedMB": 34.26000000000054
+    },
+    {
+      "id": "mars-composition-spectrometer-compact-dedicated-expanded",
+      "selection": {
+        "level": "mars",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "composition",
+        "instrument": "spectrometer",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": true,
+      "deltaVMS": 1845.3210909709865,
+      "endEnergyWh": 273.50937499998105,
+      "receivedMB": 65.67984259278002
+    },
+    {
+      "id": "mars-composition-spectrometer-dish-dedicated-expanded",
+      "selection": {
+        "level": "mars",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "composition",
+        "instrument": "spectrometer",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": true,
+      "deltaVMS": 1807.332663463366,
+      "endEnergyWh": 264.38124999998394,
+      "receivedMB": 114.19999999999779
+    },
+    {
+      "id": "mars-composition-magnetometer-compact-dedicated-expanded",
+      "selection": {
+        "level": "mars",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "composition",
+        "instrument": "magnetometer",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1912.3786886311084,
+      "endEnergyWh": 287.39999999997383,
+      "receivedMB": 12.847500000000329
+    },
+    {
+      "id": "mars-composition-magnetometer-dish-dedicated-expanded",
+      "selection": {
+        "level": "mars",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "composition",
+        "instrument": "magnetometer",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1871.5619584605306,
+      "endEnergyWh": 278.2718749999767,
+      "receivedMB": 12.847500000000329
+    },
+    {
+      "id": "mars-composition-clock-compact-dedicated-expanded",
+      "selection": {
+        "level": "mars",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "composition",
+        "instrument": "clock",
+        "radio": "compact",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1919.3583303978066,
+      "endEnergyWh": 288.19375000002725,
+      "receivedMB": 7.137499999999862
+    },
+    {
+      "id": "mars-composition-clock-dish-dedicated-expanded",
+      "selection": {
+        "level": "mars",
+        "kit": {
+          "engine": 2,
+          "hull": 2,
+          "power": 2
+        },
+        "objective": "composition",
+        "instrument": "clock",
+        "radio": "dish",
+        "launcher": "dedicated",
+        "budget": "expanded"
+      },
+      "feasibleInStudy": false,
+      "deltaVMS": 1878.2412225700657,
+      "endEnergyWh": 279.06562500003014,
+      "receivedMB": 7.137499999999862
+    }
+  ]
+}

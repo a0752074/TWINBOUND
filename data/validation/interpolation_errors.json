@@ -1,0 +1,56 @@
+[
+  {
+    "body": "earth",
+    "day": 680.125,
+    "positionErrorKm": 0.0002183901465777096,
+    "velocityErrorMS": 3.7175187975839934e-8
+  },
+  {
+    "body": "earth",
+    "day": 1523.125,
+    "positionErrorKm": 0.0001745884400487472,
+    "velocityErrorMS": 1.6262851488571165e-7
+  },
+  {
+    "body": "earth",
+    "day": 3000.125,
+    "positionErrorKm": 0.00006811880437575955,
+    "velocityErrorMS": 2.983938844344465e-8
+  },
+  {
+    "body": "moon",
+    "day": 680.0625,
+    "positionErrorKm": 0.0004517403893679721,
+    "velocityErrorMS": 1.7663128521138995e-7
+  },
+  {
+    "body": "moon",
+    "day": 1523.0625,
+    "positionErrorKm": 0.0010638329694484087,
+    "velocityErrorMS": 8.409389450104144e-7
+  },
+  {
+    "body": "moon",
+    "day": 3000.0625,
+    "positionErrorKm": 0.0004937445383887488,
+    "velocityErrorMS": 1.8529079307210427e-7
+  },
+  {
+    "body": "pluto",
+    "day": 681,
+    "positionErrorKm": 0.0000011902772951190217,
+    "velocityErrorMS": 6.910711535172583e-9
+  },
+  {
+    "body": "pluto",
+    "day": 1523,
+    "positionErrorKm": 5.356144826240869e-7,
+    "velocityErrorMS": 3.4000866207142653e-9
+  },
+  {
+    "body": "pluto",
+    "day": 3001,
+    "positionErrorKm": 0.0000010712289652481738,
+    "velocityErrorMS": 1.353153234981174e-8
+  }
+]

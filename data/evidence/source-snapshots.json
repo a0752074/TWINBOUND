@@ -1,0 +1,72 @@
+{
+  "reviewed": "2026-11-14",
+  "sources": [
+    {
+      "name": "mission-development.pdf",
+      "url": "https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf?emrc=a454cf",
+      "bytes": 2624448,
+      "sha256": "7220691fb47fa5e9ff25f37ae1df25587574d7c8c2a88a7fbe48788cf2797161",
+      "status": "retrieved"
+    },
+    {
+      "name": "cubesat-101.pdf",
+      "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+      "resolvedURL": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+      "bytes": 4445718,
+      "sha256": "57d2783457cb94b69136476ca341ddf4c7dc23bf61682606e37a048e9e5ae592",
+      "status": "retrieved"
+    },
+    {
+      "name": "cml.pdf",
+      "url": "https://dataverse.jpl.nasa.gov/api/access/datafile/50237",
+      "resolvedURL": "https://dataverse.jpl.nasa.gov/api/access/datafile/50237",
+      "bytes": 1512531,
+      "sha256": "3275fa77ca644b424d7e96bee444281cf32a121387853fb2f1859fa370cb420c",
+      "status": "retrieved"
+    },
+    {
+      "name": "mission-viz-tree.json",
+      "url": "https://api.github.com/repos/nasa/mission-viz/git/trees/main?recursive=1",
+      "resolvedURL": "https://api.github.com/repos/nasa/mission-viz/git/trees/main?recursive=1",
+      "bytes": 17768,
+      "sha256": "8014f310f4d1ac3721a9274d79059c91fec71b2613a2f5e73b715d764ed0877a",
+      "status": "retrieved"
+    },
+    {
+      "name": "mission-viz-tutorial.html",
+      "url": "https://nasa.github.io/mission-viz/RMarkdown/Elliptical_Orbit_Design.html",
+      "resolvedURL": "https://nasa.github.io/mission-viz/RMarkdown/Elliptical_Orbit_Design.html",
+      "bytes": 1070583,
+      "sha256": "aa9ff5fd09f53635a08b64d4a0b4dbbd6b1e20e0933e575985ff7e1e1ad7811e",
+      "status": "retrieved"
+    },
+    {
+      "name": "mdl.html",
+      "url": "https://etd.gsfc.nasa.gov/capabilities/integrated-design-center/mission-design-lab",
+      "resolvedURL": "https://etd.gsfc.nasa.gov/capabilities/integrated-design-center/mission-design-lab",
+      "bytes": 334905,
+      "sha256": "3f84fbd9d82ce3d82fbb10ca77fff71258c1d5f5dad693cb537593b99ee9a624",
+      "status": "retrieved"
+    },
+    {
+      "name": "mission-viz-commit.json",
+      "url": "https://api.github.com/repos/nasa/mission-viz/commits/main",
+      "bytes": 5824,
+      "sha256": "0e2921fe3e747c0d36907ab06c47b4ffbb59c6083189948ef78611dd1c3aad07",
+      "status": "retrieved"
+    },
+    {
+      "name": "telescope-game.html",
+      "url": "https://science.nasa.gov/mission/webb/game-build-it-yourself/",
+      "resolvedURL": "https://science.nasa.gov/mission/webb/game-build-it-yourself/",
+      "bytes": 280025,
+      "sha256": "6de9a80a1c87268960bd912f1467400b606ec5bdde6b779eb91c69a4f37f18b7",
+      "status": "retrieved"
+    }
+  ],
+  "repositoryLicenseReview": {
+    "commit": "c6f22701dc5fc3bf25172557a46557b1b5481eec",
+    "result": "No repository-wide license found in the inspected tree. X3Dom/LICENSE applies to that component; it was not treated as a license for the tutorial. No repository code was copied.",
+    "tree": "7b0271acb85cbc782cbc6f51619dc19800563912"
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "schema": "twinbound-maturity-v1",
+  "assessment": "Simplified CML-informed evidence checklist",
+  "officialCML": null,
+  "rows": [
+    {
+      "area": "Mission Concept",
+      "complete": true,
+      "evidence": {
+        "scienceGoal": "Map visible features",
+        "deliverable": "A visible-light flyby survey"
+      },
+      "pages": [
+        2,
+        5
+      ],
+      "status": "Complete",
+      "source": {
+        "id": "concept-maturity",
+        "url": "https://hdl.handle.net/2014/44299",
+        "download": "https://dataverse.jpl.nasa.gov/api/access/datafile/50237",
+        "title": "Space Mission Concept Development Using Concept Maturity Levels",
+        "authors": [
+          "Randii R. Wessen",
+          "Chester Borden",
+          "John Ziemer",
+          "Johnny Kwok"
+        ],
+        "year": 2013,
+        "pdfPages": [
+          2,
+          5
+        ],
+        "sections": [
+          "II Concept Maturity Levels",
+          "III Early CML Phases",
+          "IV Concept Maturity Level Matrix",
+          "V Concept Maturity Level Checklists"
+        ],
+        "use": "Method"
+      },
+      "officialCML": null
+    },
+    {
+      "area": "Feasibility",
+      "complete": true,
+      "evidence": {
+        "gameChecks": [
+          {
+            "id": "instrument",
+            "label": "Instrument matches the science objective",
+            "pass": true
+          },
+          {
+            "id": "mass",
+            "label": "Wet mass fits the injection service",
+            "pass": true
+          },
+          {
+            "id": "budget",
+            "label": "Design stays within the selected budget",
+            "pass": true
+          },
+          {
+            "id": "lifetime",
+            "label": "Planned duration fits the scenario lifetime",
+            "pass": true
+          },
+          {
+            "id": "arrival",
+            "label": "Spacecraft reached the destination",
+            "pass": true
+          },
+          {
+            "id": "science",
+            "label": "Required science data received on Earth",
+            "pass": true
+          }
+        ]
+      },
+      "pages": [
+        2,
+        3
+      ],
+      "status": "Complete",
+      "source": {
+        "id": "concept-maturity",
+        "url": "https://hdl.handle.net/2014/44299",
+        "download": "https://dataverse.jpl.nasa.gov/api/access/datafile/50237",
+        "title": "Space Mission Concept Development Using Concept Maturity Levels",
+        "authors": [
+          "Randii R. Wessen",
+          "Chester Borden",
+          "John Ziemer",
+          "Johnny Kwok"
+        ],
+        "year": 2013,
+        "pdfPages": [
+          2,
+          3
+        ],
+        "sections": [
+          "II Concept Maturity Levels",
+          "III Early CML Phases",
+          "IV Concept Maturity Level Matrix",
+          "V Concept Maturity Level Checklists"
+        ],
+        "use": "Method"
+      },
+      "officialCML": null
+    },
+    {
+      "area": "Trade Study",
+      "complete": true,
+      "evidence": {
+        "alternatives": 8,
+        "studyIds": [
+          "pluto-imaging-camera-compact-dedicated-expanded",
+          "pluto-imaging-camera-dish-dedicated-expanded",
+          "pluto-imaging-spectrometer-compact-dedicated-expanded",
+          "pluto-imaging-spectrometer-dish-dedicated-expanded",
+          "pluto-imaging-magnetometer-compact-dedicated-expanded",
+          "pluto-imaging-magnetometer-dish-dedicated-expanded",
+          "pluto-imaging-clock-compact-dedicated-expanded",
+          "pluto-imaging-clock-dish-dedicated-expanded"
+        ]
+      },
+      "pages": [
+        2,
+        3,
+        10
+      ],
+      "status": "Complete",
+      "source": {
+        "id": "concept-maturity",
+        "url": "https://hdl.handle.net/2014/44299",
+        "download": "https://dataverse.jpl.nasa.gov/api/access/datafile/50237",
+        "title": "Space Mission Concept Development Using Concept Maturity Levels",
+        "authors": [
+          "Randii R. Wessen",
+          "Chester Borden",
+          "John Ziemer",
+          "Johnny Kwok"
+        ],
+        "year": 2013,
+        "pdfPages": [
+          2,
+          3,
+          10
+        ],
+        "sections": [
+          "II Concept Maturity Levels",
+          "III Early CML Phases",
+          "IV Concept Maturity Level Matrix",
+          "V Concept Maturity Level Checklists"
+        ],
+        "use": "Method"
+      },
+      "officialCML": null
+    },
+    {
+      "area": "Requirements",
+      "complete": true,
+      "evidence": {
+        "ids": [
+          "REQ-SCI-001",
+          "REQ-LAUNCH-001",
+          "REQ-COST-001",
+          "REQ-OPS-001",
+          "REQ-NAV-001",
+          "REQ-DATA-001"
+        ]
+      },
+      "pages": [
+        5,
+        11
+      ],
+      "status": "Complete",
+      "source": {
+        "id": "concept-maturity",
+        "url": "https://hdl.handle.net/2014/44299",
+        "download": "https://dataverse.jpl.nasa.gov/api/access/datafile/50237",
+        "title": "Space Mission Concept Development Using Concept Maturity Levels",
+        "authors": [
+          "Randii R. Wessen",
+          "Chester Borden",
+          "John Ziemer",
+          "Johnny Kwok"
+        ],
+        "year": 2013,
+        "pdfPages": [
+          5,
+          11
+        ],
+        "sections": [
+          "II Concept Maturity Levels",
+          "III Early CML Phases",
+          "IV Concept Maturity Level Matrix",
+          "V Concept Maturity Level Checklists"
+        ],
+        "use": "Method"
+      },
+      "officialCML": null
+    },
+    {
+      "area": "Verification Evidence",
+      "complete": true,
+      "evidence": {
+        "status": "arrived",
+        "scienceComplete": true,
+        "requirementsPassed": 6
+      },
+      "pages": [
+        11,
+        14
+      ],
+      "status": "Complete",
+      "source": {
+        "id": "concept-maturity",
+        "url": "https://hdl.handle.net/2014/44299",
+        "download": "https://dataverse.jpl.nasa.gov/api/access/datafile/50237",
+        "title": "Space Mission Concept Development Using Concept Maturity Levels",
+        "authors": [
+          "Randii R. Wessen",
+          "Chester Borden",
+          "John Ziemer",
+          "Johnny Kwok"
+        ],
+        "year": 2013,
+        "pdfPages": [
+          11,
+          14
+        ],
+        "sections": [
+          "II Concept Maturity Levels",
+          "III Early CML Phases",
+          "IV Concept Maturity Level Matrix",
+          "V Concept Maturity Level Checklists"
+        ],
+        "use": "Method"
+      },
+      "officialCML": null
+    },
+    {
+      "area": "Unresolved Risks",
+      "complete": false,
+      "status": "Open",
+      "evidence": [
+        {
+          "id": "MODEL-TIME",
+          "description": "Mixed control-time resource economy and TDB propagation; not a continuous engineering mission model."
+        },
+        {
+          "id": "HARDWARE",
+          "description": "Hardware performance, prices and service capacities are educational assumptions."
+        },
+        {
+          "id": "INDEPENDENT-REVIEW",
+          "description": "No independent flight-hardware review or complete CML matrix assessment."
+        }
+      ],
+      "source": {
+        "id": "concept-maturity",
+        "url": "https://hdl.handle.net/2014/44299",
+        "download": "https://dataverse.jpl.nasa.gov/api/access/datafile/50237",
+        "title": "Space Mission Concept Development Using Concept Maturity Levels",
+        "authors": [
+          "Randii R. Wessen",
+          "Chester Borden",
+          "John Ziemer",
+          "Johnny Kwok"
+        ],
+        "year": 2013,
+        "pdfPages": [
+          11,
+          14
+        ],
+        "sections": [
+          "II Concept Maturity Levels",
+          "III Early CML Phases",
+          "IV Concept Maturity Level Matrix",
+          "V Concept Maturity Level Checklists"
+        ],
+        "use": "Method"
+      },
+      "officialCML": null
+    }
+  ],
+  "unresolvedRisks": [
+    {
+      "id": "MODEL-TIME",
+      "description": "Mixed control-time resource economy and TDB propagation; not a continuous engineering mission model."
+    },
+    {
+      "id": "HARDWARE",
+      "description": "Hardware performance, prices and service capacities are educational assumptions."
+    },
+    {
+      "id": "INDEPENDENT-REVIEW",
+      "description": "No independent flight-hardware review or complete CML matrix assessment."
+    }
+  ],
+  "scope": "Evidence completeness only. No official level, 80% threshold, quality certification, or score modifier is assigned."
+}

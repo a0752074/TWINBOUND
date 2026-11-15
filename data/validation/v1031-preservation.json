@@ -1,0 +1,1021 @@
+{
+  "baseline": "Supplied TWINBOUND v10.3.0 Final Mission Edition ZIP",
+  "files": [
+    {
+      "file": "assets/favicon.svg",
+      "sha256": "8b056b707659a092ded0be3bab70effa79fdfb42a140c6bcb613d8e95ca87bfb"
+    },
+    {
+      "file": "assets/photos/PIA00407.jpg",
+      "sha256": "b97cb7e1fe54a68f0dc1949015752875c86ee18921b91c43046e5fe20f195a4e"
+    },
+    {
+      "file": "assets/photos/PIA02653.jpg",
+      "sha256": "9904cc710b0b688db8e27102b37dbce377f2af13118127f71a9c130aa12e4370"
+    },
+    {
+      "file": "assets/photos/PIA12954.jpg",
+      "sha256": "772422234452b24748e7cc8fa111a91c8e1d27e0947fdb815d289eee11881428"
+    },
+    {
+      "file": "assets/photos/PIA13008.jpg",
+      "sha256": "839bf582379dc0abbf691e934b8a9c218154fdfa49c39aa11c8ed52394253aa2"
+    },
+    {
+      "file": "assets/photos/proxima_wfc3.jpg",
+      "sha256": "22733c1ade944756ddcfe39208cee5845ac05710aefbd343c231e38022029bfb"
+    },
+    {
+      "file": "assets/photos/proxima_wfpc2.jpg",
+      "sha256": "e4231858c5bc750bd4dabec5b6cdf216bb18f7666f85c9fcdddc536c87f57692"
+    },
+    {
+      "file": "data/ephemeris.bin",
+      "sha256": "22ebdae7bd9b7efa78a823e0aebbfe9e7c2b000f59d84788ea1e5f341aa0a90b"
+    },
+    {
+      "file": "data/ephemeris.json",
+      "sha256": "cc9c5d184986ea37216816a6dbb6ef4317460375be940998f0119d656bf6eaa1"
+    },
+    {
+      "file": "data/evidence/generation.log",
+      "sha256": "3247eea87b8eea1b04ed920e226fd24be29ba14ea0d4e8422748c9c105ac0959"
+    },
+    {
+      "file": "data/evidence/gmat/benchmark.script",
+      "sha256": "e3546e19a35846caa642f8058d5f2961c1c059ea35e1d1326ce18c98affa8daf"
+    },
+    {
+      "file": "data/evidence/gmat/case.json",
+      "sha256": "e83e4a798327f0fb571d3862fd80d7ca7f7665fff9c58408015c538d4b07ee30"
+    },
+    {
+      "file": "data/evidence/gmat/status.json",
+      "sha256": "2b61e31912ebc57adf412394f06b9e951f718d6a3eb697e52d1195963bc22922"
+    },
+    {
+      "file": "data/evidence/gmat/twinbound-reference.json",
+      "sha256": "9401349b9437ffd56ed6a78f52f54c9253a805dff985fbe35df794bb4bcf8638"
+    },
+    {
+      "file": "data/evidence/mars/cubesat-review.json",
+      "sha256": "322c990ba28bcb2782c4df9b427a31204cc5d7ae02139c5336d69febaf1387fd"
+    },
+    {
+      "file": "data/evidence/mars/maturity.json",
+      "sha256": "0f66f4480d6e3fff5fead69aa4e8e6df99d868dca2dd673d2547fbd628ea630a"
+    },
+    {
+      "file": "data/evidence/mars/mission-viz-actual-track.csv",
+      "sha256": "650127d32da045885a0b29274c0a2f3694b37e52c238dd7a6f8ecc8d12fdd7a1"
+    },
+    {
+      "file": "data/evidence/mars/mission-viz-osculating-ellipse.csv",
+      "sha256": "6463e92acffda3550c2fe9ee6fe51a5d3444a52793490ff740c48e5fd2c56255"
+    },
+    {
+      "file": "data/evidence/mars/mission-viz.json",
+      "sha256": "cc00276c5c26bcd31db4198e02590a53db6149d535b08e66d1f1364d95e13f40"
+    },
+    {
+      "file": "data/evidence/mars/record.json",
+      "sha256": "cd3a29415c95d5c0cb1ca45aade7ddd45d36b4e6b97a2ae388eadb9cc1205e13"
+    },
+    {
+      "file": "data/evidence/mars/requirements.json",
+      "sha256": "85f0ff3d307547640e9484a1a735b9b2475a0893e72bc27e7d872891b673ecfe"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/index.json",
+      "sha256": "74cfded1072d3f65993f150d393cf9a3562b656cd2b0c1d3fd098a1d81eb6506"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-camera-compact-dedicated-expanded.json",
+      "sha256": "d22d60dd4b091efac90c46a7b7136ab7d7d3283ed330125a2ec8bef38b1d5df4"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-camera-dish-dedicated-expanded.json",
+      "sha256": "fe1c3534662e560a58100a10c81f2d55d95aed50b8512be62683a650d84d18fc"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-clock-compact-dedicated-expanded.json",
+      "sha256": "ff37d03b476586ff548913e06e911404ca59516e70137193b2e900fb878f9845"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-clock-dish-dedicated-expanded.json",
+      "sha256": "da115cbad0ecbb056d9975521f79c2bb5ccb23560994129204cdaf1762ed170f"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-magnetometer-compact-dedicated-expanded.json",
+      "sha256": "2f9980122c602bed5c1f75693bf2b7a288806c7a000af0396c1694e62d06eec2"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-magnetometer-dish-dedicated-expanded.json",
+      "sha256": "29bb72588dacfac7838c8641e4e7c3f6b13b49073b92530f2529398e89658e30"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-spectrometer-compact-dedicated-expanded.json",
+      "sha256": "420d778825fe3bdfa0a8b1112ed91e269f3c63a2af892f08543da4107c94673d"
+    },
+    {
+      "file": "data/evidence/mars/trade-studies/mars-composition-spectrometer-dish-dedicated-expanded.json",
+      "sha256": "7b7642f2a8eed43f7c7600e3b94efc4777dafcd088b3ad41c1aaa8e6c9c321e9"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/cubesat-review.json",
+      "sha256": "80559fd90b597693c8c3b151d2024b779be52d52eb817596639716f5689de3a8"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/maturity.json",
+      "sha256": "f0cd83c116feeea1eb7467e99b4ea72670b2fede58b98441bb6b1bd91be893b3"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/mission-viz-actual-track.csv",
+      "sha256": "650127d32da045885a0b29274c0a2f3694b37e52c238dd7a6f8ecc8d12fdd7a1"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/mission-viz-osculating-ellipse.csv",
+      "sha256": "6463e92acffda3550c2fe9ee6fe51a5d3444a52793490ff740c48e5fd2c56255"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/mission-viz.json",
+      "sha256": "cc00276c5c26bcd31db4198e02590a53db6149d535b08e66d1f1364d95e13f40"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/record.json",
+      "sha256": "f235b67d12405afc00ffecca1cafbb3298aa6acd5941144ba01db7980f31a57a"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/requirements.json",
+      "sha256": "0fd4c1f710ac35aa0509c6fd4a5e55c7d26af5b8c3263b8d445288a301220f99"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/index.json",
+      "sha256": "74cfded1072d3f65993f150d393cf9a3562b656cd2b0c1d3fd098a1d81eb6506"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-camera-compact-dedicated-expanded.json",
+      "sha256": "d22d60dd4b091efac90c46a7b7136ab7d7d3283ed330125a2ec8bef38b1d5df4"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-camera-dish-dedicated-expanded.json",
+      "sha256": "fe1c3534662e560a58100a10c81f2d55d95aed50b8512be62683a650d84d18fc"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-clock-compact-dedicated-expanded.json",
+      "sha256": "ff37d03b476586ff548913e06e911404ca59516e70137193b2e900fb878f9845"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-clock-dish-dedicated-expanded.json",
+      "sha256": "da115cbad0ecbb056d9975521f79c2bb5ccb23560994129204cdaf1762ed170f"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-magnetometer-compact-dedicated-expanded.json",
+      "sha256": "2f9980122c602bed5c1f75693bf2b7a288806c7a000af0396c1694e62d06eec2"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-magnetometer-dish-dedicated-expanded.json",
+      "sha256": "29bb72588dacfac7838c8641e4e7c3f6b13b49073b92530f2529398e89658e30"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-spectrometer-compact-dedicated-expanded.json",
+      "sha256": "420d778825fe3bdfa0a8b1112ed91e269f3c63a2af892f08543da4107c94673d"
+    },
+    {
+      "file": "data/evidence/mars-incompatible/trade-studies/mars-composition-spectrometer-dish-dedicated-expanded.json",
+      "sha256": "7b7642f2a8eed43f7c7600e3b94efc4777dafcd088b3ad41c1aaa8e6c9c321e9"
+    },
+    {
+      "file": "data/evidence/moon/cubesat-review.json",
+      "sha256": "f54357a6bae966bd529b7e06f6aae2815f64c9260f38252300890d2b051b08d4"
+    },
+    {
+      "file": "data/evidence/moon/maturity.json",
+      "sha256": "54e2d3869fbb72695605695eba9669c14949383355fb74dcd06f5e1d10d7950a"
+    },
+    {
+      "file": "data/evidence/moon/mission-viz-actual-track.csv",
+      "sha256": "6067c272e62e30007ee06254bbdb9a3b0b971421e870ba731d04d6982a5c4bed"
+    },
+    {
+      "file": "data/evidence/moon/mission-viz-osculating-ellipse.csv",
+      "sha256": "796ceb68a3eb1bf484901b6fa459ab754f084e31290d2108d89dc7fdf9b2e14d"
+    },
+    {
+      "file": "data/evidence/moon/mission-viz.json",
+      "sha256": "46f204c08cd1b7885fbf918f5d84ad0ab41dac45ea8cac42d2d4286c7fe2ee6e"
+    },
+    {
+      "file": "data/evidence/moon/record.json",
+      "sha256": "f2b670d10b58c81d767050ca1fee2b7b531b52592825176ced3b5d2439d1031b"
+    },
+    {
+      "file": "data/evidence/moon/requirements.json",
+      "sha256": "a4ac7a2fc5d2c4eed62b425e242ff1f7d3e9d649b5d6e3ea33730c80de2e56bc"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/index.json",
+      "sha256": "1e119618c344ef2699e7c207427428f57127271ffe00880c6dfb10031c4d920f"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-camera-compact-dedicated-expanded.json",
+      "sha256": "c96addb15b231cb05f6298a881b7ef05d2511fa50fc4db24dac6839440ab3b76"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-camera-dish-dedicated-expanded.json",
+      "sha256": "8281e18faccb705d2c1c3bc543af8e9e68933ae18d91ce1afe07c9d39aff834c"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-clock-compact-dedicated-expanded.json",
+      "sha256": "1173650f4898fa27c0e23ab1a6ffba625624669bd80fb49761cfda13e84d56d4"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-clock-dish-dedicated-expanded.json",
+      "sha256": "4ca60337877dcd8374b41abf7d6533fd596a26fc844daed287108b5f125e3d45"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-magnetometer-compact-dedicated-expanded.json",
+      "sha256": "17191c951778cd254c4eba677c45bc0401ebc54795a00b0afd272a51f44a27c0"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-magnetometer-dish-dedicated-expanded.json",
+      "sha256": "8acfecedfb3a91cc000f826db38cc421cf2603475052bfc6b2aed8a30c5a747d"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-spectrometer-compact-dedicated-expanded.json",
+      "sha256": "ee0706a0fc29080e49a5d5b00d6250f2a49632c9c63d6df63c6d2efa8f7cc656"
+    },
+    {
+      "file": "data/evidence/moon/trade-studies/moon-imaging-spectrometer-dish-dedicated-expanded.json",
+      "sha256": "4fbe825f4c250fde45cc13295addd57e34cf58f0f7be2a1580f012375ddc0523"
+    },
+    {
+      "file": "data/evidence/pluto/cubesat-review.json",
+      "sha256": "653efb2a48fe259a05de99dcc5ae7281fff914f354b7beb80da4f4415b3120ec"
+    },
+    {
+      "file": "data/evidence/pluto/maturity.json",
+      "sha256": "2687d20a85c132b6619661663c9527c300ce16a4489a169d094308ceda7c7b79"
+    },
+    {
+      "file": "data/evidence/pluto/mission-viz-actual-track.csv",
+      "sha256": "1c1d2bc3f2b7cd0d1c4629d607e1eb72df23e7b0b7b3b2b97fd8f6c3a5195768"
+    },
+    {
+      "file": "data/evidence/pluto/mission-viz-osculating-ellipse.csv",
+      "sha256": "5a9c80096e990d971e9a10f1d6670dad4ff1e398a9c63179a1f86ba11580a761"
+    },
+    {
+      "file": "data/evidence/pluto/mission-viz.json",
+      "sha256": "37100552052942ca0ebd33b96911db57808eb4c1054868c53a557ac52a626558"
+    },
+    {
+      "file": "data/evidence/pluto/record.json",
+      "sha256": "b0821239cbc956a52d3dc92e703247663f38d25be36d170c760d712e38eb150a"
+    },
+    {
+      "file": "data/evidence/pluto/requirements.json",
+      "sha256": "9ba1e83893c46be713d1c837106b535f77cb2650e0f241b2aaf0682405e750dc"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/index.json",
+      "sha256": "3baca4fd5d4ad8affff397f1bc4e5d429fc34cfa72689157291b9276d3439263"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-camera-compact-dedicated-expanded.json",
+      "sha256": "5128aa7a4b47516fa1173eaa60ed05ecfbb93e73b1943724b1ba65315142c24e"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-camera-dish-dedicated-expanded.json",
+      "sha256": "aafa34c2dcb316fad9b7ca2b14b4f26b7e39fe6540201eca663e6287ab72cbc0"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-clock-compact-dedicated-expanded.json",
+      "sha256": "16a3854647ebaee843e6b6340c2ba3c54350f05a78f774319f54e96f8016f54b"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-clock-dish-dedicated-expanded.json",
+      "sha256": "45d26b90251e194cc9460a0b8831209ac3936a0542bf2fc39ef7c3e1b3f065b2"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-magnetometer-compact-dedicated-expanded.json",
+      "sha256": "66eab0cc165fc560973820fe2f2e0d634bfb8377796c7a38f1d4d5fe1b844976"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-magnetometer-dish-dedicated-expanded.json",
+      "sha256": "a74a94a2a167471a81be64348fe8a0f6b4239dc34517e5130899b5b6a83997cb"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-spectrometer-compact-dedicated-expanded.json",
+      "sha256": "e943a0674dc0bb86df5cfe28d5d8509c86f2b0fbe2229900bc2356e923f00515"
+    },
+    {
+      "file": "data/evidence/pluto/trade-studies/pluto-imaging-spectrometer-dish-dedicated-expanded.json",
+      "sha256": "8e1cb92a75e8db9f110c364cd603a921ed2f19a6ad69770fc8f17ef968a06ef3"
+    },
+    {
+      "file": "data/evidence/proxima/cubesat-review.json",
+      "sha256": "290ddacb464ace3f2a5b833c6ee63613ab4af81aa91f47e58829599e7dace69c"
+    },
+    {
+      "file": "data/evidence/proxima/maturity.json",
+      "sha256": "8f0c8bff8865462e7f2522501371050e9be40790909a33f56662ffb54ae2ab8b"
+    },
+    {
+      "file": "data/evidence/proxima/mission-viz.json",
+      "sha256": "8970772029b4e5ff3acceee5cd8ccc3bf6a7b93b82560240e789de27ac46b8cd"
+    },
+    {
+      "file": "data/evidence/proxima/record.json",
+      "sha256": "48ba501c4ca9ba89a581993b208f91d7c77117ca4ecc016dd4da304a5925afae"
+    },
+    {
+      "file": "data/evidence/proxima/requirements.json",
+      "sha256": "5f131e08613be374e8cd89af5c06bc7602133a8b50928ea27da3b41119caedab"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/index.json",
+      "sha256": "c870d017843f57c8cc2db0b6a60a011ff2f12ea2efb92fc62a410daec55c04b5"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-camera-compact-dedicated-expanded.json",
+      "sha256": "de7f64d5205fe2caa1e00a78cde4ffaff140de5f04ce32b39e84cdd46f23b527"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-camera-dish-dedicated-expanded.json",
+      "sha256": "47b024a200a73623b7856b8b3f3c3a0f069b6bc90c86d7b0ebdeac18a5434a85"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-clock-compact-dedicated-expanded.json",
+      "sha256": "baa4511ef357d66e3e73a15c0d5b6525a0436b08f919a86067bbd691dfb6dc10"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-clock-dish-dedicated-expanded.json",
+      "sha256": "cdc449f3c5b55653c09966c8b32a7d2a8d5e771dce21e939fad77aa94bfa4612"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-magnetometer-compact-dedicated-expanded.json",
+      "sha256": "1eadd4ef476530662c66c328ff1d6429a974b847c380d61dd9cbee144bc0bdcd"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-magnetometer-dish-dedicated-expanded.json",
+      "sha256": "3fbdca7f1fcc09edd189421f9a15a1bb77cb04e6c417054e483a9ca1abe7feb4"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-spectrometer-compact-dedicated-expanded.json",
+      "sha256": "14a83f4486bac1375c52393d6a90930fa8ea1852253bfa24b3f4fa17074e7d02"
+    },
+    {
+      "file": "data/evidence/proxima/trade-studies/proxima-clocks-spectrometer-dish-dedicated-expanded.json",
+      "sha256": "15e87aa8ac728231ef4c977cfc27678e24c3ccc653c5e3dc40ae0b1c08b37a2b"
+    },
+    {
+      "file": "data/evidence/resource-audit-v101.json",
+      "sha256": "c0fd3b6cd1d712651d921cb6cd7c872b3cdb6d6ef5049d99ed847c109ac42108"
+    },
+    {
+      "file": "data/evidence/resource-audit-v102.json",
+      "sha256": "8036d5282c7de715070fff5d7258da5b0d55a04a76fd3fff46ba8b6840cc3600"
+    },
+    {
+      "file": "data/evidence/resource-audit-v103.json",
+      "sha256": "271e399a4e3bdfb065b7956bb05084d92eba0d55205a784d0edcbd530d91718a"
+    },
+    {
+      "file": "data/evidence/source-snapshots.json",
+      "sha256": "2121ccdadefe24043d187928ecea5569b2f33b978f0da3069363fdbe7c29a97e"
+    },
+    {
+      "file": "data/evidence/summary.json",
+      "sha256": "f8b76f54a98d53b368825fbe1a54be509b8f176236e5a308bbed34050f36bebb"
+    },
+    {
+      "file": "data/gravity_v3.json",
+      "sha256": "f70a6109d87c4fda8ce604e721cf02fb38371a1cccaebb57613d9b8c2568fce9"
+    },
+    {
+      "file": "data/horizons_v10/earth.bin",
+      "sha256": "222c00110021fc6384d1f9b65e9abb95801d7f8d4a6dc52dbc0961168d49de8b"
+    },
+    {
+      "file": "data/horizons_v10/earth.json.gz",
+      "sha256": "5be07f4db590beb3ae4d57252564da5257855034abaeb27670bc59d6f847a520"
+    },
+    {
+      "file": "data/horizons_v10/jupiter.bin",
+      "sha256": "bb711ac36b42f1f88c1adf7040fd2d0ea5cb64434b5558ed2c939104951296b8"
+    },
+    {
+      "file": "data/horizons_v10/jupiter.json.gz",
+      "sha256": "973d6baf3496b706b24b8f5f9e517e4e2fac0bc7fbd45d7eebcf10a14d5205ef"
+    },
+    {
+      "file": "data/horizons_v10/manifest.json",
+      "sha256": "b3f49d8b388319a03f81c7a8f624aedd0f41a3daf554e8a98e985fc01ab2b795"
+    },
+    {
+      "file": "data/horizons_v10/mars.bin",
+      "sha256": "b21da9d6d311ec428abc3e8d26812d04625205d1cde9c457b23adf8e62db9b77"
+    },
+    {
+      "file": "data/horizons_v10/mars.json.gz",
+      "sha256": "f7138dd2c9055c079112658c3434d52ce2ec097a892bb5b61ec0c8c5e9890157"
+    },
+    {
+      "file": "data/horizons_v10/mercury.bin",
+      "sha256": "2501a3ecfbc714b23817630fe471ba98e817c9ebaeb3af2fe18ad2892b990883"
+    },
+    {
+      "file": "data/horizons_v10/mercury.json.gz",
+      "sha256": "9180f6b734ca40ac81b2fe3365c61ba8fdca1d54e19d06e0196d590bbd1ead7a"
+    },
+    {
+      "file": "data/horizons_v10/moon.bin",
+      "sha256": "4d848859252753f2a5a486801c66504285cae49320bacee22515b447bf3c5b32"
+    },
+    {
+      "file": "data/horizons_v10/moon.json.gz",
+      "sha256": "59ef61c74cc08f2448154619c0dc5c14ed05cd49bbc45db18a7d049e351140f9"
+    },
+    {
+      "file": "data/horizons_v10/neptune.bin",
+      "sha256": "4ad6ea90cb7b61006a3bff3dafe0ee0e5db083b6668f6f7287a5ecae00237ada"
+    },
+    {
+      "file": "data/horizons_v10/neptune.json.gz",
+      "sha256": "17aeee9e0ad07e8e6af52701ceecd3cf387562483d672505f4271513a529a70b"
+    },
+    {
+      "file": "data/horizons_v10/pluto.bin",
+      "sha256": "19debfb563df2e14d320a6bb3102ccf550bf1e02cf41bd5889eb10bae7f13404"
+    },
+    {
+      "file": "data/horizons_v10/pluto.json.gz",
+      "sha256": "92c8f67e55a726c70bdd1374c891f5e58f7af7e83c12fcba9b12a067e8a67b3e"
+    },
+    {
+      "file": "data/horizons_v10/saturn.bin",
+      "sha256": "6c90d7b1944580f6a52c157f20178d6a6b23fd869c0c2d4a03d8b912cbdb4190"
+    },
+    {
+      "file": "data/horizons_v10/saturn.json.gz",
+      "sha256": "9b362782d50970bbe66790e052e728090e9347c0854b5dbfd1b5328699289ef9"
+    },
+    {
+      "file": "data/horizons_v10/sun.bin",
+      "sha256": "056a18a6f5a1134a17b21a167bb7f610034884ff1b96052c6170181969ed0f30"
+    },
+    {
+      "file": "data/horizons_v10/sun.json.gz",
+      "sha256": "7fe293d422444d316e51062dc7b7d1f90b6bf346f417b7b5bd7db274418d5d01"
+    },
+    {
+      "file": "data/horizons_v10/uranus.bin",
+      "sha256": "6fe4b9be2e6ecf5792d1baa94da0700b74a552945b9ae0c480b003146a9c55c0"
+    },
+    {
+      "file": "data/horizons_v10/uranus.json.gz",
+      "sha256": "2ee2937e42f39e28d315fd136f0aa4f28319ffd9f6b36f821f97472b8c79be1c"
+    },
+    {
+      "file": "data/horizons_v10/venus.bin",
+      "sha256": "624b6ae12d8c08e1e13d716474f5516848e5059adbc9c58b70c1f7ff5af9c5e6"
+    },
+    {
+      "file": "data/horizons_v10/venus.json.gz",
+      "sha256": "a986846d2572a372c9b57098e981f7aafee35b4a6b01017371d178ce1ff3185e"
+    },
+    {
+      "file": "data/lab_v8.json",
+      "sha256": "4fd20429fa59352d46d3f45f84664f52675933ada90a36c7a36360a7c6f088d7"
+    },
+    {
+      "file": "data/photos.json",
+      "sha256": "868ce6643af344994b183920d5574888d38d1390e8c6a1eaa5d46597b35ddae4"
+    },
+    {
+      "file": "data/validation/cache_rebuild.log",
+      "sha256": "cb72eb562ce2c763645cf66b985e14e1b5bc96515167dd11174fd68f71de0893"
+    },
+    {
+      "file": "data/validation/controlled_missions.json",
+      "sha256": "1825da0477e426889b6d334bea97deb96b46d9cd88877c8ec8b32f22cfc7a92a"
+    },
+    {
+      "file": "data/validation/interpolation_errors.json",
+      "sha256": "901e80b2bc7386131837f0083fc9d32b7cc37412b68050652ff2e25d9341e117"
+    },
+    {
+      "file": "data/validation/jpl_midpoints.json",
+      "sha256": "ba1f5917732457f3244dab4918f0fe5362edaba9ad9d0e6c5f753e01618a5eb6"
+    },
+    {
+      "file": "data/validation/mission-score-calibration.json",
+      "sha256": "b14d2a16f2f00a8e4756f50dbb1e72174466104425194c7f9e1ed79f7ed77d31"
+    },
+    {
+      "file": "data/validation/mission-score-original-pilot.json",
+      "sha256": "d1839961cbf76af5058f5c2877e978f59f0fb2a7342516522d3fe97fea4b580e"
+    },
+    {
+      "file": "data/validation/numerical_report.json",
+      "sha256": "2e0ade29a69e3c89e75de916ceb30c706ff8ce7318ca5158eaeb2dcff892f6ad"
+    },
+    {
+      "file": "data/validation/release_checks.txt",
+      "sha256": "beb45d4fcc268d10d50f9ec32754464a39de472095421ba785c0a59d4c76cd48"
+    },
+    {
+      "file": "data/validation/tangent_fix_report.json",
+      "sha256": "8afb505b06013d70ef7c1c27578a64b211e48b2b8f15fa65582b091ffbe9433b"
+    },
+    {
+      "file": "data/validation/test_results.tap",
+      "sha256": "484c1f873d984d7a242e3607ef19966f2bb4ce892ec17acc74c9ca2e826433cf"
+    },
+    {
+      "file": "data/validation/v103/api-tests.log",
+      "sha256": "27e15ef31dd11a80bc5c2d85aa8c595f4ae05e7ddaf643206f14dff15ca81fba"
+    },
+    {
+      "file": "data/validation/v103/node-tests.log",
+      "sha256": "ccaa2a2bba68838b65c379dbe7210cc47ee8689057acba86304e0ccdc3a6a6c0"
+    },
+    {
+      "file": "data/validation/v103/release-checks.log",
+      "sha256": "e461ba5b66c9026f902a787109162901000f59d4eb81566e339fa07c505c0742"
+    },
+    {
+      "file": "data/validation/v103/score-rules.log",
+      "sha256": "710d79a13553cf729a0278011ccf59052814569e87ef0b1ea84084854d5144d1"
+    },
+    {
+      "file": "data/validation/validation_report.json",
+      "sha256": "98df5a028e7be38958ea341502930005f5dfda0919836ba6707945139ba344ea"
+    },
+    {
+      "file": "src/art.js",
+      "sha256": "875260b35d4624b61e6b09b46aacbf547788364ee366494ec32908676fb03da6"
+    },
+    {
+      "file": "src/audio.js",
+      "sha256": "dff509dd1c611cb00e90a53c5f9d5356a8b9a7806f6509a230081468a92bd805"
+    },
+    {
+      "file": "src/cockpit.css",
+      "sha256": "f726681c31d74710377e2a724a1a5689dd7082f8680dcdf082e3f24d5843b79c"
+    },
+    {
+      "file": "src/cockpit.js",
+      "sha256": "15aae7da8f7cf6d00e9770f3c236b32a258527891019a4c83090da7395e86e23"
+    },
+    {
+      "file": "src/dynamics.js",
+      "sha256": "15c57a8fb940f6fd265cfd3d4b45f3e8348a2344392152e432a4c8dd229f7abd"
+    },
+    {
+      "file": "src/flight-3d.js",
+      "sha256": "95b6ebc6d5d6caaa0975ff94c8b9f7033751baf40d6476edcf82e8a498292891"
+    },
+    {
+      "file": "src/flight-record.js",
+      "sha256": "8da4d647a4d386450d08ea852ceb7f111f40a2252d8878a57c389da1bed66431"
+    },
+    {
+      "file": "src/mission-analysis-worker.js",
+      "sha256": "7b038b867efb447943478804065a2429af38c4bf8d2344ed48c7bf0a50eba69a"
+    },
+    {
+      "file": "src/mission-score.js",
+      "sha256": "4692b62144284495a2cd23e762febc7013f2a785f26015b53ac25ec96a01c4cd"
+    },
+    {
+      "file": "src/mission.js",
+      "sha256": "8bcf77d7bdc3a68f2a69e822adc6abf3d0360589cda01679e62c1f7706ab7691"
+    },
+    {
+      "file": "src/navigation.js",
+      "sha256": "cb31eb0925d57b236eb9b2b79d6c9b747f70ea512a92ed005866abd07d7499ea"
+    },
+    {
+      "file": "src/orbit-view.js",
+      "sha256": "a35a340098e601373d26613263625dee90eb8f73c10736e80781aaa17a238b97"
+    },
+    {
+      "file": "src/orbit.js",
+      "sha256": "aa10646909ea44552ff06592311c6514c36fd2bcc3836fe0a4504699102adabd"
+    },
+    {
+      "file": "src/photos.js",
+      "sha256": "b5ce3ff1c28240a85527142ac34c75614dc3686b6c834f58d2e6528384bb661a"
+    },
+    {
+      "file": "src/physics.js",
+      "sha256": "049ef2b9e5c8c46ef1d4f25b6d40ce99294d1c4c5c9f6ea62d77d775195d1c93"
+    },
+    {
+      "file": "src/planning-v10.js",
+      "sha256": "ba8badca4b80a0c29587bac0d864d1cc813a2167400a8f7556d7699f50a378ad"
+    },
+    {
+      "file": "src/render.js",
+      "sha256": "e617d39ea9e76e6d78e9bff0a24cc7cd21fe57028a92c2e788ed1a5496baa4ed"
+    },
+    {
+      "file": "src/research/gmat.js",
+      "sha256": "45b77c8cad41713ba21201cc3fb36df50b7fda17767f5c0e21a57ec50485ea3c"
+    },
+    {
+      "file": "src/research/mission-viz.js",
+      "sha256": "3b8a46d831f69babae88602ee267d632ec6266b8f32fc17a9e26768e119ab1c7"
+    },
+    {
+      "file": "src/research/requirements.js",
+      "sha256": "aaec8b60c5385e82c65c7bb8c530c2731daa1700f031b87e1be14311fc3ae592"
+    },
+    {
+      "file": "src/research/sources.js",
+      "sha256": "38f081a79e594cc1c510a210974288cd103ea9f37f5e74cddf0a369da90f986f"
+    },
+    {
+      "file": "src/research/trade-study.js",
+      "sha256": "23a4d93b08810dd71ef36f96564f8202d4587e57a88a63a0da32c8d5a71008b7"
+    },
+    {
+      "file": "src/storage.js",
+      "sha256": "19a08459effa0a813e385e4b73df1cee23454fcb757f38f9f6b409bae273802b"
+    },
+    {
+      "file": "src/style.css",
+      "sha256": "faaccb16d32685bd99188b59cb4d473a2e171f34a505fee6ffcec7ef6749814b"
+    },
+    {
+      "file": "src/trajectory-worker.js",
+      "sha256": "a2269477948e388f60fff571032b35d61ba3da18b76e86ada13f74efda0973d5"
+    }
+  ],
+  "configWithoutVersionSha256": "331a5bc1e6bc9062b282afc793820f9101d4f9dd4da4bf9a7255a0e1ea9506e7",
+  "scoringRulesWithoutGameVersion": {
+    "scoreVersion": "10.3.0-1",
+    "bonusCaps": {
+      "moon": 9960,
+      "mars": 22636,
+      "pluto": 31204,
+      "proxima": 48866
+    },
+    "equipment": {
+      "engine": {
+        "name": "Engine",
+        "icon": "engine",
+        "color": "#ffbe87",
+        "items": [
+          {
+            "name": "Spark",
+            "tier": "Basic",
+            "tag": "Lower cost; more refueling",
+            "price": 85000,
+            "mass": 58,
+            "thrust": 14000,
+            "isp": 180,
+            "fuel": 180,
+            "bonus": 0.35,
+            "detail": "Isp 180 s · Thrust 14 kN · Fuel 180 kg",
+            "note": "Lower specific impulse uses more fuel for each maneuver."
+          },
+          {
+            "name": "Cruiser",
+            "tier": "Standard",
+            "tag": "Balanced propulsion",
+            "price": 240000,
+            "mass": 78,
+            "thrust": 15000,
+            "isp": 285,
+            "fuel": 220,
+            "bonus": 0.16,
+            "detail": "Isp 285 s · Thrust 15 kN · Fuel 220 kg",
+            "note": "A balance of thrust, fuel capacity, and cost."
+          },
+          {
+            "name": "Meteor",
+            "tier": "Advanced",
+            "tag": "Higher fuel efficiency",
+            "price": 680000,
+            "mass": 95,
+            "thrust": 16000,
+            "isp": 420,
+            "fuel": 260,
+            "bonus": 0,
+            "detail": "Isp 420 s · Thrust 16 kN · Fuel 260 kg",
+            "note": "Higher specific impulse and a larger tank support repeated maneuvers."
+          }
+        ]
+      },
+      "hull": {
+        "name": "Hull",
+        "icon": "hull",
+        "color": "#bbaff5",
+        "items": [
+          {
+            "name": "Lightframe",
+            "tier": "Basic",
+            "tag": "One hit ends the flight",
+            "price": 65000,
+            "mass": 65,
+            "health": 1,
+            "bonus": 0.35,
+            "detail": "Impact capacity 1  hits · Structure 65 kg",
+            "note": "A direct impact ends the flight. Near misses do not count as impacts."
+          },
+          {
+            "name": "Reinforced",
+            "tier": "Standard",
+            "tag": "Room for mistakes",
+            "price": 190000,
+            "mass": 105,
+            "health": 3,
+            "bonus": 0.16,
+            "detail": "Impact capacity 3  hits · Structure 105 kg",
+            "note": "Brief protection follows an impact. A repair pickup restores one cell."
+          },
+          {
+            "name": "Heavy shield",
+            "tier": "Advanced",
+            "tag": "More impact protection",
+            "price": 520000,
+            "mass": 155,
+            "health": 5,
+            "bonus": 0,
+            "detail": "Impact capacity 5  hits · Structure 155 kg",
+            "note": "Heavier protection reduces acceleration at the same thrust."
+          }
+        ]
+      },
+      "power": {
+        "name": "Power system",
+        "icon": "power",
+        "color": "#9ce4cf",
+        "items": [
+          {
+            "name": "Battery pack",
+            "tier": "Basic",
+            "tag": "Collect energy crystals",
+            "price": 55000,
+            "mass": 35,
+            "battery": 100,
+            "generation": 0,
+            "bonus": 0.35,
+            "detail": "100 Wh · Generation 0 W",
+            "note": "About three minutes of baseline endurance. Collect energy to keep flying."
+          },
+          {
+            "name": "Solar wing",
+            "tier": "Standard",
+            "tag": "More battery capacity",
+            "price": 210000,
+            "mass": 65,
+            "battery": 180,
+            "generation": 350,
+            "bonus": 0.16,
+            "detail": "180 Wh · Average generation 350 W",
+            "note": "Generation is a gameplay constant; sunlight and solar distance are not modeled."
+          },
+          {
+            "name": "Continuous power unit",
+            "tier": "Advanced",
+            "tag": "Longer endurance",
+            "price": 730000,
+            "mass": 110,
+            "battery": 400,
+            "generation": 950,
+            "bonus": 0,
+            "detail": "400 Wh · Generation 950 W",
+            "note": "Long endurance, with the highest cost and mass."
+          }
+        ]
+      }
+    },
+    "instruments": {
+      "camera": {
+        "name": "Survey camera",
+        "mass": 12,
+        "powerW": 65,
+        "dataMBps": 0.12,
+        "price": 80000,
+        "storageMB": 32,
+        "measures": "visible imaging"
+      },
+      "spectrometer": {
+        "name": "Imaging spectrometer",
+        "mass": 28,
+        "powerW": 210,
+        "dataMBps": 0.4,
+        "price": 280000,
+        "storageMB": 64,
+        "measures": "spectral composition"
+      },
+      "magnetometer": {
+        "name": "Fields and particles package",
+        "mass": 8,
+        "powerW": 35,
+        "dataMBps": 0.045,
+        "price": 60000,
+        "storageMB": 16,
+        "measures": "local environment"
+      },
+      "clock": {
+        "name": "Clock comparison package",
+        "mass": 6,
+        "powerW": 25,
+        "dataMBps": 0.025,
+        "price": 75000,
+        "storageMB": 16,
+        "measures": "elapsed proper time"
+      }
+    },
+    "radios": {
+      "compact": {
+        "name": "Compact radio",
+        "mass": 7,
+        "powerW": 45,
+        "price": 45000,
+        "rateAtAU": 0.8,
+        "maxMBps": 0.25
+      },
+      "dish": {
+        "name": "High-gain radio",
+        "mass": 19,
+        "powerW": 160,
+        "price": 150000,
+        "rateAtAU": 12,
+        "maxMBps": 1.2
+      }
+    },
+    "launchers": {
+      "shared": {
+        "name": "Shared injection service",
+        "capacityKg": 650,
+        "extraCost": 0
+      },
+      "dedicated": {
+        "name": "Dedicated injection service",
+        "capacityKg": 1100,
+        "extraCost": 350000
+      }
+    },
+    "budgets": {
+      "lean": 1600000,
+      "expanded": 3500000
+    },
+    "objectives": {
+      "imaging": {
+        "name": "Map visible features",
+        "instrument": "camera",
+        "requiredMB": 2,
+        "deliverable": "A visible-light flyby survey"
+      },
+      "composition": {
+        "name": "Compare surface composition",
+        "instrument": "spectrometer",
+        "requiredMB": 6,
+        "deliverable": "A spectral composition survey"
+      },
+      "environment": {
+        "name": "Measure the local environment",
+        "instrument": "magnetometer",
+        "requiredMB": 1,
+        "deliverable": "An in-situ fields and particles record"
+      },
+      "clocks": {
+        "name": "Compare Earth and onboard clocks",
+        "instrument": "clock",
+        "requiredMB": 0.5,
+        "deliverable": "An onboard record of the ideal relativistic journey"
+      }
+    },
+    "levels": {
+      "moon": {
+        "objectives": [
+          "imaging",
+          "composition",
+          "environment"
+        ],
+        "range": [
+          2.6,
+          5.5,
+          0.005
+        ],
+        "multiplier": 1,
+        "maxDays": 20
+      },
+      "mars": {
+        "objectives": [
+          "imaging",
+          "composition",
+          "environment"
+        ],
+        "range": [
+          1,
+          30,
+          0.01
+        ],
+        "multiplier": 1.35,
+        "maxDays": 1095.75
+      },
+      "pluto": {
+        "objectives": [
+          "imaging",
+          "composition",
+          "environment"
+        ],
+        "range": [
+          10,
+          75,
+          0.01
+        ],
+        "multiplier": 1.8,
+        "maxDays": 7305
+      },
+      "proxima": {
+        "objectives": [
+          "clocks",
+          "environment"
+        ],
+        "range": [
+          0.3,
+          0.8,
+          0.005
+        ],
+        "multiplier": 2.3,
+        "maxDays": 18262.5
+      }
+    },
+    "costBenchmarks": {
+      "moon:imaging": {
+        "minimumValidCost": 450000,
+        "referenceCost": 1325000,
+        "validDesigns": 101,
+        "referenceBudget": 3500000
+      },
+      "moon:composition": {
+        "minimumValidCost": 650000,
+        "referenceCost": 1520000,
+        "validDesigns": 99,
+        "referenceBudget": 3500000
+      },
+      "moon:environment": {
+        "minimumValidCost": 430000,
+        "referenceCost": 1312500,
+        "validDesigns": 102,
+        "referenceBudget": 3500000
+      },
+      "mars:imaging": {
+        "minimumValidCost": 450000,
+        "referenceCost": 1325000,
+        "validDesigns": 101,
+        "referenceBudget": 3500000
+      },
+      "mars:composition": {
+        "minimumValidCost": 650000,
+        "referenceCost": 1520000,
+        "validDesigns": 99,
+        "referenceBudget": 3500000
+      },
+      "mars:environment": {
+        "minimumValidCost": 430000,
+        "referenceCost": 1312500,
+        "validDesigns": 102,
+        "referenceBudget": 3500000
+      },
+      "pluto:imaging": {
+        "minimumValidCost": 450000,
+        "referenceCost": 1325000,
+        "validDesigns": 101,
+        "referenceBudget": 3500000
+      },
+      "pluto:composition": {
+        "minimumValidCost": 650000,
+        "referenceCost": 1520000,
+        "validDesigns": 99,
+        "referenceBudget": 3500000
+      },
+      "pluto:environment": {
+        "minimumValidCost": 430000,
+        "referenceCost": 1312500,
+        "validDesigns": 102,
+        "referenceBudget": 3500000
+      },
+      "proxima:clocks": {
+        "minimumValidCost": 445000,
+        "referenceCost": 1327500,
+        "validDesigns": 102,
+        "referenceBudget": 3500000
+      },
+      "proxima:environment": {
+        "minimumValidCost": 430000,
+        "referenceCost": 1312500,
+        "validDesigns": 102,
+        "referenceBudget": 3500000
+      }
+    }
+  }
+}

@@ -1,0 +1,718 @@
+TAP version 13
+# Subtest: application flow plans, configures, starts, pauses, ends, and exports with the actual worker
+ok 1 - application flow plans, configures, starts, pauses, ends, and exports with the actual worker
+  ---
+  duration_ms: 1911.819701
+  type: 'test'
+  ...
+# Subtest: missing NASA reference metadata does not block normal offline flight
+ok 2 - missing NASA reference metadata does not block normal offline flight
+  ---
+  duration_ms: 270.941033
+  type: 'test'
+  ...
+# Subtest: actual JPL mission with random v9 encounters reaches the real Moon and unlocks the matching photo
+ok 3 - actual JPL mission with random v9 encounters reaches the real Moon and unlocks the matching photo
+  ---
+  duration_ms: 1469.811206
+  type: 'test'
+  ...
+# Subtest: the actual 3D drawing routine renders valid finite geometry at desktop and mobile sizes
+ok 4 - the actual 3D drawing routine renders valid finite geometry at desktop and mobile sizes
+  ---
+  duration_ms: 157.014261
+  type: 'test'
+  ...
+# Subtest: v10.1 dynamics, navigation, orbit renderer, art, audio, saves and NASA data remain byte-identical
+ok 5 - v10.1 dynamics, navigation, orbit renderer, art, audio, saves and NASA data remain byte-identical
+  ---
+  duration_ms: 168.677592
+  type: 'test'
+  ...
+# Subtest: the default 2D game has exact v10.1 outcomes for identical seeds, equipment and input
+ok 6 - the default 2D game has exact v10.1 outcomes for identical seeds, equipment and input
+  ---
+  duration_ms: 531.609347
+  type: 'test'
+  ...
+# Subtest: 2D linked navigation and science preserve the complete baseline result on all four destinations
+ok 7 - 2D linked navigation and science preserve the complete baseline result on all four destinations
+  ---
+  duration_ms: 2379.077493
+  type: 'test'
+  ...
+# Subtest: 3D uses the same single-engine fuel flow for normalized three-axis input
+ok 8 - 3D uses the same single-engine fuel flow for normalized three-axis input
+  ---
+  duration_ms: 0.769263
+  type: 'test'
+  ...
+# Subtest: forward and reverse, and ascend and descend, cancel without free impulse
+ok 9 - forward and reverse, and ascend and descend, cancel without free impulse
+  ---
+  duration_ms: 0.267241
+  type: 'test'
+  ...
+# Subtest: coasting preserves local vertical momentum without fuel use
+ok 10 - coasting preserves local vertical momentum without fuel use
+  ---
+  duration_ms: 0.254892
+  type: 'test'
+  ...
+# Subtest: 3D vertical thrust changes the real 3D trajectory and spends fuel
+ok 11 - 3D vertical thrust changes the real 3D trajectory and spends fuel
+  ---
+  duration_ms: 8.503384
+  type: 'test'
+  ...
+# Subtest: 3D swept collisions and pickups require actual spatial proximity
+ok 12 - 3D swept collisions and pickups require actual spatial proximity
+  ---
+  duration_ms: 0.533239
+  type: 'test'
+  ...
+# Subtest: cockpit bonus applies only to earned points while active and cannot be farmed by toggling
+ok 13 - cockpit bonus applies only to earned points while active and cannot be farmed by toggling
+  ---
+  duration_ms: 0.437616
+  type: 'test'
+  ...
+# Subtest: depth allocation is deterministic and does not consume the obstacle random stream
+ok 14 - depth allocation is deterministic and does not consume the obstacle random stream
+  ---
+  duration_ms: 0.214121
+  type: 'test'
+  ...
+# Subtest: perspective projection distinguishes vertical and forward depth with a near-plane guard
+ok 15 - perspective projection distinguishes vertical and forward depth with a near-plane guard
+  ---
+  duration_ms: 0.16673
+  type: 'test'
+  ...
+# Subtest: 3D guidance includes vertical corrections and preserves safe-route hints
+ok 16 - 3D guidance includes vertical corrections and preserves safe-route hints
+  ---
+  duration_ms: 0.186971
+  type: 'test'
+  ...
+# Subtest: a complete controlled 3D mission reaches moon and preserves its base award
+ok 17 - a complete controlled 3D mission reaches moon and preserves its base award
+  ---
+  duration_ms: 1028.733722
+  type: 'test'
+  ...
+# Subtest: a complete controlled 3D mission reaches mars and preserves its base award
+ok 18 - a complete controlled 3D mission reaches mars and preserves its base award
+  ---
+  duration_ms: 1708.116696
+  type: 'test'
+  ...
+# Subtest: a complete controlled 3D mission reaches pluto and preserves its base award
+ok 19 - a complete controlled 3D mission reaches pluto and preserves its base award
+  ---
+  duration_ms: 10029.388438
+  type: 'test'
+  ...
+# Subtest: a complete controlled 3D mission reaches proxima and preserves its base award
+ok 20 - a complete controlled 3D mission reaches proxima and preserves its base award
+  ---
+  duration_ms: 117.728645
+  type: 'test'
+  ...
+# Subtest: map initial tangents agree with independently propagated frame-relative motion
+ok 21 - map initial tangents agree with independently propagated frame-relative motion
+  ---
+  duration_ms: 1373.059828
+  type: 'test'
+  ...
+# Subtest: Mars requires adding Earth orbital velocity before drawing the solar-frame direction
+ok 22 - Mars requires adding Earth orbital velocity before drawing the solar-frame direction
+  ---
+  duration_ms: 0.841512
+  type: 'test'
+  ...
+# Subtest: rocket lies on the actual visible green curve and its axis follows the local tangent in XY and XZ
+ok 23 - rocket lies on the actual visible green curve and its axis follows the local tangent in XY and XZ
+  ---
+  duration_ms: 11.050511
+  type: 'test'
+  ...
+# Subtest: Bezier start derivative equals the physical relative velocity, including nonzero Z
+ok 24 - Bezier start derivative equals the physical relative velocity, including nonzero Z
+  ---
+  duration_ms: 1014.807985
+  type: 'test'
+  ...
+# Subtest: actual Canvas rocket rotation follows its visible curve even while new slider values are pending
+ok 25 - actual Canvas rocket rotation follows its visible curve even while new slider values are pending
+  ---
+  duration_ms: 4.362669
+  type: 'test'
+  ...
+# Subtest: dragging the current arrow preserves controls instead of interpreting total velocity as relative heading
+ok 26 - dragging the current arrow preserves controls instead of interpreting total velocity as relative heading
+  ---
+  duration_ms: 2.899215
+  type: 'test'
+  ...
+# Subtest: drag inversion can reach a physically attainable different XY direction
+ok 27 - drag inversion can reach a physically attainable different XY direction
+  ---
+  duration_ms: 1.893518
+  type: 'test'
+  ...
+# Subtest: stellar preview and actual arrival use the same 0.2 percent encounter radius
+ok 28 - stellar preview and actual arrival use the same 0.2 percent encounter radius
+  ---
+  duration_ms: 1.263734
+  type: 'test'
+  ...
+# Subtest: a live maneuver invalidates old forecasts, including a late worker response
+ok 29 - a live maneuver invalidates old forecasts, including a late worker response
+  ---
+  duration_ms: 17.076683
+  type: 'test'
+  ...
+# Subtest: a forecast whose encounter is already in the past cannot affect current navigation risk
+ok 30 - a forecast whose encounter is already in the past cannot affect current navigation risk
+  ---
+  duration_ms: 1.885886
+  type: 'test'
+  ...
+# Subtest: closest-approach relative speed is finite when the nearest point is an endpoint
+ok 31 - closest-approach relative speed is finite when the nearest point is an endpoint
+  ---
+  duration_ms: 0.537395
+  type: 'test'
+  ...
+# Subtest: a fast surface crossing is detected and localized even with negligible gravity
+ok 32 - a fast surface crossing is detected and localized even with negligible gravity
+  ---
+  duration_ms: 0.995172
+  type: 'test'
+  ...
+# Subtest: live coasting and preflight integration agree at the same simulated time on each planetary mission
+ok 33 - live coasting and preflight integration agree at the same simulated time on each planetary mission
+  ---
+  duration_ms: 377.66
+  type: 'test'
+  ...
+# Subtest: payload and radio add real dry mass and price without changing the flight score multiplier
+ok 34 - payload and radio add real dry mass and price without changing the flight score multiplier
+  ---
+  duration_ms: 1.345377
+  type: 'test'
+  ...
+# Subtest: oversize and overbudget designs are reported; a dedicated service and expanded cap resolve them
+ok 35 - oversize and overbudget designs are reported; a dedicated service and expanded cap resolve them
+  ---
+  duration_ms: 0.236425
+  type: 'test'
+  ...
+# Subtest: an incompatible instrument can return bytes but cannot complete the selected science goal
+ok 36 - an incompatible instrument can return bytes but cannot complete the selected science goal
+  ---
+  duration_ms: 7.169876
+  type: 'test'
+  ...
+# Subtest: stored, transmitted, and dropped data conserve all generated bytes
+ok 37 - stored, transmitted, and dropped data conserve all generated bytes
+  ---
+  duration_ms: 14.71267
+  type: 'test'
+  ...
+# Subtest: transmitted observations cannot be credited on Earth before their one-way light time
+ok 38 - transmitted observations cannot be credited on Earth before their one-way light time
+  ---
+  duration_ms: 0.399268
+  type: 'test'
+  ...
+# Subtest: a solar-system mission requires ground delivery, while the ideal interstellar demonstration uses an onboard archive
+ok 39 - a solar-system mission requires ground delivery, while the ideal interstellar demonstration uses an onboard archive
+  ---
+  duration_ms: 0.929353
+  type: 'test'
+  ...
+# Subtest: a more capable radio changes return rate; the range law is inverse square below the cap
+ok 40 - a more capable radio changes return rate; the range law is inverse square below the cap
+  ---
+  duration_ms: 0.137806
+  type: 'test'
+  ...
+# Subtest: science and radio power consume the existing battery, and no energy means no new data
+ok 41 - science and radio power consume the existing battery, and no energy means no new data
+  ---
+  duration_ms: 235.974531
+  type: 'test'
+  ...
+# Subtest: Earth distance and solar occultation come from actual physical positions
+ok 42 - Earth distance and solar occultation come from actual physical positions
+  ---
+  duration_ms: 4.562458
+  type: 'test'
+  ...
+# Subtest: malformed and cross-scenario mission settings fall back to valid choices
+ok 43 - malformed and cross-scenario mission settings fall back to valid choices
+  ---
+  duration_ms: 0.466549
+  type: 'test'
+  ...
+# Subtest: configured science mission reaches moon on the event date
+ok 44 - configured science mission reaches moon on the event date
+  ---
+  duration_ms: 1418.442925
+  type: 'test'
+  ...
+# Subtest: configured science mission reaches mars on the event date
+ok 45 - configured science mission reaches mars on the event date
+  ---
+  duration_ms: 1480.117346
+  type: 'test'
+  ...
+# Subtest: configured science mission reaches pluto on the event date
+ok 46 - configured science mission reaches pluto on the event date
+  ---
+  duration_ms: 7856.082738
+  type: 'test'
+  ...
+# Subtest: configured science mission reaches proxima on the event date
+ok 47 - configured science mission reaches proxima on the event date
+  ---
+  duration_ms: 108.194386
+  type: 'test'
+  ...
+# Subtest: live 3D state starts at exactly the predicted injection state
+ok 48 - live 3D state starts at exactly the predicted injection state
+  ---
+  duration_ms: 188.960576
+  type: 'test'
+  ...
+# Subtest: one real second of thrust changes physical 3D velocity and uses one second of propellant
+ok 49 - one real second of thrust changes physical 3D velocity and uses one second of propellant
+  ---
+  duration_ms: 46.484432
+  type: 'test'
+  ...
+# Subtest: the same thrust changes the future real target encounter
+ok 50 - the same thrust changes the future real target encounter
+  ---
+  duration_ms: 26.78332
+  type: 'test'
+  ...
+# Subtest: coasting is genuinely accelerated by moving celestial bodies
+ok 51 - coasting is genuinely accelerated by moving celestial bodies
+  ---
+  duration_ms: 16.212749
+  type: 'test'
+  ...
+# Subtest: relative speed comes from 3D physical velocities, not sprite pixels
+ok 52 - relative speed comes from 3D physical velocities, not sprite pixels
+  ---
+  duration_ms: 6.2652
+  type: 'test'
+  ...
+# Subtest: small evasive maneuver does not suddenly drain navigation health
+ok 53 - small evasive maneuver does not suddenly drain navigation health
+  ---
+  duration_ms: 69.468524
+  type: 'test'
+  ...
+# Subtest: ordinary short evasive burns remain safe on long interplanetary missions
+ok 54 - ordinary short evasive burns remain safe on long interplanetary missions
+  ---
+  duration_ms: 1443.190469
+  type: 'test'
+  ...
+# Subtest: holding down explicitly suppresses even automatic corrective thrust
+ok 55 - holding down explicitly suppresses even automatic corrective thrust
+  ---
+  duration_ms: 32.309954
+  type: 'test'
+  ...
+# Subtest: continued wrong-way thrust drains navigation health and gives the physical opposite hint
+ok 56 - continued wrong-way thrust drains navigation health and gives the physical opposite hint
+  ---
+  duration_ms: 105.510681
+  type: 'test'
+  ...
+# Subtest: actual counter-thrust improves physical risk and gradually restores health
+ok 57 - actual counter-thrust improves physical risk and gradually restores health
+  ---
+  duration_ms: 168.963329
+  type: 'test'
+  ...
+# Subtest: remaining corrective delta-v is included in physical risk
+ok 58 - remaining corrective delta-v is included in physical risk
+  ---
+  duration_ms: 37.786221
+  type: 'test'
+  ...
+# Subtest: finite navigation assistance is charged fuel and cannot override full user thrust
+ok 59 - finite navigation assistance is charged fuel and cannot override full user thrust
+  ---
+  duration_ms: 153.28963
+  type: 'test'
+  ...
+# Subtest: navigation zero ends through the ordinary scored failure result state
+ok 60 - navigation zero ends through the ordinary scored failure result state
+  ---
+  duration_ms: 2.007158
+  type: 'test'
+  ...
+# Subtest: displaying progress 100% cannot grant an unearned arrival
+ok 61 - displaying progress 100% cannot grant an unearned arrival
+  ---
+  duration_ms: 1.207219
+  type: 'test'
+  ...
+# Subtest: risk health has recovery and smoothing, with no ten-second countdown
+ok 62 - risk health has recovery and smoothing, with no ten-second countdown
+  ---
+  duration_ms: 0.262834
+  type: 'test'
+  ...
+# Subtest: actual arrival is gated by a physical distance threshold
+ok 63 - actual arrival is gated by a physical distance threshold
+  ---
+  duration_ms: 813.914901
+  type: 'test'
+  ...
+# Subtest: coast integration converges when max step is reduced
+ok 64 - coast integration converges when max step is reduced
+  ---
+  duration_ms: 13.011631
+  type: 'test'
+  ...
+# Subtest: burn-and-coast solutions remain close at 30 Hz and 120 Hz
+ok 65 - burn-and-coast solutions remain close at 30 Hz and 120 Hz
+  ---
+  duration_ms: 337.208043
+  type: 'test'
+  ...
+# Subtest: stellar mode keeps sublight ideal clocks separate from local maneuver velocities
+ok 66 - stellar mode keeps sublight ideal clocks separate from local maneuver velocities
+  ---
+  duration_ms: 121.750381
+  type: 'test'
+  ...
+# Subtest: all planetary missions finish only at their real encounter, at distinct reasonable play times
+ok 67 - all planetary missions finish only at their real encounter, at distinct reasonable play times
+  ---
+  duration_ms: 10121.878069
+  type: 'test'
+  ...
+# Subtest: all 11 official JPL binary files match their recorded source hashes
+ok 68 - all 11 official JPL binary files match their recorded source hashes
+  ---
+  duration_ms: 67.099193
+  type: 'test'
+  ...
+# Subtest: changing a date changes the real Earth and Pluto 3D states
+ok 69 - changing a date changes the real Earth and Pluto 3D states
+  ---
+  duration_ms: 16.79469
+  type: 'test'
+  ...
+# Subtest: same launch controls on another date produce a different physical prediction
+ok 70 - same launch controls on another date produce a different physical prediction
+  ---
+  duration_ms: 231.238674
+  type: 'test'
+  ...
+# Subtest: date parser and ephemeris reject unsupported ranges without extrapolation
+ok 71 - date parser and ephemeris reject unsupported ranges without extrapolation
+  ---
+  duration_ms: 0.561461
+  type: 'test'
+  ...
+# Subtest: the dated defaults for all four missions can approach their intended target
+ok 72 - the dated defaults for all four missions can approach their intended target
+  ---
+  duration_ms: 994.628647
+  type: 'test'
+  ...
+# Subtest: another launch date has its own reachable preset and moving target
+ok 73 - another launch date has its own reachable preset and moving target
+  ---
+  duration_ms: 823.346843
+  type: 'test'
+  ...
+# Subtest: heading changes both the injection point and the future miss distance
+ok 74 - heading changes both the injection point and the future miss distance
+  ---
+  duration_ms: 11.128979
+  type: 'test'
+  ...
+# Subtest: Z pitch changes the true 3D trajectory
+ok 75 - Z pitch changes the true 3D trajectory
+  ---
+  duration_ms: 8.408863
+  type: 'test'
+  ...
+# Subtest: shared Dormand-Prince solver preserves a circular Kepler orbit
+ok 76 - shared Dormand-Prince solver preserves a circular Kepler orbit
+  ---
+  duration_ms: 1.564885
+  type: 'test'
+  ...
+# Subtest: relativistic clocks are monotone, sublight and agree at leg boundaries
+ok 77 - relativistic clocks are monotone, sublight and agree at leg boundaries
+  ---
+  duration_ms: 0.320821
+  type: 'test'
+  ...
+# Subtest: interpolated states agree with independent official JPL midpoint queries
+ok 78 - interpolated states agree with independent official JPL midpoint queries
+  ---
+  duration_ms: 0.770705
+  type: 'test'
+  ...
+# Subtest: both advertised launch-date endpoints have reachable presets
+ok 79 - both advertised launch-date endpoints have reachable presets
+  ---
+  duration_ms: 1541.336593
+  type: 'test'
+  ...
+# Subtest: coasting preserves velocity and spends no fuel
+ok 80 - coasting preserves velocity and spends no fuel
+  ---
+  duration_ms: 12.448858
+  type: 'test'
+  ...
+# Subtest: down cuts all thrust without erasing momentum
+ok 81 - down cuts all thrust without erasing momentum
+  ---
+  duration_ms: 2.706417
+  type: 'test'
+  ...
+# Subtest: thrust conserves the fuel/mass/impulse relation
+ok 82 - thrust conserves the fuel/mass/impulse relation
+  ---
+  duration_ms: 15.518988
+  type: 'test'
+  ...
+# Subtest: diagonal input does not double fuel use or total impulse
+ok 83 - diagonal input does not double fuel use or total impulse
+  ---
+  duration_ms: 1.395682
+  type: 'test'
+  ...
+# Subtest: opposite lateral inputs cancel thrust
+ok 84 - opposite lateral inputs cancel thrust
+  ---
+  duration_ms: 0.581602
+  type: 'test'
+  ...
+# Subtest: empty tank coasts and cannot generate free thrust
+ok 85 - empty tank coasts and cannot generate free thrust
+  ---
+  duration_ms: 0.637286
+  type: 'test'
+  ...
+# Subtest: partial final fuel burn scales actual thrust
+ok 86 - partial final fuel burn scales actual thrust
+  ---
+  duration_ms: 0.232639
+  type: 'test'
+  ...
+# Subtest: battery uses watt-hours, without free generation
+ok 87 - battery uses watt-hours, without free generation
+  ---
+  duration_ms: 7.096556
+  type: 'test'
+  ...
+# Subtest: higher Isp consumes less propellant for the configured thrust
+ok 88 - higher Isp consumes less propellant for the configured thrust
+  ---
+  duration_ms: 0.911766
+  type: 'test'
+  ...
+# Subtest: basic hull fails on the first direct collision
+ok 89 - basic hull fails on the first direct collision
+  ---
+  duration_ms: 0.646979
+  type: 'test'
+  ...
+# Subtest: temporary collision protection prevents multiple immediate hits
+ok 90 - temporary collision protection prevents multiple immediate hits
+  ---
+  duration_ms: 0.306619
+  type: 'test'
+  ...
+# Subtest: swept collision catches a high-speed pass
+ok 91 - swept collision catches a high-speed pass
+  ---
+  duration_ms: 0.215724
+  type: 'test'
+  ...
+# Subtest: capture core is fatal even with armor and invulnerability
+ok 92 - capture core is fatal even with armor and invulnerability
+  ---
+  duration_ms: 0.209604
+  type: 'test'
+  ...
+# Subtest: gravity bends a coasting trajectory without consuming fuel
+ok 93 - gravity bends a coasting trajectory without consuming fuel
+  ---
+  duration_ms: 4.640285
+  type: 'test'
+  ...
+# Subtest: comet ring gives one supply, never repeated free resources
+ok 94 - comet ring gives one supply, never repeated free resources
+  ---
+  duration_ms: 1.133089
+  type: 'test'
+  ...
+# Subtest: resource collection never exceeds capacity
+ok 95 - resource collection never exceeds capacity
+  ---
+  duration_ms: 0.234662
+  type: 'test'
+  ...
+# Subtest: electrical depletion ends the mission
+ok 96 - electrical depletion ends the mission
+  ---
+  duration_ms: 0.162394
+  type: 'test'
+  ...
+# Subtest: 600 elapsed seconds alone never grant arrival
+ok 97 - 600 elapsed seconds alone never grant arrival
+  ---
+  duration_ms: 65.82898
+  type: 'test'
+  ...
+# Subtest: same seed produces identical encounters with identical controls
+ok 98 - same seed produces identical encounters with identical controls
+  ---
+  duration_ms: 40.899106
+  type: 'test'
+  ...
+# Subtest: harder levels increase pacing and all-basic gear increases scoring
+ok 99 - harder levels increase pacing and all-basic gear increases scoring
+  ---
+  duration_ms: 0.399048
+  type: 'test'
+  ...
+# Subtest: failure cannot unlock a future photo
+ok 100 - failure cannot unlock a future photo
+  ---
+  duration_ms: 0.41375
+  type: 'test'
+  ...
+# Subtest: swept geometry handles stationary and crossing segments
+ok 101 - swept geometry handles stationary and crossing segments
+  ---
+  duration_ms: 0.116254
+  type: 'test'
+  ...
+# Subtest: CubeSat citations distinguish one-based PDF pages from printed page numbers
+ok 102 - CubeSat citations distinguish one-based PDF pages from printed page numbers
+  ---
+  duration_ms: 7.461302
+  type: 'test'
+  ...
+# Subtest: requirement traces agree with real successful missions and an incompatible-instrument failure
+ok 103 - requirement traces agree with real successful missions and an incompatible-instrument failure
+  ---
+  duration_ms: 1274.935411
+  type: 'test'
+  ...
+# Subtest: CubeSat review uses actual values, marks hardware limits and leaves the game result unchanged
+ok 104 - CubeSat review uses actual values, marks hardware limits and leaves the game result unchanged
+  ---
+  duration_ms: 1.202812
+  type: 'test'
+  ...
+# Subtest: trade studies expose actual instrument and radio differences using shared science and delta-v functions
+ok 105 - trade studies expose actual instrument and radio differences using shared science and delta-v functions
+  ---
+  duration_ms: 67.936248
+  type: 'test'
+  ...
+# Subtest: CML analysis reports evidence and risks without assigning an official level or scoring
+ok 106 - CML analysis reports evidence and risks without assigning an official level or scoring
+  ---
+  duration_ms: 1.145857
+  type: 'test'
+  ...
+# Subtest: Mission Viz tutorial ellipse matches an independently integrated Kepler orbit
+ok 107 - Mission Viz tutorial ellipse matches an independently integrated Kepler orbit
+  ---
+  duration_ms: 9.241901
+  type: 'test'
+  ...
+# Subtest: state vectors and orbital elements round-trip elliptic, circular, polar, retrograde and hyperbolic cases
+ok 108 - state vectors and orbital elements round-trip elliptic, circular, polar, retrograde and hyperbolic cases
+  ---
+  duration_ms: 1.128732
+  type: 'test'
+  ...
+# Subtest: Kepler solver handles negative and multi-revolution anomalies and rejects invalid cases
+ok 109 - Kepler solver handles negative and multi-revolution anomalies and rejects invalid cases
+  ---
+  duration_ms: 0.36661
+  type: 'test'
+  ...
+# Subtest: Mission Viz export uses actual JPL state vectors and excludes the relativistic route
+ok 110 - Mission Viz export uses actual JPL state vectors and excludes the relativistic route
+  ---
+  duration_ms: 3.131223
+  type: 'test'
+  ...
+# Subtest: GMAT status is Not Executed; comparison refuses mismatched force models and measures known offsets
+ok 111 - GMAT status is Not Executed; comparison refuses mismatched force models and measures known offsets
+  ---
+  duration_ms: 5.352842
+  type: 'test'
+  ...
+# Subtest: the game dependency graph contains no offline research modules
+ok 112 - the game dependency graph contains no offline research modules
+  ---
+  duration_ms: 2.06848
+  type: 'test'
+  ...
+# Subtest: all equipment prices, masses, resources and score multipliers remain exactly v9
+ok 113 - all equipment prices, masses, resources and score multipliers remain exactly v9
+  ---
+  duration_ms: 1.547619
+  type: 'test'
+  ...
+# Subtest: every v9 score source and combo multiplier gives the same exact score
+ok 114 - every v9 score source and combo multiplier gives the same exact score
+  ---
+  duration_ms: 2.239747
+  type: 'test'
+  ...
+# Subtest: resource and comet awards, combo and repair effects remain v9
+ok 115 - resource and comet awards, combo and repair effects remain v9
+  ---
+  duration_ms: 0.507951
+  type: 'test'
+  ...
+# Subtest: same seed and controls retain the v9 obstacle, collision and award sequence
+ok 116 - same seed and controls retain the v9 obstacle, collision and award sequence
+  ---
+  duration_ms: 119.041546
+  type: 'test'
+  ...
+# Subtest: original sprites, audio, base styles and all photo bytes are retained
+ok 117 - original sprites, audio, base styles and all photo bytes are retained
+  ---
+  duration_ms: 2.744984
+  type: 'test'
+  ...
+# Subtest: v9 scores, kit, photos and records migrate without deleting the original save
+ok 118 - v9 scores, kit, photos and records migrate without deleting the original save
+  ---
+  duration_ms: 1.772807
+  type: 'test'
+  ...
+1..118
+# tests 118
+# suites 0
+# pass 118
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 16218.394177

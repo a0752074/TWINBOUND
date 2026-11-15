@@ -1,0 +1,309 @@
+{
+  "schema": "twinbound-release-validation-v1",
+  "release": "10.2.0",
+  "runtime": {
+    "node": "24.22.1",
+    "python": "3.12.14",
+    "os": "Linux"
+  },
+  "automatedTests": {
+    "pass": 118,
+    "fail": 0,
+    "skipped": 0,
+    "output": "data/validation/test_results.tap"
+  },
+  "protectedFiles": [
+    {
+      "path": "assets/favicon.svg",
+      "sha256": "8b056b707659a092ded0be3bab70effa79fdfb42a140c6bcb613d8e95ca87bfb",
+      "matches": true
+    },
+    {
+      "path": "assets/photos/PIA00407.jpg",
+      "sha256": "b97cb7e1fe54a68f0dc1949015752875c86ee18921b91c43046e5fe20f195a4e",
+      "matches": true
+    },
+    {
+      "path": "assets/photos/PIA02653.jpg",
+      "sha256": "9904cc710b0b688db8e27102b37dbce377f2af13118127f71a9c130aa12e4370",
+      "matches": true
+    },
+    {
+      "path": "assets/photos/PIA12954.jpg",
+      "sha256": "772422234452b24748e7cc8fa111a91c8e1d27e0947fdb815d289eee11881428",
+      "matches": true
+    },
+    {
+      "path": "assets/photos/PIA13008.jpg",
+      "sha256": "839bf582379dc0abbf691e934b8a9c218154fdfa49c39aa11c8ed52394253aa2",
+      "matches": true
+    },
+    {
+      "path": "assets/photos/proxima_wfc3.jpg",
+      "sha256": "22733c1ade944756ddcfe39208cee5845ac05710aefbd343c231e38022029bfb",
+      "matches": true
+    },
+    {
+      "path": "assets/photos/proxima_wfpc2.jpg",
+      "sha256": "e4231858c5bc750bd4dabec5b6cdf216bb18f7666f85c9fcdddc536c87f57692",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/earth.bin",
+      "sha256": "222c00110021fc6384d1f9b65e9abb95801d7f8d4a6dc52dbc0961168d49de8b",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/earth.json.gz",
+      "sha256": "5be07f4db590beb3ae4d57252564da5257855034abaeb27670bc59d6f847a520",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/jupiter.bin",
+      "sha256": "bb711ac36b42f1f88c1adf7040fd2d0ea5cb64434b5558ed2c939104951296b8",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/jupiter.json.gz",
+      "sha256": "973d6baf3496b706b24b8f5f9e517e4e2fac0bc7fbd45d7eebcf10a14d5205ef",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/manifest.json",
+      "sha256": "b3f49d8b388319a03f81c7a8f624aedd0f41a3daf554e8a98e985fc01ab2b795",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/mars.bin",
+      "sha256": "b21da9d6d311ec428abc3e8d26812d04625205d1cde9c457b23adf8e62db9b77",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/mars.json.gz",
+      "sha256": "f7138dd2c9055c079112658c3434d52ce2ec097a892bb5b61ec0c8c5e9890157",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/mercury.bin",
+      "sha256": "2501a3ecfbc714b23817630fe471ba98e817c9ebaeb3af2fe18ad2892b990883",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/mercury.json.gz",
+      "sha256": "9180f6b734ca40ac81b2fe3365c61ba8fdca1d54e19d06e0196d590bbd1ead7a",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/moon.bin",
+      "sha256": "4d848859252753f2a5a486801c66504285cae49320bacee22515b447bf3c5b32",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/moon.json.gz",
+      "sha256": "59ef61c74cc08f2448154619c0dc5c14ed05cd49bbc45db18a7d049e351140f9",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/neptune.bin",
+      "sha256": "4ad6ea90cb7b61006a3bff3dafe0ee0e5db083b6668f6f7287a5ecae00237ada",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/neptune.json.gz",
+      "sha256": "17aeee9e0ad07e8e6af52701ceecd3cf387562483d672505f4271513a529a70b",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/pluto.bin",
+      "sha256": "19debfb563df2e14d320a6bb3102ccf550bf1e02cf41bd5889eb10bae7f13404",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/pluto.json.gz",
+      "sha256": "92c8f67e55a726c70bdd1374c891f5e58f7af7e83c12fcba9b12a067e8a67b3e",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/saturn.bin",
+      "sha256": "6c90d7b1944580f6a52c157f20178d6a6b23fd869c0c2d4a03d8b912cbdb4190",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/saturn.json.gz",
+      "sha256": "9b362782d50970bbe66790e052e728090e9347c0854b5dbfd1b5328699289ef9",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/sun.bin",
+      "sha256": "056a18a6f5a1134a17b21a167bb7f610034884ff1b96052c6170181969ed0f30",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/sun.json.gz",
+      "sha256": "7fe293d422444d316e51062dc7b7d1f90b6bf346f417b7b5bd7db274418d5d01",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/uranus.bin",
+      "sha256": "6fe4b9be2e6ecf5792d1baa94da0700b74a552945b9ae0c480b003146a9c55c0",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/uranus.json.gz",
+      "sha256": "2ee2937e42f39e28d315fd136f0aa4f28319ffd9f6b36f821f97472b8c79be1c",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/venus.bin",
+      "sha256": "624b6ae12d8c08e1e13d716474f5516848e5059adbc9c58b70c1f7ff5af9c5e6",
+      "matches": true
+    },
+    {
+      "path": "data/horizons_v10/venus.json.gz",
+      "sha256": "a986846d2572a372c9b57098e981f7aafee35b4a6b01017371d178ce1ff3185e",
+      "matches": true
+    },
+    {
+      "path": "src/art.js",
+      "sha256": "875260b35d4624b61e6b09b46aacbf547788364ee366494ec32908676fb03da6",
+      "matches": true
+    },
+    {
+      "path": "src/audio.js",
+      "sha256": "dff509dd1c611cb00e90a53c5f9d5356a8b9a7806f6509a230081468a92bd805",
+      "matches": true
+    },
+    {
+      "path": "src/dynamics.js",
+      "sha256": "15c57a8fb940f6fd265cfd3d4b45f3e8348a2344392152e432a4c8dd229f7abd",
+      "matches": true
+    },
+    {
+      "path": "src/navigation.js",
+      "sha256": "cb31eb0925d57b236eb9b2b79d6c9b747f70ea512a92ed005866abd07d7499ea",
+      "matches": true
+    },
+    {
+      "path": "src/orbit-view.js",
+      "sha256": "a35a340098e601373d26613263625dee90eb8f73c10736e80781aaa17a238b97",
+      "matches": true
+    },
+    {
+      "path": "src/orbit.js",
+      "sha256": "aa10646909ea44552ff06592311c6514c36fd2bcc3836fe0a4504699102adabd",
+      "matches": true
+    },
+    {
+      "path": "src/planning-v10.js",
+      "sha256": "ba8badca4b80a0c29587bac0d864d1cc813a2167400a8f7556d7699f50a378ad",
+      "matches": true
+    },
+    {
+      "path": "src/render.js",
+      "sha256": "e617d39ea9e76e6d78e9bff0a24cc7cd21fe57028a92c2e788ed1a5496baa4ed",
+      "matches": true
+    },
+    {
+      "path": "src/storage.js",
+      "sha256": "43f07802051ba84ed829ffdc3153c0e32c89f540f2b779f883a6b01b7418023b",
+      "matches": true
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "faaccb16d32685bd99188b59cb4d473a2e171f34a505fee6ffcec7ef6749814b",
+      "matches": true
+    }
+  ],
+  "controlledMissionCases": [
+    {
+      "level": "moon",
+      "status": "arrived",
+      "scienceComplete": true,
+      "traceAligned": true,
+      "requirementsPass": 6,
+      "requirementsFail": [],
+      "tradeAlternatives": 8,
+      "officialCML": null,
+      "vizStatus": "Analyzed"
+    },
+    {
+      "level": "mars",
+      "status": "arrived",
+      "scienceComplete": true,
+      "traceAligned": true,
+      "requirementsPass": 6,
+      "requirementsFail": [],
+      "tradeAlternatives": 8,
+      "officialCML": null,
+      "vizStatus": "Analyzed"
+    },
+    {
+      "level": "pluto",
+      "status": "arrived",
+      "scienceComplete": true,
+      "traceAligned": true,
+      "requirementsPass": 6,
+      "requirementsFail": [],
+      "tradeAlternatives": 8,
+      "officialCML": null,
+      "vizStatus": "Analyzed"
+    },
+    {
+      "level": "proxima",
+      "status": "arrived",
+      "scienceComplete": true,
+      "traceAligned": true,
+      "requirementsPass": 6,
+      "requirementsFail": [],
+      "tradeAlternatives": 8,
+      "officialCML": null,
+      "vizStatus": "Not Applicable"
+    },
+    {
+      "level": "mars",
+      "status": "arrived",
+      "scienceComplete": false,
+      "traceAligned": true,
+      "requirementsPass": 4,
+      "requirementsFail": [
+        "REQ-SCI-001",
+        "REQ-DATA-001"
+      ],
+      "tradeAlternatives": 8,
+      "officialCML": null,
+      "vizStatus": "Analyzed",
+      "scenario": "incompatible-instrument"
+    }
+  ],
+  "rendererChecks": {
+    "status": "Executed",
+    "method": "Actual drawing commands through Canvas-to-SVG adapter",
+    "sizes": [
+      [
+        1400,
+        840
+      ],
+      [
+        390,
+        700
+      ],
+      [
+        320,
+        568
+      ]
+    ],
+    "browserRendering": "Not Executed"
+  },
+  "gmat": {
+    "status": "Not Executed",
+    "preparation": "data/evidence/gmat/status.json"
+  },
+  "manualChecksPending": [
+    "Browser layout and rendering",
+    "Hardware keyboard/touch timing",
+    "Audio playback",
+    "Fullscreen and cross-browser behavior",
+    "Windows and macOS launcher execution"
+  ],
+  "details": "docs/VALIDATION.md"
+}

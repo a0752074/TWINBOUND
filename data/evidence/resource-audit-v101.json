@@ -1,0 +1,177 @@
+{
+  "schema": "twinbound-resource-audit-v1",
+  "version": "10.1.0",
+  "categories": {
+    "A": "NASA numerical or image data",
+    "B": "NASA source software or algorithm reused",
+    "C": "Executable document-derived method",
+    "D": "Design principle reference",
+    "E": "Link only / no integration"
+  },
+  "resources": [
+    {
+      "id": "jpl-horizons",
+      "title": "NASA/JPL Horizons",
+      "role": "Data used in calculations",
+      "url": "https://ssd-api.jpl.nasa.gov/doc/horizons.html",
+      "implementation": "Bundled sampled positions and velocities set the moving gravity sources, date-specific injection states, trajectory predictions, live navigation, Earth range, and signal delay. Raw API responses, parameters, and hashes are included.",
+      "files": [
+        "data/horizons_v10/manifest.json",
+        "src/dynamics.js",
+        "src/navigation.js",
+        "src/mission.js"
+      ],
+      "category": "A",
+      "functions": [
+        "JplEphemeris.state",
+        "JplEphemeris.acceleration",
+        "presetForDate",
+        "Navigation.advance",
+        "linkGeometry"
+      ],
+      "qualification": "As recorded in the source package."
+    },
+    {
+      "id": "mission-development",
+      "title": "Design and Develop Science Missions",
+      "role": "Challenge resource adapted into gameplay",
+      "url": "https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf?emrc=a454cf",
+      "implementation": "Adapts the goal-to-requirements workflow and four mission segments. Players choose a science objective, configure the spacecraft and injection service, transmit observations to Earth, and inspect a delivered-science report.",
+      "files": [
+        "src/mission.js",
+        "src/mission-ui.js",
+        "docs/NASA_RESOURCES.md"
+      ],
+      "category": "C",
+      "functions": [
+        "configureMission",
+        "designChecks",
+        "ScienceOperations.report"
+      ],
+      "qualification": "The listed game mechanisms exist; detailed document trace was not available in the input package."
+    },
+    {
+      "id": "mission-design-lab",
+      "title": "NASA Goddard Mission Design Lab",
+      "role": "Challenge resource adapted into gameplay",
+      "url": "https://etd.gsfc.nasa.gov/capabilities/integrated-design-center/mission-design-lab",
+      "implementation": "The instrument trade table exposes alternative designs with mass, power, data rate, and cost. Choices change the live craft mass, energy consumption, storage, and mission assessment. This is a small educational trade study.",
+      "files": [
+        "src/mission.js",
+        "src/mission-ui.js"
+      ],
+      "category": "C",
+      "functions": [
+        "configureMission",
+        "missionEditorHTML",
+        "Navigation.remainingDV"
+      ],
+      "qualification": "The listed game mechanisms exist; detailed document trace was not available in the input package."
+    },
+    {
+      "id": "cubesat-101",
+      "title": "CubeSat 101",
+      "role": "Challenge resource adapted into gameplay",
+      "url": "https://www3.nasa.gov/sites/default/files/atoms/files/nasa_csli_cubesat_101_508.pdf",
+      "implementation": "Adapts mission planning, launch accommodation, operational checkout, and data return concepts into wet-mass capacity checks, objective verification, finite onboard storage, and a ground-delivery report. The game spacecraft is not a CubeSat-standard design.",
+      "files": [
+        "src/mission.js",
+        "docs/NASA_RESOURCES.md"
+      ],
+      "category": "D",
+      "functions": [
+        "designChecks",
+        "ScienceOperations.step"
+      ],
+      "qualification": "The listed game mechanisms exist; detailed document trace was not available in the input package."
+    },
+    {
+      "id": "telescope-game",
+      "title": "Build It Yourself: A Learning Game About Telescopes",
+      "role": "Challenge resource adapted into gameplay",
+      "url": "https://science.nasa.gov/mission/webb/game-build-it-yourself/",
+      "implementation": "Adapts its science-first design principle: each objective requires a matching measurement package. An incompatible instrument can still fly, but cannot satisfy the science mission. No source code or art was copied from this game.",
+      "files": [
+        "src/mission.js",
+        "src/mission-ui.js"
+      ],
+      "category": "C",
+      "functions": [
+        "ScienceOperations.report",
+        "designChecks"
+      ],
+      "qualification": "The listed game mechanisms exist; detailed document trace was not available in the input package."
+    },
+    {
+      "id": "concept-maturity",
+      "title": "Space mission concept development using concept maturity levels",
+      "role": "Challenge resource used as design guidance",
+      "url": "https://dataverse.jpl.nasa.gov/dataset.xhtml?persistentId=hdl:2014/44299",
+      "implementation": "Informs the distinction between a concept, a checked design, and demonstrated mission performance. The preflight requirements and postflight evidence remain explicit. These checks are not a NASA CML rating or certification.",
+      "files": [
+        "src/mission.js",
+        "docs/NASA_RESOURCES.md"
+      ],
+      "category": "D",
+      "functions": [],
+      "qualification": "The listed game mechanisms exist; detailed document trace was not available in the input package."
+    },
+    {
+      "id": "nasa-images",
+      "title": "NASA Image and Video Library / Hubble archives",
+      "role": "Data used in the collection",
+      "url": "https://images.nasa.gov/",
+      "implementation": "Successful flights unlock target-matched archived observations, retaining original image bytes, source URLs, credits, and SHA-256 hashes. They are not observations produced by the simulation.",
+      "files": [
+        "data/photos.json",
+        "docs/IMAGE_CREDITS.md"
+      ],
+      "category": "A",
+      "functions": [
+        "renderAlbum",
+        "finishGame"
+      ],
+      "qualification": "As recorded in the source package."
+    },
+    {
+      "id": "gmat",
+      "title": "General Mission Analysis Tool (GMAT)",
+      "role": "Further study only",
+      "url": "https://software.nasa.gov/software/GSC-19468-1",
+      "implementation": "Listed for follow-up engineering studies. GMAT is not bundled, executed, or used as a validation reference in this release.",
+      "category": "E",
+      "functions": [],
+      "qualification": "As recorded in the source package."
+    },
+    {
+      "id": "mission-viz",
+      "title": "NASA Mission Viz",
+      "role": "Further study only",
+      "url": "https://nasa.github.io/mission-viz/",
+      "implementation": "Linked for mission visualization examples. The game uses its own Canvas projections and does not run Mission Viz code.",
+      "category": "E",
+      "functions": [],
+      "qualification": "As recorded in the source package."
+    },
+    {
+      "id": "vr-challenge",
+      "title": "Visualize a Space Mission Using Virtual Reality (2023)",
+      "role": "Further study only",
+      "url": "https://www.spaceappschallenge.org/2023/challenges/visualize-a-space-mission-using-virtual-reality/",
+      "implementation": "Background challenge reference. This release has no VR mode.",
+      "category": "E",
+      "functions": [],
+      "qualification": "As recorded in the source package."
+    },
+    {
+      "id": "csa-games",
+      "title": "Canadian Space Agency: Games and activities",
+      "role": "Partner learning resource; further study only",
+      "url": "https://www.asc-csa.gc.ca/eng/activities/",
+      "implementation": "Additional space learning activities. No CSA data are used in the calculations.",
+      "category": "E",
+      "functions": [],
+      "qualification": "As recorded in the source package."
+    }
+  ]
+}
