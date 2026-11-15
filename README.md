@@ -1,10 +1,14 @@
 # TWINBOUND — Space Mission Design Game
 
-**[Play TWINBOUND Online](https://a0752074.github.io/TWINBOUND/)**
+**[Play TWINBOUND Online](https://YOUR_USERNAME.github.io/TWINBOUND/)**
+
+Version **10.3.1 — GitHub Pages & Local Leaderboard Edition**.
+Replace `YOUR_USERNAME` (and `TWINBOUND` if you choose another repository name) before publishing.
 
 TWINBOUND combines NASA data and mission-design methods with spacecraft engineering, date-dependent orbital simulation and a 2D / 3D flight game. Choose a destination, configure a spacecraft and science objective, plan a trajectory, fly through an encounter field, and review the mission's science return and score. Friends can take turns on the same computer and compare their best flights.
 
-**[Watch the 30-second Gameplay Demo](https://youtu.be/T0G1cfsGDY8)**
+**Watch the 30-second Gameplay Demo** — YouTube link to be added: `YOUR_YOUTUBE_VIDEO_URL`.
+This is an unlinked placeholder; replace it with your uploaded video's URL. No demo is published by this release.
 
 ## How to play
 
@@ -96,7 +100,7 @@ Proxima is a **one-way idealized** 4.2465-light-year journey with an external dr
 $$
 \gamma=\frac{1}{\sqrt{1-\beta^2}},\quad
  t_{\rm acc}=\frac{c}{a}\sqrt{\gamma^2-1},\quad
- \tau_{\rm acc}=\frac{c}{a}\operatorname{acosh}(\gamma),\quad
+ \tau_{\rm acc}=\frac{c}{a}\mathrm{acosh}(\gamma),\quad
  x_{\rm acc}=\frac{c^2}{a}(\gamma-1).
 $$
 
@@ -109,6 +113,8 @@ $$
 If the route is too short to reach the selected cap, the peak is reduced. Local avoidance controls remain separate from the analytic relativistic drive. This level does not use a measured Proxima ephemeris, a feasible propulsion-energy budget or a general-relativistic engine. Implementation: `relativisticLeg` in `src/orbit.js` and `src/navigation.js`.
 
 ## Scoring system
+
+The scoring version is `10.3.0-1`; compatible records can rank.
 
 ### Original Arcade Score
 
@@ -139,7 +145,7 @@ $$
 $$
 
 $$
-\mathrm{NASA\ Mission\ Bonus}=\operatorname{round}(\mathrm{Level\ Bonus\ Cap}\times Q),\qquad
+\mathrm{NASA\ Mission\ Bonus}=\mathrm{round}(\mathrm{Level\ Bonus\ Cap}\times Q),\qquad
 Q=0.15pR+0.20pE+0.60D+0.05FC.
 $$
 
@@ -167,7 +173,7 @@ For Moon/Mars/Pluto, credited data are Earth receipts; stored and in-transit dat
 The cost benchmark enumerates 27 bus kits × 2 radios × 2 injection services using the objective's required instrument. Designs must pass the existing checks against the **fixed expanded budget** (with duration zero for this hardware enumeration). The cheapest qualifying design defines $K_{\min}$ and the median defines $K_{\rm ref}$:
 
 $$
- C=\operatorname{clamp}\!\left(\frac{K_{\rm ref}-K_{\rm actual}}{K_{\rm ref}-K_{\min}},0,1\right).
+ C=\mathrm{clamp}\!\left(\frac{K_{\rm ref}-K_{\rm actual}}{K_{\rm ref}-K_{\min}},0,1\right).
 $$
 
 A zero denominator gives $C=0$. The selected budget cannot inflate the reference cost; it only changes the budget check. A lower-cost design receives cost credit only after full mission success. Mission Bonus is added **after** Arcade Score and receives no destination, equipment, Combo or 3D multiplier.
@@ -198,9 +204,15 @@ These are data sources or adapted methods, not claims that NASA software runs th
 | [NASA Mission Viz: Elliptical Orbit Design](https://nasa.github.io/mission-viz/RMarkdown/Elliptical_Orbit_Design.html) | Tutorial-derived orbital mathematics and departure-state elements in flight-report Trajectory Analysis | `src/research/mission-viz.js`, `src/flight-record.js`, `src/flight-report.js` |
 | [NASA images](https://images.nasa.gov/) and [Hubble archives](https://science.nasa.gov/mission/hubble/multimedia/) | Credited destination-matched collection rewards from original archive images | `data/photos.json`, `src/photos.js`, `src/app.js`, `assets/photos/` |
 
-See [NASA resources and citations](docs/NASA_RESOURCES.md), [integration evidence](docs/NASA_INTEGRATION_EVIDENCE.md), [image credits](docs/IMAGE_CREDITS.md) and [License](LICENSE). 
+See [NASA resources and citations](docs/NASA_RESOURCES.md), [integration evidence](docs/NASA_INTEGRATION_EVIDENCE.md), [image credits](docs/IMAGE_CREDITS.md) and [License](LICENSE). The retained research files include concept-maturity analysis and a GMAT benchmark scaffold. **GMAT was not executed and is not the game's runtime integrator.** Original citations and evidence remain in the repository, including references omitted from the player resource cards.
 
 ## Local Leaderboard
+
+Each destination has a **Top 50** using **one best flight per normalized Player ID**. Sort order is Final Score descending, NASA Mission Bonus descending, flight date ascending, then Flight ID ascending. The same order selects each player's best flight and makes ties reproducible. Your own best remains accessible even outside the displayed Top 50.
+
+Click any entry to open its complete report, including another player's flight. **My Flights** shows only the current player's complete history, paginated by 50; lower-scoring flights are never deleted to make the board. Legacy scoring stays separate. Compatible archive entries remain usable.
+
+IndexedDB stores full reports on this browser and origin; a localStorage fallback is available. Settings, spacecraft choices, collection and personal bests remain separate for each Player ID. Reopening the same site normally retains records. Different computers, browsers, browser profiles and site origins do not share them. Localhost and the Pages site have separate archives. Clearing site data or using temporary/private browsing can remove records. There are no global uploads, accounts or synchronization services.
 
 ## Installation and development
 
@@ -220,8 +232,10 @@ Keep the console open and use its printed URL, normally `http://127.0.0.1:8765`.
 
 ### Repository and development setup
 
+After creating your repository (replace the placeholder username and repository name):
+
 ```sh
-git clone https://github.com/a0752074/TWINBOUND.git
+git clone https://github.com/YOUR_USERNAME/TWINBOUND.git
 cd TWINBOUND
 python run.py --no-browser
 ```
@@ -235,10 +249,20 @@ python tools/verify_release.py
 python tools/build_static.py
 ```
 
-`dist/` is the complete standalone website. Preview it at `http://127.0.0.1:9000/` with `python -m http.server 9000 --directory dist`. Optional real-browser tests, including a `/TWINBOUND/` subpath, are documented in [Validation](docs/VALIDATION_v10.3.1.md).
+`dist/` is the complete standalone website. Preview it at `http://127.0.0.1:9000/` with `python -m http.server 9000 --directory dist`. Optional real-browser tests, including a `/TWINBOUND/` subpath, are documented in [Validation](docs/VALIDATION_v10.3.1.md). Retained former-server tests can run with `python -m unittest discover -s tests -p test_server.py -v`; `server.py` is not imported by the normal launcher or static site.
 
+### Publish to GitHub Pages
 
+1. Create your own **public** repository named `TWINBOUND`, with default branch `main`.
+2. Upload the **contents** of the extracted project to its root, including `.github/workflows/pages.yml`. `index.html`, `README.md`, `src/` and `data/` must be at the repository root. Do not upload only the ZIP or an extra enclosing folder. Use Git or GitHub Desktop to preserve hidden files and transfer the complete project.
+3. Replace `YOUR_USERNAME` in this README's Pages link and clone command. If you use a different repository name, replace `TWINBOUND` in both URLs. Replace the demo sentence with `[Watch the 30-second Gameplay Demo](YOUR_ACTUAL_YOUTUBE_URL)` once your video is uploaded.
+4. Under **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**.
+5. Push to `main`, or open **Actions → Publish TWINBOUND to GitHub Pages → Run workflow**. The existing workflow tests the project, verifies data/scoring, builds `dist`, and deploys it.
+6. Open the URL shown in the deployment result, normally `https://YOUR_USERNAME.github.io/TWINBOUND/`. Confirm four destinations, a completed/ended flight, saved reports and the Local Leaderboard. Future pushes to `main` redeploy automatically.
 
+No repository secret, API-base variable, personal token in the game, backend, database or tunnel is required. The workflow uses GitHub's automatic job token and Pages permissions. Repository subpaths work because assets, JSON, binaries and module Workers use relative URLs. Full upload commands, troubleshooting and the replacement checklist are in [Deployment](docs/DEPLOYMENT.md).
+
+**Release verification is local; this package does not claim a public GitHub Pages deployment.**
 
 ## AI assistance and credits
 
